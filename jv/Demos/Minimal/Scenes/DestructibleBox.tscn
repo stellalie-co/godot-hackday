@@ -1,0 +1,103 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://icon.png" type="Texture" id=1]
+[ext_resource path="res://jv/Engine/Common/BaseController.gd" type="Script" id=2]
+[ext_resource path="res://jv/Engine/Common/Health.gd" type="Script" id=3]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 32.0669, 31.8847 )
+
+[sub_resource type="Animation" id=2]
+
+resource_name = "die"
+length = 0.3
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 0, 0, 1 ), Color( 1, 0, 0, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+
+length = 0.3
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.8, 0.8 ), Vector2( 1, 1 ) ]
+}
+
+[node name="destructible" type="StaticBody2D" groups=[
+"destructible",
+]]
+
+position = Vector2( 778.763, 490.783 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="shape" type="CollisionShape2D" parent="." index="0"]
+
+visible = false
+shape = SubResource( 1 )
+
+[node name="agent_torso" type="Sprite" parent="." index="1"]
+
+modulate = Color( 1, 0, 0, 1 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
+
+[node name="agent_animation" type="AnimationPlayer" parent="agent_torso" index="0"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/die = SubResource( 2 )
+anims/hit = SubResource( 3 )
+blend_times = [  ]
+
+[node name="Controller" type="Node2D" parent="agent_torso" index="1"]
+
+script = ExtResource( 2 )
+damagable_groups = ""
+agent_torso = null
+agent_animation = null
+agent_shape = NodePath("../../shape")
+display_debug_information = false
+
+[node name="Health" type="Node2D" parent="agent_torso/Controller" index="0"]
+
+script = ExtResource( 3 )
+max_health = 100
+current_health = 30
+invincible_time_on_hit = 0.0
+
+

@@ -1,0 +1,49 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://jv/Engine/Common/BaseController.gd" type="Script" id=1]
+[ext_resource path="res://jv/Engine/AI/Enemy/DamageOnContact.gd" type="Script" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 48.1548, 10 )
+
+[node name="Trap" type="Area2D"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Material" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="agent_shape" type="CollisionShape2D" parent="." index="0"]
+
+shape = SubResource( 1 )
+
+[node name="agent_torso" type="Node2D" parent="." index="1"]
+
+[node name="Controller" type="Node2D" parent="agent_torso" index="0"]
+
+script = ExtResource( 1 )
+damagable_groups = "player"
+agent_torso = null
+agent_animation = null
+agent_shape = null
+display_debug_information = false
+
+[node name="DamageOnContact" type="Node2D" parent="agent_torso/Controller" index="0"]
+
+script = ExtResource( 2 )
+disabled = false
+debug = false
+damage_target_on_contact = 10
+bounce_up_height = 400
+bounce_up_speed = 50
+
+

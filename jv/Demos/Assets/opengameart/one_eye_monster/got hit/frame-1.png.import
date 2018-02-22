@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/frame-1.png-900afdab522c147ddcc9a9597f49542f.stex"
+
+[deps]
+
+source_file="res://jv/Demos/Assets/opengameart/one_eye_monster/got hit/frame-1.png"
+source_md5="e49f65581069006abf267c8f82b064ec"
+
+dest_files=[ "res://.import/frame-1.png-900afdab522c147ddcc9a9597f49542f.stex" ]
+dest_md5="f18c97d180f93c6b296b8bed671dafe3"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

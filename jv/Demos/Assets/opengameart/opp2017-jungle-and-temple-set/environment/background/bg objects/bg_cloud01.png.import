@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/bg_cloud01.png-ce8b60e92bdf08595ed457bb0cc2c04a.stex"
+
+[deps]
+
+source_file="res://jv/Demos/Assets/opengameart/opp2017-jungle-and-temple-set/environment/background/bg objects/bg_cloud01.png"
+source_md5="582f8c8de1768b7f6a4a20f36ea3b045"
+
+dest_files=[ "res://.import/bg_cloud01.png-ce8b60e92bdf08595ed457bb0cc2c04a.stex" ]
+dest_md5="553d1d970b1666cd09292944342cac68"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

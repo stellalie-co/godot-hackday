@@ -1,0 +1,157 @@
+[gd_scene load_steps=17 format=2]
+
+[ext_resource path="res://jv/Demos/Assets/opengameart/one_eye_monster/Idle/frame-1.png" type="Texture" id=1]
+[ext_resource path="res://jv/Demos/Assets/opengameart/one_eye_monster/Idle/frame-2.png" type="Texture" id=2]
+[ext_resource path="res://jv/Demos/Assets/opengameart/one_eye_monster/die/frame-1.png" type="Texture" id=3]
+[ext_resource path="res://jv/Demos/Assets/opengameart/one_eye_monster/die/frame-2.png" type="Texture" id=4]
+[ext_resource path="res://jv/Demos/Assets/opengameart/one_eye_monster/die/frame-3.png" type="Texture" id=5]
+[ext_resource path="res://jv/Demos/Assets/opengameart/one_eye_monster/got hit/frame-1.png" type="Texture" id=6]
+[ext_resource path="res://jv/Demos/Assets/opengameart/one_eye_monster/got hit/frame-2.png" type="Texture" id=7]
+[ext_resource path="res://jv/Engine/AI/Enemy/EnemyController.gd" type="Script" id=8]
+[ext_resource path="res://jv/Engine/AI/Enemy/Movement.gd" type="Script" id=9]
+[ext_resource path="res://jv/Engine/Common/Health.gd" type="Script" id=10]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/SkillSlots.gd" type="Script" id=11]
+[ext_resource path="res://jv/Engine/AI/Enemy/ShootProjectileSkill.gd" type="Script" id=12]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/MachineGunBullet.tscn" type="PackedScene" id=13]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/ShotgunBullet.tscn" type="PackedScene" id=14]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 27.9377, 34.0859 )
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "die",
+"speed": 3.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": false,
+"name": "shoot",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
+"loop": false,
+"name": "hit",
+"speed": 3.0
+} ]
+
+[node name="StaticEnemy" type="KinematicBody2D" index="0" groups=[
+"enemy",
+]]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+
+[node name="agent_shape" type="CollisionShape2D" parent="." index="0"]
+
+visible = false
+shape = SubResource( 1 )
+
+[node name="agent_torso" type="Node2D" parent="." index="1"]
+
+[node name="agent_animation" type="AnimatedSprite" parent="agent_torso" index="0"]
+
+scale = Vector2( 0.1, 0.1 )
+frames = SubResource( 2 )
+animation = "idle"
+frame = 1
+playing = true
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Controller" type="Node2D" parent="agent_torso" index="1"]
+
+script = ExtResource( 8 )
+damagable_groups = "player"
+agent_torso = null
+agent_animation = null
+agent_shape = null
+display_debug_information = false
+agent_initial_facing_direction = "left"
+
+[node name="Movement" type="Node2D" parent="agent_torso/Controller" index="0"]
+
+script = ExtResource( 9 )
+disabled = true
+debug = false
+gravity = 900
+run_speed = 250
+slope_slide_stop = 25.0
+movement_sound_manager = null
+damage_target_on_contact = 10
+change_direction_when_colliding = true
+number_of_collision_raycasts = 1
+collision_distance = 50
+
+[node name="Health" type="Node2D" parent="agent_torso/Controller" index="1"]
+
+script = ExtResource( 10 )
+max_health = 100
+current_health = 100
+invincible_time_on_hit = 0.0
+
+[node name="SkillSlots" type="Node2D" parent="agent_torso/Controller" index="2"]
+
+script = ExtResource( 11 )
+disabled = false
+debug = false
+skill_activation = 0
+delay_between_skills = 0.5
+
+[node name="ShootMachineGunBullet" type="Node2D" parent="agent_torso/Controller/SkillSlots" index="0"]
+
+script = ExtResource( 12 )
+_sections_unfolded = [ "Transform" ]
+disabled = false
+debug = false
+cooldown_time = 1
+skill_animation = ""
+skill_priority = 0
+projectile_type = ExtResource( 13 )
+projectile_animation_identifier = null
+projectile_start_position = null
+override_bullet_damage = 0
+spawn_count = 1
+ray_x = 400
+ray_y = 0
+number_of_raycasts = 1
+ray_gap = 10
+
+[node name="MachineGunBulletStartPosition" type="Position2D" parent="agent_torso/Controller/SkillSlots/ShootMachineGunBullet" index="0"]
+
+position = Vector2( -15.6145, 3.8147e-05 )
+
+[node name="ShootShotgunBullet" type="Node2D" parent="agent_torso/Controller/SkillSlots" index="1"]
+
+position = Vector2( 0, -0.390366 )
+script = ExtResource( 12 )
+disabled = false
+debug = false
+cooldown_time = 3
+skill_animation = ""
+skill_priority = 0
+projectile_type = ExtResource( 14 )
+projectile_animation_identifier = null
+projectile_start_position = null
+override_bullet_damage = 0
+spawn_count = 3
+ray_x = 300
+ray_y = 0
+number_of_raycasts = 1
+ray_gap = 10
+
+[node name="ShotgunBulletStartPosition" type="Position2D" parent="agent_torso/Controller/SkillSlots/ShootShotgunBullet" index="0"]
+
+position = Vector2( -15.6145, 16.2 )
+
+

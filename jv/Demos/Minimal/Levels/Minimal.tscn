@@ -1,0 +1,83 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://jv/Demos/TileSets/JungleTiles.tres" type="TileSet" id=1]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/Hero.tscn" type="PackedScene" id=2]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/DestructibleBox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/StaticEnemy.tscn" type="PackedScene" id=5]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/Trap.tscn" type="PackedScene" id=6]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 29.7883, 30.5757 )
+
+[node name="World" type="Node"]
+
+[node name="TileMap" type="TileMap" parent="." index="0"]
+
+mode = 0
+tile_set = ExtResource( 1 )
+cell_size = Vector2( 32, 48 )
+cell_quadrant_size = 16
+cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+cell_half_offset = 2
+cell_tile_origin = 0
+cell_y_sort = false
+cell_clip_uv = false
+collision_use_kinematic = false
+collision_friction = 1.0
+collision_bounce = 0.0
+collision_layer = 1
+collision_mask = 1
+occluder_light_mask = 1
+format = 1
+tile_data = PoolIntArray( 720901, 0, 0, 720902, 1, 0, 720903, 1, 0, 720904, 1, 0, 720905, 1, 0, 720906, 1, 0, 720907, 1, 0, 720908, 1, 0, 720909, 1, 0, 720910, 1, 0, 720911, 1, 0, 720912, 1, 0, 720913, 1, 0, 720914, 1, 0, 720915, 1, 0, 720916, 1, 0, 720917, 1, 0, 720918, 1, 0, 720919, 1, 0, 720920, 1, 0, 720921, 2, 0 )
+_sections_unfolded = [ "Cell", "Visibility" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="Hero" parent="." index="1" instance=ExtResource( 2 )]
+
+position = Vector2( 286.612, 425 )
+
+[node name="platform" type="StaticBody2D" parent="." index="2" groups=[
+"platform",
+]]
+
+editor/display_folded = true
+position = Vector2( 296.402, 495.971 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="platform" index="0"]
+
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform" index="1"]
+
+shape = SubResource( 1 )
+
+[node name="destructible" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 784.076, 498.309 )
+
+[node name="StaticEnemy" parent="." index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 712.23, 497.616 )
+
+[node name="Trap" parent="." index="5" instance=ExtResource( 6 )]
+
+position = Vector2( -22.9877, 587.26 )
+scale = Vector2( 3.87432, 1 )
+
+

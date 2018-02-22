@@ -1,0 +1,167 @@
+[gd_scene load_steps=22 format=2]
+
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Idle0.png" type="Texture" id=1]
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Jump0.png" type="Texture" id=2]
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Jump1.png" type="Texture" id=3]
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Run0.png" type="Texture" id=4]
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Run1.png" type="Texture" id=5]
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Run2.png" type="Texture" id=6]
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Run3.png" type="Texture" id=7]
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Run4.png" type="Texture" id=8]
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Run5.png" type="Texture" id=9]
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Jump3.png" type="Texture" id=10]
+[ext_resource path="res://jv/Demos/Assets/opengameart/opp2_sprites/Traveller/Jump4.png" type="Texture" id=11]
+[ext_resource path="res://jv/Engine/PlayableCharacters/PlayerController.gd" type="Script" id=12]
+[ext_resource path="res://jv/Engine/PlayableCharacters/Movement.gd" type="Script" id=13]
+[ext_resource path="res://jv/Engine/PlayableCharacters/HandleProjectileWeapon.gd" type="Script" id=14]
+[ext_resource path="res://jv/Engine/Weapon/ProjectileWeapon.gd" type="Script" id=15]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/MachineGunBullet.tscn" type="PackedScene" id=16]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/MachineGun.tscn" type="PackedScene" id=17]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/Shotgun.tscn" type="PackedScene" id=18]
+[ext_resource path="res://jv/Engine/Common/Health.gd" type="Script" id=19]
+
+[sub_resource type="CapsuleShape2D" id=1]
+
+custom_solver_bias = 0.0
+radius = 12.5641
+height = 33.2875
+
+[sub_resource type="SpriteFrames" id=2]
+
+animations = [ {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "extra_jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 3 ) ],
+"loop": false,
+"name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "run",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
+"loop": false,
+"name": "fall",
+"speed": 5.0
+} ]
+
+[node name="Hero" type="KinematicBody2D" groups=[
+"player",
+]]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+_sections_unfolded = [ "Collision", "Material", "collision" ]
+
+[node name="agent_shape" type="CollisionShape2D" parent="." index="0"]
+
+visible = false
+position = Vector2( 0, 3 )
+shape = SubResource( 1 )
+_sections_unfolded = [ "Pause" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="agent_torso" type="Node2D" parent="." index="1"]
+
+[node name="agent_animation" type="AnimatedSprite" parent="agent_torso" index="0"]
+
+frames = SubResource( 2 )
+animation = "idle"
+playing = true
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlayerController" type="Node2D" parent="agent_torso" index="1"]
+
+script = ExtResource( 12 )
+damagable_groups = "enemy,destructible"
+agent_torso = null
+agent_animation = null
+agent_shape = null
+display_debug_information = false
+action_player_input_name = ""
+action_ui_right = "ui_right"
+action_ui_left = "ui_left"
+action_ui_down = "ui_down"
+action_ui_up = "ui_up"
+action_ui_jump = "ui_jump"
+action_ui_shoot = "ui_shoot"
+
+[node name="Movement" type="Node2D" parent="agent_torso/PlayerController" index="0"]
+
+script = ExtResource( 13 )
+disabled = false
+debug = false
+gravity = 900
+run_speed = 250
+slope_slide_stop = 25.0
+jump_speed = 480
+min_jump = 300
+extra_jump = 1
+movement_sound_player = null
+prevent_input_on_hit = true
+
+[node name="HandleProjectileWeapon" type="Node2D" parent="agent_torso/PlayerController" index="1"]
+
+script = ExtResource( 14 )
+disabled = false
+debug = false
+direction = 2
+
+[node name="Handgun" type="Node2D" parent="agent_torso/PlayerController/HandleProjectileWeapon" index="0"]
+
+editor/display_folded = true
+script = ExtResource( 15 )
+projectile_type = ExtResource( 16 )
+active = false
+weapon_animation_identifier = "handgun"
+projectile_start_position = NodePath("Position2D")
+waiting_time = 0.5
+spawn_count = 1
+override_bullet_damage = 0
+mode = 1
+
+[node name="Position2D" type="Position2D" parent="agent_torso/PlayerController/HandleProjectileWeapon/Handgun" index="0"]
+
+position = Vector2( 20, 18 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="MachineGun" parent="agent_torso/PlayerController/HandleProjectileWeapon" index="1" instance=ExtResource( 17 )]
+
+visible = false
+position = Vector2( 15, 18 )
+_sections_unfolded = [ "Transform" ]
+active = false
+weapon_animation_identifier = null
+override_bullet_damage = 0
+
+[node name="Shotgun" parent="agent_torso/PlayerController/HandleProjectileWeapon" index="2" instance=ExtResource( 18 )]
+
+position = Vector2( 13, 16 )
+active = true
+weapon_animation_identifier = null
+override_bullet_damage = 0
+
+[node name="Health" type="Node2D" parent="agent_torso/PlayerController" index="2"]
+
+script = ExtResource( 19 )
+max_health = 100
+current_health = 100
+invincible_time_on_hit = 0.5
+
+
