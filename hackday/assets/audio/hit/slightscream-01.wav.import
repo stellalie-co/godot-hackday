@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/slightscream-01.wav-a439b54b665f9b04958bd6313d4c1840.sample"
+
+[deps]
+
+source_file="res://hackday/assets/audio/hit/slightscream-01.wav"
+source_md5="d4cf8f6c0829f2f66150a62bdb9874b5"
+
+dest_files=[ "res://.import/slightscream-01.wav-a439b54b665f9b04958bd6313d4c1840.sample" ]
+dest_md5="50ab3b8ac694ac5e11f3a6a92845ff01"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

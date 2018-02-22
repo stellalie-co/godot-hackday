@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/run_30fps20pat.wav-323da8d97642d67bb9f26a4209c87379.sample"
+
+[deps]
+
+source_file="res://hackday/assets/audio/run/run_30fps20pat.wav"
+source_md5="7646b90aef7c38352a7c0c80ad6150ee"
+
+dest_files=[ "res://.import/run_30fps20pat.wav-323da8d97642d67bb9f26a4209c87379.sample" ]
+dest_md5="7f8b0373ca14077e77faa26c9d9f989b"
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
