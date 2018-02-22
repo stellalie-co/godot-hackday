@@ -15,59 +15,54 @@
 [ext_resource path="res://hackday/assets/enemy/Gorilla/Running/Running_012.png" type="Texture" id=13]
 [ext_resource path="res://hackday/assets/enemy/Gorilla/Running/Running_013.png" type="Texture" id=14]
 [ext_resource path="res://hackday/assets/enemy/Gorilla/Running/Running_014.png" type="Texture" id=15]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_000.png" type="Texture" id=16]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_001.png" type="Texture" id=17]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_002.png" type="Texture" id=18]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_003.png" type="Texture" id=19]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_004.png" type="Texture" id=20]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_005.png" type="Texture" id=21]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_006.png" type="Texture" id=22]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_007.png" type="Texture" id=23]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_008.png" type="Texture" id=24]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_009.png" type="Texture" id=25]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_010.png" type="Texture" id=26]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_011.png" type="Texture" id=27]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_012.png" type="Texture" id=28]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_013.png" type="Texture" id=29]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_014.png" type="Texture" id=30]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_000.png" type="Texture" id=31]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_001.png" type="Texture" id=32]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_002.png" type="Texture" id=33]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_003.png" type="Texture" id=34]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_004.png" type="Texture" id=35]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_005.png" type="Texture" id=36]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_006.png" type="Texture" id=37]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_007.png" type="Texture" id=38]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_008.png" type="Texture" id=39]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_009.png" type="Texture" id=40]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_010.png" type="Texture" id=41]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_011.png" type="Texture" id=42]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_012.png" type="Texture" id=43]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_013.png" type="Texture" id=44]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_014.png" type="Texture" id=45]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_000.png" type="Texture" id=46]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_001.png" type="Texture" id=47]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_002.png" type="Texture" id=48]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_003.png" type="Texture" id=49]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_004.png" type="Texture" id=50]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_005.png" type="Texture" id=51]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_006.png" type="Texture" id=52]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_007.png" type="Texture" id=53]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_008.png" type="Texture" id=54]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_009.png" type="Texture" id=55]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_010.png" type="Texture" id=56]
-[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_011.png" type="Texture" id=57]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_000.png" type="Texture" id=16]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_001.png" type="Texture" id=17]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_002.png" type="Texture" id=18]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_003.png" type="Texture" id=19]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_004.png" type="Texture" id=20]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_005.png" type="Texture" id=21]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_006.png" type="Texture" id=22]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_007.png" type="Texture" id=23]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_008.png" type="Texture" id=24]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_009.png" type="Texture" id=25]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_010.png" type="Texture" id=26]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_011.png" type="Texture" id=27]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_012.png" type="Texture" id=28]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_013.png" type="Texture" id=29]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Dying/Dying_014.png" type="Texture" id=30]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_000.png" type="Texture" id=31]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_001.png" type="Texture" id=32]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_002.png" type="Texture" id=33]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_003.png" type="Texture" id=34]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_004.png" type="Texture" id=35]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_005.png" type="Texture" id=36]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_006.png" type="Texture" id=37]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_007.png" type="Texture" id=38]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_008.png" type="Texture" id=39]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_009.png" type="Texture" id=40]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_010.png" type="Texture" id=41]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Hurt/Hurt_011.png" type="Texture" id=42]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_000.png" type="Texture" id=43]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_001.png" type="Texture" id=44]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_002.png" type="Texture" id=45]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_003.png" type="Texture" id=46]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_004.png" type="Texture" id=47]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_005.png" type="Texture" id=48]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_006.png" type="Texture" id=49]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_007.png" type="Texture" id=50]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_008.png" type="Texture" id=51]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_009.png" type="Texture" id=52]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_010.png" type="Texture" id=53]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_011.png" type="Texture" id=54]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_012.png" type="Texture" id=55]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_013.png" type="Texture" id=56]
+[ext_resource path="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_014.png" type="Texture" id=57]
 [ext_resource path="res://jv/Engine/AI/Enemy/EnemyController.gd" type="Script" id=58]
 [ext_resource path="res://jv/Engine/AI/Enemy/Movement.gd" type="Script" id=59]
 [ext_resource path="res://jv/Engine/Common/Health.gd" type="Script" id=60]
 [ext_resource path="res://jv/Demos/Minimal/Scenes/SkillSlots.gd" type="Script" id=61]
 [ext_resource path="res://jv/Engine/AI/Enemy/ShootProjectileSkill.gd" type="Script" id=62]
 [ext_resource path="res://jv/Demos/Minimal/Scenes/MachineGunBullet.tscn" type="PackedScene" id=63]
-
-[sub_resource type="RectangleShape2D" id=1]
-
-custom_solver_bias = 0.0
-extents = Vector2( 27.9377, 34.0859 )
 
 [sub_resource type="SpriteFrames" id=2]
 
@@ -78,20 +73,25 @@ animations = [ {
 "speed": 24.0
 }, {
 "frames": [ ExtResource( 16 ), ExtResource( 17 ), ExtResource( 18 ), ExtResource( 19 ), ExtResource( 20 ), ExtResource( 21 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 28 ), ExtResource( 29 ), ExtResource( 30 ) ],
-"loop": true,
-"name": "shoot",
-"speed": 24.0
-}, {
-"frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ) ],
 "loop": false,
 "name": "die",
 "speed": 24.0
 }, {
-"frames": [ ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ],
+"frames": [ ExtResource( 31 ), ExtResource( 32 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ) ],
 "loop": false,
 "name": "hit",
 "speed": 24.0
+}, {
+"frames": [ ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ) ],
+"loop": true,
+"name": "shoot",
+"speed": 24.0
 } ]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 61.9959, 94.4133 )
 
 [node name="Gorilla" type="KinematicBody2D" groups=[
 "enemy",
@@ -102,16 +102,16 @@ collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 
-[node name="agent_shape" type="CollisionShape2D" parent="." index="0"]
+[node name="agent_torso" type="Node2D" parent="." index="0"]
 
-visible = false
-shape = SubResource( 1 )
-
-[node name="agent_torso" type="Node2D" parent="." index="1"]
+editor/display_folded = true
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="agent_animation" type="AnimatedSprite" parent="agent_torso" index="0"]
 
-scale = Vector2( -0.25, 0.25 )
+scale = Vector2( -0.5, 0.5 )
 frames = SubResource( 2 )
 animation = "idle"
 frame = 13
@@ -131,13 +131,14 @@ agent_initial_facing_direction = "left"
 [node name="Movement" type="Node2D" parent="agent_torso/Controller" index="0"]
 
 script = ExtResource( 59 )
-disabled = true
+disabled = false
 debug = false
 gravity = 900
 run_speed = 250
 slope_slide_stop = 25.0
 movement_sound_manager = null
 damage_target_on_contact = 10
+wandering_distance = 200
 change_direction_when_colliding = true
 number_of_collision_raycasts = 1
 collision_distance = 50
@@ -148,6 +149,8 @@ script = ExtResource( 60 )
 max_health = 100
 current_health = 100
 invincible_time_on_hit = 0.0
+hit_audio_player = null
+god_mode = false
 
 [node name="SkillSlots" type="Node2D" parent="agent_torso/Controller" index="2"]
 
@@ -162,7 +165,7 @@ delay_between_skills = 0.5
 script = ExtResource( 62 )
 _sections_unfolded = [ "Transform" ]
 disabled = false
-debug = true
+debug = false
 cooldown_time = 1
 skill_animation = ""
 skill_priority = 0
@@ -179,5 +182,10 @@ ray_gap = 10
 [node name="MachineGunBulletStartPosition" type="Position2D" parent="agent_torso/Controller/SkillSlots/ShootMachineGunBullet" index="0"]
 
 position = Vector2( -63.3717, -7.87745 )
+
+[node name="agent_shape" type="CollisionShape2D" parent="." index="1"]
+
+position = Vector2( 32.9826, -4.30207 )
+shape = SubResource( 1 )
 
 
