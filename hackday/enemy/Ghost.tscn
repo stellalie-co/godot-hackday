@@ -113,7 +113,7 @@ animations = [ {
 "speed": 30.0
 } ]
 
-[node name="Ghost" type="KinematicBody2D" index="0" groups=[
+[node name="Ghost" type="KinematicBody2D" groups=[
 "enemy",
 ]]
 
@@ -139,7 +139,7 @@ __meta__ = {
 scale = Vector2( -0.2, 0.2 )
 frames = SubResource( 2 )
 animation = "run"
-frame = 6
+frame = 8
 playing = true
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -163,6 +163,7 @@ run_speed = 250
 slope_slide_stop = 25.0
 movement_sound_manager = null
 damage_target_on_contact = 10
+wandering_distance = 0
 change_direction_when_colliding = true
 number_of_collision_raycasts = 1
 collision_distance = 50
@@ -173,5 +174,7 @@ script = ExtResource( 83 )
 max_health = 100
 current_health = 100
 invincible_time_on_hit = 0.0
+hit_audio_player = null
+god_mode = false
 
 

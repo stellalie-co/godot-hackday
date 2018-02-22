@@ -1,4 +1,4 @@
-[gd_scene load_steps=180 format=2]
+[gd_scene load_steps=183 format=2]
 
 [ext_resource path="res://hackday/assets/player/BadassJohn/jumping/jumping_000.png" type="Texture" id=1]
 [ext_resource path="res://hackday/assets/player/BadassJohn/firing/firing_000.png" type="Texture" id=2]
@@ -172,11 +172,14 @@
 [ext_resource path="res://hackday/assets/player/BadassJohn/hurt/hurt_027.png" type="Texture" id=170]
 [ext_resource path="res://jv/Engine/PlayableCharacters/PlayerController.gd" type="Script" id=171]
 [ext_resource path="res://jv/Engine/PlayableCharacters/Movement.gd" type="Script" id=172]
-[ext_resource path="res://jv/Engine/PlayableCharacters/HandleProjectileWeapon.gd" type="Script" id=173]
-[ext_resource path="res://jv/Engine/Weapon/ProjectileWeapon.gd" type="Script" id=174]
-[ext_resource path="res://jv/Demos/Minimal/Scenes/MachineGunBullet.tscn" type="PackedScene" id=175]
-[ext_resource path="res://jv/Engine/Common/Health.gd" type="Script" id=176]
-[ext_resource path="res://hackday/assets/audio/shoot/8bit_gunloop_explosion.wav" type="AudioStream" id=177]
+[ext_resource path="res://hackday/assets/audio/run/run_30fps20pat.wav" type="AudioStream" id=173]
+[ext_resource path="res://hackday/assets/audio/jump/slightscream-03.wav" type="AudioStream" id=174]
+[ext_resource path="res://jv/Engine/PlayableCharacters/HandleProjectileWeapon.gd" type="Script" id=175]
+[ext_resource path="res://jv/Engine/Weapon/ProjectileWeapon.gd" type="Script" id=176]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/MachineGunBullet.tscn" type="PackedScene" id=177]
+[ext_resource path="res://hackday/assets/audio/shoot/8bit_gunloop_explosion.wav" type="AudioStream" id=178]
+[ext_resource path="res://jv/Engine/Common/Health.gd" type="Script" id=179]
+[ext_resource path="res://hackday/assets/audio/hit/slightscream-01.wav" type="AudioStream" id=180]
 
 [sub_resource type="RectangleShape2D" id=3]
 
@@ -232,7 +235,7 @@ animations = [ {
 "speed": 60.0
 } ]
 
-[node name="BadassJohn" type="KinematicBody2D" index="0" groups=[
+[node name="BadassJohn" type="KinematicBody2D" groups=[
 "player",
 ]]
 
@@ -289,51 +292,85 @@ slope_slide_stop = 25.0
 jump_speed = 1000
 min_jump = 300
 extra_jump = 1
-movement_sound_player = null
+run_audio_player = NodePath("run")
+jump_audio_player = NodePath("jump")
+extra_jump_audio_player = NodePath("jump")
+fall_audio_player = null
 prevent_input_on_hit = true
+
+[node name="run" type="AudioStreamPlayer2D" parent="agent_torso/PlayerController/Movement" index="0"]
+
+stream = ExtResource( 173 )
+volume_db = 0.0
+autoplay = false
+max_distance = 2000.0
+attenuation = 1.0
+bus = "Master"
+area_mask = 1
+
+[node name="jump" type="AudioStreamPlayer" parent="agent_torso/PlayerController/Movement" index="1"]
+
+stream = ExtResource( 174 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
 
 [node name="HandleProjectileWeapon" type="Node2D" parent="agent_torso/PlayerController" index="1"]
 
-script = ExtResource( 173 )
+script = ExtResource( 175 )
 disabled = false
 debug = false
 direction = 0
 
 [node name="MachineGun" type="Node2D" parent="agent_torso/PlayerController/HandleProjectileWeapon" index="0"]
 
-script = ExtResource( 174 )
-projectile_type = ExtResource( 175 )
+editor/display_folded = true
+script = ExtResource( 176 )
+projectile_type = ExtResource( 177 )
 active = true
 weapon_animation_identifier = null
 projectile_start_position = NodePath("Position2D")
+audio_player = NodePath("MachineGun_sound")
 waiting_time = 0.3
 spawn_count = 1
 override_bullet_damage = 0
 override_bullet_speed = 800
 mode = 1
 
-[node name="Position2D" type="Position2D" parent="agent_torso/PlayerController/HandleProjectileWeapon/MachineGun" index="0"]
+[node name="MachineGun_sound" type="AudioStreamPlayer" parent="agent_torso/PlayerController/HandleProjectileWeapon/MachineGun" index="0"]
+
+stream = ExtResource( 178 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="Position2D" type="Position2D" parent="agent_torso/PlayerController/HandleProjectileWeapon/MachineGun" index="1"]
 
 position = Vector2( 231.843, -47.6482 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="Health" type="Node2D" parent="agent_torso/PlayerController" index="2"]
 
-script = ExtResource( 176 )
+script = ExtResource( 179 )
 __meta__ = {
 "_edit_lock_": true
 }
 max_health = 100
 current_health = 100
-invincible_time_on_hit = 0.5
+invincible_time_on_hit = 0.3
+hit_audio_player = NodePath("hit_audio_player")
 god_mode = true
 
-[node name="agent_sound_shoot" type="AudioStreamPlayer" parent="." index="2"]
+[node name="hit_audio_player" type="AudioStreamPlayer2D" parent="agent_torso/PlayerController/Health" index="0"]
 
-stream = ExtResource( 177 )
+stream = ExtResource( 180 )
 volume_db = 0.0
 autoplay = false
-mix_target = 0
+max_distance = 2000.0
+attenuation = 1.0
 bus = "Master"
+area_mask = 1
 
 

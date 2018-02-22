@@ -86,6 +86,6 @@ _sections_unfolded = [ "Collision", "Material", "Transform", "collision" ]
 
 [node name="StaticEnemy" parent="." index="6" instance=ExtResource( 7 )]
 
-position = Vector2( 1050.55, 716.35 )
+position = Vector2( 1430, 740 )
 
 

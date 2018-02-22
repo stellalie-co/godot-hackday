@@ -16,6 +16,8 @@ export(String) var weapon_animation_identifier setget ,get_weapon_animation_iden
 # OPTIONAL - the start position of the projectile when it is first created
 export(NodePath) var projectile_start_position
 
+export(NodePath) var audio_player
+
 # OPTIONAL - how long before user can shoot again. Set to 0 to have projectiles
 # continuously created
 export(float) var waiting_time = 0.5
@@ -54,6 +56,7 @@ var timer
 var start_position
 var shoot_animation
 var current_animation_state
+var audio
 
 
 
@@ -64,6 +67,9 @@ func _ready():
 	else:
 		start_position = Position2D.new()
 		add_child(start_position)
+		
+	if audio_player:
+		audio = get_node(audio_player)
 	
 	# Reset spawn_count
 	if spawn_count <= 0:
@@ -118,6 +124,8 @@ func spawn_projectiles():
 	var direction_guideline = get_direction_guideline(flip_horizontal)
 	
 	controller.play_agent_animation(shoot_animation)
+	if audio:
+		audio.play()
 
 	for index in spawn_count:
 		var projectile = projectile_type.instance()

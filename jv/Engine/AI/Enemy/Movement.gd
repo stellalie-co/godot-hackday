@@ -9,6 +9,7 @@ export var run_speed = 250 # pixels/sec
 export var slope_slide_stop = 25.0
 export(NodePath) var movement_sound_manager
 export(int) var damage_target_on_contact = 0
+export(int) var wandering_distance = 0
 export(bool) var change_direction_when_colliding = true
 export(int) var number_of_collision_raycasts = 1
 export(int) var collision_distance = 50
@@ -41,10 +42,15 @@ var current_animation
 var raycast_generator
 var is_turning_around = false
 var moving_direction
+var original_position
+var turning_around_time = 0
 
 
 func _ready():
 	moving_direction = get_controller().get_agent_initial_facing_direction()
+	
+	if wandering_distance > 0:
+		original_position = get_global_position()
 	
 	if damage_target_on_contact < 0:
 		damage_target_on_contact = 0
@@ -133,10 +139,19 @@ func _physics_process(delta):
 		current_animation = new_animation
 		controller.play_agent_animation(new_animation)
 		
+		
+	turning_around_time += delta
+
 	
 	### COLLISION DETECTION ###
 	if change_direction_when_colliding and detect_collision():
 		turn_around()
+	elif wandering_distance > 0:
+		var pos_x = get_global_position().x
+		if pos_x < original_position.x - wandering_distance or pos_x > original_position.x + wandering_distance:
+			if turning_around_time > 2:
+				turn_around()
+
 
 
 func detect_collision():
@@ -163,6 +178,7 @@ func turn_around():
 	raycast_generator.flip_rays()
 	get_controller().set_agent_data("moving_direction", moving_direction)
 	get_controller().broadcast_status("flip_horizontal")
+	turning_around_time = 0
 
 
 # DEBUG ===================================

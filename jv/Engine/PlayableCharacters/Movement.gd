@@ -8,7 +8,10 @@ export var slope_slide_stop = 25.0
 export var jump_speed = 480
 export var min_jump = 300
 export var extra_jump = 1
-export(NodePath) var movement_sound_player
+export(NodePath) var run_audio_player
+export(NodePath) var jump_audio_player
+export(NodePath) var extra_jump_audio_player
+export(NodePath) var fall_audio_player
 export(bool) var prevent_input_on_hit = true
 
 
@@ -37,11 +40,20 @@ var has_jumped = false
 var gravity_vel = Vector2(0, gravity)
 var current_animation
 var prevent_user_input = false
+var audios = {}
+var current_audio
 
 
 func _ready():
-	if movement_sound_player:
-		sound_manager = get_agent().get_node(movement_sound_player)
+	if jump_audio_player:
+		audios["jump"] = get_node(jump_audio_player)
+	
+	if run_audio_player:
+		audios["run"] = get_node(run_audio_player)
+		
+	if fall_audio_player:
+		audios["fall"] = get_node(fall_audio_player)
+		
 	get_controller().listen_for_status_updated(self, "_on_status_updated")
 
 
@@ -145,6 +157,7 @@ func _physics_process(delta):
 	if new_animation != current_animation:
 		current_animation = new_animation
 		controller.play_agent_animation(new_animation)
+		play_sound(new_animation)
 		controller.broadcast_status("movement", { "state": new_animation })
 		
 
@@ -156,3 +169,12 @@ func _on_status_updated(status, options):
 		elif status == "recover_after_hit":
 			prevent_user_input = false
 			get_controller().get_agent_shape().set_disabled(false)
+
+
+func play_sound(sound):
+	if current_audio:
+		current_audio.stop()
+	if audios.has(sound):
+		current_audio = audios[sound]
+		current_audio.play()
+

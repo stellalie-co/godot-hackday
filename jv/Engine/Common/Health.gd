@@ -6,8 +6,10 @@ export(int) var max_health = 100
 export(int) var current_health = 100
 # OPTIONAL - the lower the number the faster the agent can be hit again
 export(float) var invincible_time_on_hit = 0.1
+export(NodePath) var hit_audio_player
 # OPTIONAL
 export(bool) var god_mode = false
+
 
 
 var is_alive = true setget , get_is_alive
@@ -16,6 +18,7 @@ var agent
 var controller
 var timer
 var current_animation_state
+var hit_audio
 
 
 func _ready():
@@ -25,6 +28,9 @@ func _ready():
 	
 	# attach new metadata function to agent which will dispatch when he got hit
 	agent.set_meta("receive_damage", funcref(self, "agent_receive_damage"))
+	
+	if hit_audio_player:
+		hit_audio = get_node(hit_audio_player)
 	
 	if current_health <= 0:
 		current_health = 1
@@ -72,6 +78,8 @@ func decrease_health_points(health_points):
 
 	# Damage agent
 	if current_health > 0:
+		if hit_audio:
+			hit_audio.play()
 		controller.play_agent_animation_once("hit", true, current_animation_state)
 		controller.broadcast_status("hit")
 		restart_invincible_timer()

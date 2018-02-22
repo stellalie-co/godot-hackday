@@ -44,7 +44,7 @@ animations = [ {
 "speed": 3.0
 } ]
 
-[node name="StaticEnemy" type="KinematicBody2D" groups=[
+[node name="StaticEnemy" type="KinematicBody2D" index="0" groups=[
 "enemy",
 ]]
 
@@ -82,13 +82,14 @@ agent_initial_facing_direction = "left"
 [node name="Movement" type="Node2D" parent="agent_torso/Controller" index="0"]
 
 script = ExtResource( 9 )
-disabled = true
+disabled = false
 debug = false
 gravity = 900
 run_speed = 250
 slope_slide_stop = 25.0
 movement_sound_manager = null
 damage_target_on_contact = 10
+wandering_distance = 200
 change_direction_when_colliding = true
 number_of_collision_raycasts = 1
 collision_distance = 50
@@ -99,6 +100,7 @@ script = ExtResource( 10 )
 max_health = 100
 current_health = 100
 invincible_time_on_hit = 0.0
+hit_audio_player = null
 god_mode = false
 
 [node name="SkillSlots" type="Node2D" parent="agent_torso/Controller" index="2"]
