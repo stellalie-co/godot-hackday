@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Crow.png-773df2719d8dd1523bc168330707c323.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Body Parts/Crow.png"
+source_md5="e5c071a9dd023b080fb3a58c0b2005ac"
+
+dest_files=[ "res://.import/Crow.png-773df2719d8dd1523bc168330707c323.stex" ]
+dest_md5="b18830de0d173d4f57bdac2ad4ab4dae"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

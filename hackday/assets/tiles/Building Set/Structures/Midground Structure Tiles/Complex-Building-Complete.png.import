@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Complex-Building-Complete.png-cfee488349b35487990ade7400e9106b.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Structures/Midground Structure Tiles/Complex-Building-Complete.png"
+source_md5="443fdfa1d7de4ca0611e74955c441d2b"
+
+dest_files=[ "res://.import/Complex-Building-Complete.png-cfee488349b35487990ade7400e9106b.stex" ]
+dest_md5="39cf91aaf914918197f944b9ffd14fbb"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

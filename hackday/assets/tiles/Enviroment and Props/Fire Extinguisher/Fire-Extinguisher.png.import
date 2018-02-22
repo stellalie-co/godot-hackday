@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Fire-Extinguisher.png-a108a39b3d132e9d1965d995e2fab6a8.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Fire Extinguisher/Fire-Extinguisher.png"
+source_md5="a4da2b552a79e3a9f037914ab1d06db0"
+
+dest_files=[ "res://.import/Fire-Extinguisher.png-a108a39b3d132e9d1965d995e2fab6a8.stex" ]
+dest_md5="ea6451066806dc062f0d84823d723499"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

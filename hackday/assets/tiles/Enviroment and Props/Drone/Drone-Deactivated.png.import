@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Drone-Deactivated.png-93e7ead5233444f474519b8a8b87256b.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Drone/Drone-Deactivated.png"
+source_md5="4fa5ccc38d76aab6d4a7b74948c8ece5"
+
+dest_files=[ "res://.import/Drone-Deactivated.png-93e7ead5233444f474519b8a8b87256b.stex" ]
+dest_md5="20ae37dc70c55beec5ae2b9d0eda93b8"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

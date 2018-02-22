@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Roll-Door.png-a88b88742ead8fbcd0c99dc9b35b93d5.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Withdrawn Concept/Roll-Door.png"
+source_md5="cd36a6489f79db1d7dbe3888ef1056b8"
+
+dest_files=[ "res://.import/Roll-Door.png-a88b88742ead8fbcd0c99dc9b35b93d5.stex" ]
+dest_md5="310b668790b0a1d826032fd9b912ca1b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Ladder-Yellow-Front.png-fb78b927b8b79a900087bfb573959b54.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Ladder/Ladder-Yellow-Front.png"
+source_md5="1e2c5e192b8c21cea4ea8a67ab418ea5"
+
+dest_files=[ "res://.import/Ladder-Yellow-Front.png-fb78b927b8b79a900087bfb573959b54.stex" ]
+dest_md5="05f7c4e5fc7a156bd16e9eac2855564c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

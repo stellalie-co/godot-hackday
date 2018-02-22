@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Crate-Box-Square-2.png-89c6ca7e59d3481afca57cd9ba3f0ece.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crate Boxes/Crate-Box-Square-2.png"
+source_md5="ac3ad731221dcb289b77ca3d4eb6d5a3"
+
+dest_files=[ "res://.import/Crate-Box-Square-2.png-89c6ca7e59d3481afca57cd9ba3f0ece.stex" ]
+dest_md5="c4e4ab0a1c6d2ef33022cc5df0c68ba8"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

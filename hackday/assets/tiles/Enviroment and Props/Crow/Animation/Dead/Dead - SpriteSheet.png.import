@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Dead - SpriteSheet.png-ec694fe01b3714d8d369d72b0bce9845.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Animation/Dead/Dead - SpriteSheet.png"
+source_md5="31eed03bd539594da0a84349bb9a357d"
+
+dest_files=[ "res://.import/Dead - SpriteSheet.png-ec694fe01b3714d8d369d72b0bce9845.stex" ]
+dest_md5="ee611d5050c613f7d0990ed76f9f78e4"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

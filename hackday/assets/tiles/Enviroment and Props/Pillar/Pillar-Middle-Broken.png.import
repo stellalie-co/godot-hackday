@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Pillar-Middle-Broken.png-8cf534e1cd85c6ee5972e66beec39b53.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Pillar/Pillar-Middle-Broken.png"
+source_md5="a12f579b67285db1d58d7a8a3e595c35"
+
+dest_files=[ "res://.import/Pillar-Middle-Broken.png-8cf534e1cd85c6ee5972e66beec39b53.stex" ]
+dest_md5="f1559372d39d91ff1e3351830a6c5ef8"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

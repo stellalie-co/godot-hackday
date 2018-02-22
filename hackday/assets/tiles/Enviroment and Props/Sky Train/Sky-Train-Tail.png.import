@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Sky-Train-Tail.png-1ca6082c2ced43babf441da8bc7a2a63.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Sky Train/Sky-Train-Tail.png"
+source_md5="71cc8a50b284d09a652b4521bec42d25"
+
+dest_files=[ "res://.import/Sky-Train-Tail.png-1ca6082c2ced43babf441da8bc7a2a63.stex" ]
+dest_md5="0882aa08d666686f52d0360a688116df"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Cam-Holder.png-53c857459eb068e3621f05b4e76c1055.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Security Camera/Cam-Holder.png"
+source_md5="f86af203b8247269cbfc4abfe61ca4d7"
+
+dest_files=[ "res://.import/Cam-Holder.png-53c857459eb068e3621f05b4e76c1055.stex" ]
+dest_md5="fa0a4c89e9be753289595cd3a0ce0d26"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

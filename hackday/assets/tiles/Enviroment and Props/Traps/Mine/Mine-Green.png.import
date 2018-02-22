@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Mine-Green.png-a516e45d557af75e9cf87aaeb082ec9d.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Traps/Mine/Mine-Green.png"
+source_md5="ab1056c6dad67dbe7d583f7907224dac"
+
+dest_files=[ "res://.import/Mine-Green.png-a516e45d557af75e9cf87aaeb082ec9d.stex" ]
+dest_md5="cbb7a4e8e882d4b7c4e0934f457dee2b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

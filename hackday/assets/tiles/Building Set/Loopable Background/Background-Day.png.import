@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Background-Day.png-861d0a395dc2e20366e5ebdecacee4d3.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Loopable Background/Background-Day.png"
+source_md5="511b55efc84bba30661ab5e1887a75d4"
+
+dest_files=[ "res://.import/Background-Day.png-861d0a395dc2e20366e5ebdecacee4d3.stex" ]
+dest_md5="4885725057122b9eb964cc0c2edc52b9"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

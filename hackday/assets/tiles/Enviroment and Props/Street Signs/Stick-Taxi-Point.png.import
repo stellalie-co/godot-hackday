@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Stick-Taxi-Point.png-4d60cfea5d3195f7c3477f9e02d7ef8f.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Street Signs/Stick-Taxi-Point.png"
+source_md5="d0d99d7982fc9cbf2046c79f017ccdcb"
+
+dest_files=[ "res://.import/Stick-Taxi-Point.png-4d60cfea5d3195f7c3477f9e02d7ef8f.stex" ]
+dest_md5="646ae107f8ca62f21a7c32eb746ccfa9"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

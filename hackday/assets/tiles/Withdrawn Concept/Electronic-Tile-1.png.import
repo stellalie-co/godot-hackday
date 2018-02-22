@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Electronic-Tile-1.png-aa347c20d1c6eb998db2575750a2470e.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Withdrawn Concept/Electronic-Tile-1.png"
+source_md5="39f967771f9bee76ece2caf1b6fe663e"
+
+dest_files=[ "res://.import/Electronic-Tile-1.png-aa347c20d1c6eb998db2575750a2470e.stex" ]
+dest_md5="36b8548a263681caaf5aa873505fb3a1"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

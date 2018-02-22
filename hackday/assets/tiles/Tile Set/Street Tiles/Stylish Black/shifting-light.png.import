@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/shifting-light.png-4f74af0f0b012aad825969f20a82ca8e.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Street Tiles/Stylish Black/shifting-light.png"
+source_md5="d8346fa98c301bb0d2990de6a7e8b231"
+
+dest_files=[ "res://.import/shifting-light.png-4f74af0f0b012aad825969f20a82ca8e.stex" ]
+dest_md5="cce01defecb8fb8aef768b3e1b5ffca9"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

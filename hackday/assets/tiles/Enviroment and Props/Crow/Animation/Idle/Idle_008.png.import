@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Idle_008.png-ee17414e8b5fb3406e6eece82f945d48.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Animation/Idle/Idle_008.png"
+source_md5="0c58efdaea2b2cc998c301fe2d6b51d6"
+
+dest_files=[ "res://.import/Idle_008.png-ee17414e8b5fb3406e6eece82f945d48.stex" ]
+dest_md5="8c1cac1dc54e2e9ba31afee6265e8079"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

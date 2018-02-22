@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Chair-Metal-Side.png-7c96e8e8b12fc887f6639b9572497b6b.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Seats & Chairs/Chair-Metal-Side.png"
+source_md5="0087bb8efc5120d2077fef5796142b68"
+
+dest_files=[ "res://.import/Chair-Metal-Side.png-7c96e8e8b12fc887f6639b9572497b6b.stex" ]
+dest_md5="ed336569c2b31dd2a2d185c174a82a12"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

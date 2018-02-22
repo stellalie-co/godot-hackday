@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Flying-Drone.png-c171cc128f31c4e563c09180cdede526.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Drone/Flying-Drone.png"
+source_md5="7c2c7f1cd37f7e35d8e100ec52f2ca10"
+
+dest_files=[ "res://.import/Flying-Drone.png-c171cc128f31c4e563c09180cdede526.stex" ]
+dest_md5="396e2ff17d65e284e7d8d4d641ad0ba7"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

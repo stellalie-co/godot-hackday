@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Computer-Screen.png-a758078f7d0f8f82366170b236178bc2.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Computers/Computer-Screen.png"
+source_md5="acda02f597963bc4a991b14877c3459b"
+
+dest_files=[ "res://.import/Computer-Screen.png-a758078f7d0f8f82366170b236178bc2.stex" ]
+dest_md5="e01de5924e2488f5ed533e933e4a5386"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

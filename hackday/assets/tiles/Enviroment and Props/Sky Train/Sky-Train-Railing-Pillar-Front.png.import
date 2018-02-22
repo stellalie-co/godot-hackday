@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Sky-Train-Railing-Pillar-Front.png-2442e7e3ca0b64a48d5252329565d138.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Sky Train/Sky-Train-Railing-Pillar-Front.png"
+source_md5="20c0cb7b0ce24c01cc9bc07404c87439"
+
+dest_files=[ "res://.import/Sky-Train-Railing-Pillar-Front.png-2442e7e3ca0b64a48d5252329565d138.stex" ]
+dest_md5="40e95b38bf57560d0ec2e1088fc91c6a"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

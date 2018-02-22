@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Background-Day-Complete-Blurred.png-cbdeaabb3716081661a7135540a8ee25.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Loopable Background/Full/Background-Day-Complete-Blurred.png"
+source_md5="dff42434d023684586151328fb7edb51"
+
+dest_files=[ "res://.import/Background-Day-Complete-Blurred.png-cbdeaabb3716081661a7135540a8ee25.stex" ]
+dest_md5="0e3f2d54352d9d49a3d4ad2b8b8897c6"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

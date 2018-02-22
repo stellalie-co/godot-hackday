@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Cleaning_001.png-f06f347b367290ce954eb6f1eaa2ae59.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Animation/Cleaning/Cleaning_001.png"
+source_md5="38920c58b334db867aeeecf19c20452c"
+
+dest_files=[ "res://.import/Cleaning_001.png-f06f347b367290ce954eb6f1eaa2ae59.stex" ]
+dest_md5="bc92b85ffde217c0babd4e162ad58fe1"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

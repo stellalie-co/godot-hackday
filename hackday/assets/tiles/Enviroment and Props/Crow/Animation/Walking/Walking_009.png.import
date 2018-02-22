@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Walking_009.png-4cdba397cc86aebb5cb3e4ca1266693c.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Animation/Walking/Walking_009.png"
+source_md5="e60ad87fe3fc9ebb62eedefc1512d2c0"
+
+dest_files=[ "res://.import/Walking_009.png-4cdba397cc86aebb5cb3e4ca1266693c.stex" ]
+dest_md5="57fb85a5b1b96cc2f7305c493516c29b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Road-Block.png-d0e2d4bc0110fb329b6f56bd149ba44e.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Road Block/Road-Block.png"
+source_md5="7ea3284c8681ed89be8e78fc8cfe7c61"
+
+dest_files=[ "res://.import/Road-Block.png-d0e2d4bc0110fb329b6f56bd149ba44e.stex" ]
+dest_md5="469afccf97f39d18c8f4d1eb59743a3f"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

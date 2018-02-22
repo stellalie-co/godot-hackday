@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Curve.BottomLeft.png-2860b36360950ad0c01a9b3d8c8216a0.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Metal Tiles/Silver Metallic/Curve.BottomLeft.png"
+source_md5="5a983c1e8b939c8f42d3b8702c74e75d"
+
+dest_files=[ "res://.import/Curve.BottomLeft.png-2860b36360950ad0c01a9b3d8c8216a0.stex" ]
+dest_md5="5595c2021be48ffd2f60df12a81ebb0a"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

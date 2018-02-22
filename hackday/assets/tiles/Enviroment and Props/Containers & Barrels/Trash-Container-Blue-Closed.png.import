@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Trash-Container-Blue-Closed.png-7b268f8a33d1268b4d14150c2e155b78.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Trash-Container-Blue-Closed.png"
+source_md5="aebef717d9a7542df156cce59f41c0cc"
+
+dest_files=[ "res://.import/Trash-Container-Blue-Closed.png-7b268f8a33d1268b4d14150c2e155b78.stex" ]
+dest_md5="bda55c2555f0f805750501d2f3e91356"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

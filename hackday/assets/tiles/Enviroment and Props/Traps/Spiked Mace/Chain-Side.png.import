@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Chain-Side.png-05e390b80b75e179eff75066e7c7bda9.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Traps/Spiked Mace/Chain-Side.png"
+source_md5="d8d11cd7ee857a6a407b565a00b4f0a9"
+
+dest_files=[ "res://.import/Chain-Side.png-05e390b80b75e179eff75066e7c7bda9.stex" ]
+dest_md5="9c68aec56068719a754c50ed8263060e"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

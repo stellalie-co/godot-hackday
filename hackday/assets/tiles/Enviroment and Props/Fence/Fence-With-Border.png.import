@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Fence-With-Border.png-c480d6939627fe8ced018043c6471bae.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Fence/Fence-With-Border.png"
+source_md5="c49aede42780a89284e91c1b0c3e8b8a"
+
+dest_files=[ "res://.import/Fence-With-Border.png-c480d6939627fe8ced018043c6471bae.stex" ]
+dest_md5="631b7fed0e9b81913f6432c3034303a4"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

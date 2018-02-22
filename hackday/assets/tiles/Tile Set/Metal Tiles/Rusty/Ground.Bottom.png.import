@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Ground.Bottom.png-577cdf0baa2a046c29d884b6283a6c2b.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Metal Tiles/Rusty/Ground.Bottom.png"
+source_md5="fd5d88ac235a95bbab71515b71a5730d"
+
+dest_files=[ "res://.import/Ground.Bottom.png-577cdf0baa2a046c29d884b6283a6c2b.stex" ]
+dest_md5="e7fdf02b4d6231b0d6657bcd082eb754"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

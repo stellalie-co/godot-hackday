@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Spikes-Bloody.png-1924abe9b45c13db665b376ebf215a22.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Traps/Spikes/Spikes-Bloody.png"
+source_md5="7cc7394991ead9b4437ce481d64a62cd"
+
+dest_files=[ "res://.import/Spikes-Bloody.png-1924abe9b45c13db665b376ebf215a22.stex" ]
+dest_md5="2e5cea8f69a240a01b004b5a0abbec11"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

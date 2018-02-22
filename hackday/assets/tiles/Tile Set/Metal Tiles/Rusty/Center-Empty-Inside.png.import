@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Center-Empty-Inside.png-bced9567ccaeecf803960924bac503ba.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Metal Tiles/Rusty/Center-Empty-Inside.png"
+source_md5="b7dadda35e4f99fb874c45182cb74d49"
+
+dest_files=[ "res://.import/Center-Empty-Inside.png-bced9567ccaeecf803960924bac503ba.stex" ]
+dest_md5="aadf0c0f6e15f13536b08d5921d0788b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Locker.png-9e2333305fe64eb74831296cdedefcc4.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Lockers - Cupboard- Fridge/Locker.png"
+source_md5="248031f6e251e08586821265fdb49ed2"
+
+dest_files=[ "res://.import/Locker.png-9e2333305fe64eb74831296cdedefcc4.stex" ]
+dest_md5="9cbe4ee195a68016095869cdf14d32c2"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

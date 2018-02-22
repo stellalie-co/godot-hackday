@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Remote-Car.png-be34082106af10de9b721a6b512f9cc3.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Vehicles/Carry-Load-Remote Car/Remote-Car.png"
+source_md5="a8fd0f5b0cc29ff67581ef423f208d71"
+
+dest_files=[ "res://.import/Remote-Car.png-be34082106af10de9b721a6b512f9cc3.stex" ]
+dest_md5="ec7cf50f0d6dac27d67ee6485b3917e5"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

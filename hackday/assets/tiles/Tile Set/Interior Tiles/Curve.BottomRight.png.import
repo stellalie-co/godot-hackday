@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Curve.BottomRight.png-37a1fba4e024389b238eaabd36d2f993.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Interior Tiles/Curve.BottomRight.png"
+source_md5="e78311989aa93a4844b799c9881bede3"
+
+dest_files=[ "res://.import/Curve.BottomRight.png-37a1fba4e024389b238eaabd36d2f993.stex" ]
+dest_md5="bd244f40d35d71b93a5077fea220353f"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

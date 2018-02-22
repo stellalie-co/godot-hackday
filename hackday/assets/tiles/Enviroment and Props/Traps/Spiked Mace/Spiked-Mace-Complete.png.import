@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Spiked-Mace-Complete.png-c9df908b103155edd69078fe718cb118.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Traps/Spiked Mace/Spiked-Mace-Complete.png"
+source_md5="f888bcce4ababe23e13fc1c1f1db32d4"
+
+dest_files=[ "res://.import/Spiked-Mace-Complete.png-c9df908b103155edd69078fe718cb118.stex" ]
+dest_md5="139d2ef2fa0944f57f487ddc753e04f1"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

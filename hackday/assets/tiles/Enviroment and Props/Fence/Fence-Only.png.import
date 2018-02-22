@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Fence-Only.png-86604c2f64fdfe1e70aa3dc7ef7147e1.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Fence/Fence-Only.png"
+source_md5="70615636ea39b9567c54d578886989ce"
+
+dest_files=[ "res://.import/Fence-Only.png-86604c2f64fdfe1e70aa3dc7ef7147e1.stex" ]
+dest_md5="b25fabc516a68cfa6c8120046ec79974"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

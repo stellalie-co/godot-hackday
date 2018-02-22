@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Barrel-Common.png-19f5cf7cf39ddcec95724edc4e644f11.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Barrel-Common.png"
+source_md5="8754ed7fbcae3bdee9dadca7a3ee1e41"
+
+dest_files=[ "res://.import/Barrel-Common.png-19f5cf7cf39ddcec95724edc4e644f11.stex" ]
+dest_md5="040a120dca8a6eec9e1dc24b3ace0202"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Plant-Interior-Long.png-60831d8edc76d3e92e1d91ef5f698a9d.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Plants/Plant-Interior-Long.png"
+source_md5="37a1c52191ec88ba5486e0f662038e10"
+
+dest_files=[ "res://.import/Plant-Interior-Long.png-60831d8edc76d3e92e1d91ef5f698a9d.stex" ]
+dest_md5="a50168973c181f465b2f1e2056d422bc"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

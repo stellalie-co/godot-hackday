@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Computer-Operating-Helper-Desk.png-269482579b7d63a6c7265042020c6f17.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Computers/Computer-Operating-Helper-Desk.png"
+source_md5="df5b40e61b57ceba0f7c1fa632b28c71"
+
+dest_files=[ "res://.import/Computer-Operating-Helper-Desk.png-269482579b7d63a6c7265042020c6f17.stex" ]
+dest_md5="0bb6e251e7b30d9c44d8c16844136eaa"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Remote-Car-Tire-Front.png-227b4cf8c5cabc9f0194dd0dca5ec456.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Vehicles/Carry-Load-Remote Car/Remote-Car-Tire-Front.png"
+source_md5="ba36cc01ad96f81e32c7ccbbe15dcbc8"
+
+dest_files=[ "res://.import/Remote-Car-Tire-Front.png-227b4cf8c5cabc9f0194dd0dca5ec456.stex" ]
+dest_md5="11105c207727e9ed846d383f12ae4817"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

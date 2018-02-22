@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Curve.BottomLeft.png-1014b0c03a901048933806bdb41dc49d.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Street Tiles/Dirty Street Blue/Curve.BottomLeft.png"
+source_md5="fa8cd3d7f21e5a794c62eb59b6413a66"
+
+dest_files=[ "res://.import/Curve.BottomLeft.png-1014b0c03a901048933806bdb41dc49d.stex" ]
+dest_md5="78412b565b4d055e6bd8f0dc92d1b9c8"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Spikes.png-aee9e3afa1f15917328dd7980284df4b.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Traps/Spikes/Spikes.png"
+source_md5="5f82087f30a08e65247d6ab6dabcbb63"
+
+dest_files=[ "res://.import/Spikes.png-aee9e3afa1f15917328dd7980284df4b.stex" ]
+dest_md5="308a39d47fe5ba09afc4f8a17512cf6c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

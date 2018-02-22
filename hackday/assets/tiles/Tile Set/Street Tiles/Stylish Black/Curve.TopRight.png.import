@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Curve.TopRight.png-cd28b001d888754e7690a8691b900260.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Street Tiles/Stylish Black/Curve.TopRight.png"
+source_md5="e79f4ae98d2c23d89081811cac5e1332"
+
+dest_files=[ "res://.import/Curve.TopRight.png-cd28b001d888754e7690a8691b900260.stex" ]
+dest_md5="2abbb1bdc1b112f2b9855365a3fb4977"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Crow-Sprite-Sheet.png-6cfacf4a6d6ef8ad2d098895f729bfc6.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Body Parts/Crow-Sprite-Sheet.png"
+source_md5="98f31df18afdd1b91a138d37cb486327"
+
+dest_files=[ "res://.import/Crow-Sprite-Sheet.png-6cfacf4a6d6ef8ad2d098895f729bfc6.stex" ]
+dest_md5="1c9c4812ad85ffac88faa402a9d383e4"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

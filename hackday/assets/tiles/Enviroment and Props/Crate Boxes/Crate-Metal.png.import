@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Crate-Metal.png-f9cd6a9c3f54a751d13dac044e179f9e.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crate Boxes/Crate-Metal.png"
+source_md5="7f04273f2c3613852770f1d082843863"
+
+dest_files=[ "res://.import/Crate-Metal.png-f9cd6a9c3f54a751d13dac044e179f9e.stex" ]
+dest_md5="b7c7e404369f63e56867f5a35341a580"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

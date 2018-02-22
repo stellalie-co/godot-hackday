@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Stairs-Black.png-0add7571551dababe7ea79f8ef7bd919.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Stairs/Stairs-Black.png"
+source_md5="9ae694885ad459baba8141748df16f17"
+
+dest_files=[ "res://.import/Stairs-Black.png-0add7571551dababe7ea79f8ef7bd919.stex" ]
+dest_md5="fe3288bb4ffeb86484f18bd731a6d8d9"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

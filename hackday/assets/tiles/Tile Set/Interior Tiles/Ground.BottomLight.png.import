@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Ground.BottomLight.png-551b2e921d03167b45c7e2d21ce9c5db.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Interior Tiles/Ground.BottomLight.png"
+source_md5="ed9b71a5e2f70757ef519712f95870f0"
+
+dest_files=[ "res://.import/Ground.BottomLight.png-551b2e921d03167b45c7e2d21ce9c5db.stex" ]
+dest_md5="0f4d65b6ca673329a52a15fd022a95f9"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

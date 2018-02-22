@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/suitcase-travellor.png-64cc29282bb1099a563d97afbf2e0f57.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Bags/suitcase-travellor.png"
+source_md5="6b46c0656c67307bf19354241550980a"
+
+dest_files=[ "res://.import/suitcase-travellor.png-64cc29282bb1099a563d97afbf2e0f57.stex" ]
+dest_md5="2ad89df9dd90a3bba5b326a697bbb5cd"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

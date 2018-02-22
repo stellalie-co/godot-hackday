@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Terminal-Locked.png-b62073c25af728c675ac06c98b11e6de.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Terminal/Terminal-Locked.png"
+source_md5="21a171cf508cac13e4218099f79a986f"
+
+dest_files=[ "res://.import/Terminal-Locked.png-b62073c25af728c675ac06c98b11e6de.stex" ]
+dest_md5="552e25a88892fc8af5482635e036a817"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

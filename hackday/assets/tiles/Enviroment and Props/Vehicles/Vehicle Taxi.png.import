@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Vehicle Taxi.png-65cbbb52a89e03301df7fb86c3bad3db.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Vehicles/Vehicle Taxi.png"
+source_md5="7b3a23f77dd9969afd5aebc7d8f69692"
+
+dest_files=[ "res://.import/Vehicle Taxi.png-65cbbb52a89e03301df7fb86c3bad3db.stex" ]
+dest_md5="20e13ac45882970d63917af6551315c3"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

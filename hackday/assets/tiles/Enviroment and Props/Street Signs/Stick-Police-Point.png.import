@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Stick-Police-Point.png-1bd9856ca9aaf416ef8affd6bd203538.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Street Signs/Stick-Police-Point.png"
+source_md5="d480908cb17ea1ee3df6765100cb3798"
+
+dest_files=[ "res://.import/Stick-Police-Point.png-1bd9856ca9aaf416ef8affd6bd203538.stex" ]
+dest_md5="de8ed7b3f1f799d7cb7a3a5330dbe1b1"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

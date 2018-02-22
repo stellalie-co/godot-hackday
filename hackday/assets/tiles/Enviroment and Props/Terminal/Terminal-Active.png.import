@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Terminal-Active.png-aeb43be7356005cccfcaacb91513470a.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Terminal/Terminal-Active.png"
+source_md5="f55190a7d6293d78ff1bdd0d39821c18"
+
+dest_files=[ "res://.import/Terminal-Active.png-aeb43be7356005cccfcaacb91513470a.stex" ]
+dest_md5="be0a62f221de9c11d5789add6f560619"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

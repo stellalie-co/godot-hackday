@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Electronic-Wall.png-cd798e6c0dba05280cadb5659b130bbf.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Withdrawn Concept/Electronic-Wall.png"
+source_md5="38a67f892a8dea129ddbc53d4b4aa589"
+
+dest_files=[ "res://.import/Electronic-Wall.png-cd798e6c0dba05280cadb5659b130bbf.stex" ]
+dest_md5="33b2fff39b6ee516810c2ae2ef2e44f5"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

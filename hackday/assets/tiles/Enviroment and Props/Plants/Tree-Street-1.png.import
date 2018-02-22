@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Tree-Street-1.png-05c2e90452ccd7cc45d0a8c08582c7fd.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Plants/Tree-Street-1.png"
+source_md5="70ad104e593504467e64593927d4e6f6"
+
+dest_files=[ "res://.import/Tree-Street-1.png-05c2e90452ccd7cc45d0a8c08582c7fd.stex" ]
+dest_md5="068a66428177a141579c989cccfb80be"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

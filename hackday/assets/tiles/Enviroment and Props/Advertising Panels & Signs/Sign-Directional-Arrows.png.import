@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Sign-Directional-Arrows.png-137a10e7e624edf81cb1b6d81a6fe640.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Advertising Panels & Signs/Sign-Directional-Arrows.png"
+source_md5="c51e52416a3ab4c175d23318a511f21b"
+
+dest_files=[ "res://.import/Sign-Directional-Arrows.png-137a10e7e624edf81cb1b6d81a6fe640.stex" ]
+dest_md5="5c92308b59a308dc64ead3bcfe401f59"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

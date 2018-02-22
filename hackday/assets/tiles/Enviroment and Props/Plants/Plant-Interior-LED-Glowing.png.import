@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Plant-Interior-LED-Glowing.png-c43870afeb8cd19a42634a80b7658198.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Plants/Plant-Interior-LED-Glowing.png"
+source_md5="f4c6ff09a495444fa27125eec9e7b9f3"
+
+dest_files=[ "res://.import/Plant-Interior-LED-Glowing.png-c43870afeb8cd19a42634a80b7658198.stex" ]
+dest_md5="af511f21c89f26037806107bfe1fdb6b"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

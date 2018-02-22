@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Sushi-Bar-Complete.png-1100f89cd78220802c82d4d35077ba95.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Structures/Pre Made Structures/Sushi-Bar-Complete.png"
+source_md5="946227aabe1519dd88f5f957b8c226eb"
+
+dest_files=[ "res://.import/Sushi-Bar-Complete.png-1100f89cd78220802c82d4d35077ba95.stex" ]
+dest_md5="114db0e09063d81891d7c70d2405d172"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

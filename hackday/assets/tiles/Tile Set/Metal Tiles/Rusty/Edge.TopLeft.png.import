@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Edge.TopLeft.png-25b8393f0f0f4038d9233f1326ec59d7.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Metal Tiles/Rusty/Edge.TopLeft.png"
+source_md5="ae4d8dbdac7491a09f91cf747ec1b0f3"
+
+dest_files=[ "res://.import/Edge.TopLeft.png-25b8393f0f0f4038d9233f1326ec59d7.stex" ]
+dest_md5="6d017332de4209cb4652364580713660"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

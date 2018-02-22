@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Sign-High-Voltage.png-da6c4c15aae024228365cfb38d6a556f.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Advertising Panels & Signs/Sign-High-Voltage.png"
+source_md5="01b76ca5416faa1c684ec887a2a13dcc"
+
+dest_files=[ "res://.import/Sign-High-Voltage.png-da6c4c15aae024228365cfb38d6a556f.stex" ]
+dest_md5="4342d956a24e129aacebf4cbe843ca97"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

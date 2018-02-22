@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Wall-With-Glass.png-7a3b709886f9938e1cf97ceaeb60b354.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Interior Tiles/Wall-With-Glass.png"
+source_md5="2834a0bc48da08f2bb3477f1ffb84049"
+
+dest_files=[ "res://.import/Wall-With-Glass.png-7a3b709886f9938e1cf97ceaeb60b354.stex" ]
+dest_md5="13517683734459c6bc9fd8562baf9f79"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

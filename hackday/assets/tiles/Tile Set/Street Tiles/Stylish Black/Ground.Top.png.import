@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Ground.Top.png-62d9cbcea73abf62cf2c3072aa8b3931.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Street Tiles/Stylish Black/Ground.Top.png"
+source_md5="b9fcffb9e48bbf40148a4807f2b2bade"
+
+dest_files=[ "res://.import/Ground.Top.png-62d9cbcea73abf62cf2c3072aa8b3931.stex" ]
+dest_md5="5e38fed364545071953592dc1340f49d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

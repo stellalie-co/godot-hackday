@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Background-Night-Complete-2.png-0f4c7d53d1311871bd9efa77e5bf2f6b.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Loopable Background/Full/Background-Night-Complete-2.png"
+source_md5="1a4e41fab34f8a3866bd129b84df23d6"
+
+dest_files=[ "res://.import/Background-Night-Complete-2.png-0f4c7d53d1311871bd9efa77e5bf2f6b.stex" ]
+dest_md5="e7b261f8a671cebaaba22f36876c7e37"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

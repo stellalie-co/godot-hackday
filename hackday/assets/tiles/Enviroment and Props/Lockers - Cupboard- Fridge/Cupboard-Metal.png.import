@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Cupboard-Metal.png-f15f36f52abb4d975445b5ae02b6b61d.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Lockers - Cupboard- Fridge/Cupboard-Metal.png"
+source_md5="c3a127d2a30feaa30930527b980a226f"
+
+dest_files=[ "res://.import/Cupboard-Metal.png-f15f36f52abb4d975445b5ae02b6b61d.stex" ]
+dest_md5="9017c4b792fdca55e8e9c3ab6257bf72"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

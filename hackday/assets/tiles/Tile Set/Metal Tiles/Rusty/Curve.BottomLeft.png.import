@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Curve.BottomLeft.png-f123ae7f6ed94a5f2b2d32a4f25dcb7c.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Metal Tiles/Rusty/Curve.BottomLeft.png"
+source_md5="30cad7c8e909924cf527a22fa8effb59"
+
+dest_files=[ "res://.import/Curve.BottomLeft.png-f123ae7f6ed94a5f2b2d32a4f25dcb7c.stex" ]
+dest_md5="1a866837548e5b4540022a2faef5cd10"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

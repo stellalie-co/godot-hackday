@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Fly_003.png-ec1d9a34440d1732eb53b875eaca1746.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Animation/Fly/Fly_003.png"
+source_md5="7b69e4eaabb3df42af6371a0f8f374ae"
+
+dest_files=[ "res://.import/Fly_003.png-ec1d9a34440d1732eb53b875eaca1746.stex" ]
+dest_md5="fe17b703fa318522b4d93d1aa0b24697"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

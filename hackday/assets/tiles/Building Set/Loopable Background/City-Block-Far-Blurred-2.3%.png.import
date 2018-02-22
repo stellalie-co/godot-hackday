@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/City-Block-Far-Blurred-2.3%.png-839fa4d5ab8779ec0969cbcb8c98a9e2.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Loopable Background/City-Block-Far-Blurred-2.3%.png"
+source_md5="57c328de77a8936db107be11cb3acac8"
+
+dest_files=[ "res://.import/City-Block-Far-Blurred-2.3%.png-839fa4d5ab8779ec0969cbcb8c98a9e2.stex" ]
+dest_md5="0b56fc61ec0c35b97b5f6c5ab470bd17"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

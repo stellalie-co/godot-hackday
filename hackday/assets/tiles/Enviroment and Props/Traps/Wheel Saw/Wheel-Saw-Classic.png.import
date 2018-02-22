@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Wheel-Saw-Classic.png-8a74239dddc8584a14c4ee57eaa31217.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Traps/Wheel Saw/Wheel-Saw-Classic.png"
+source_md5="4f6228939188f798a7d3c6ce7fd8e978"
+
+dest_files=[ "res://.import/Wheel-Saw-Classic.png-8a74239dddc8584a14c4ee57eaa31217.stex" ]
+dest_md5="eb314a6a7b3451adb0011af65c8435cf"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

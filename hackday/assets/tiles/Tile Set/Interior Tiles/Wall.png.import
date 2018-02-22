@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Wall.png-3f1884d557867fb37430744aa558cee1.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Interior Tiles/Wall.png"
+source_md5="29dcd34dd7da525e5425a7ff88b33a4d"
+
+dest_files=[ "res://.import/Wall.png-3f1884d557867fb37430744aa558cee1.stex" ]
+dest_md5="688fc3930e661c0c94ebaebc2c9a3d63"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Coin-4.png-da37fa52b5bac3d4924f23e92be8a0eb.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Cyberpunk Coin Animated/Coin-4.png"
+source_md5="cde329af586669f11426a227f88c5d03"
+
+dest_files=[ "res://.import/Coin-4.png-da37fa52b5bac3d4924f23e92be8a0eb.stex" ]
+dest_md5="8d16b9fa998ca1c1041b1249e547d6e8"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

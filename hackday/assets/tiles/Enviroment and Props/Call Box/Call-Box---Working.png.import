@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Call-Box---Working.png-27b32d9ef4b895e90de3893b858b672c.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Call Box/Call-Box---Working.png"
+source_md5="dda555f7f524eb87379ad301da66eece"
+
+dest_files=[ "res://.import/Call-Box---Working.png-27b32d9ef4b895e90de3893b858b672c.stex" ]
+dest_md5="41754c50e055dbb783a506f61fd8ae7c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

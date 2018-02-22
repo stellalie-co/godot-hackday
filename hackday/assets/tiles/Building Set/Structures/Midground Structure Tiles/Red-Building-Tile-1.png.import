@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Red-Building-Tile-1.png-e160d1040b655903e604abcb7a2460dc.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Structures/Midground Structure Tiles/Red-Building-Tile-1.png"
+source_md5="6f298f0e0d6c8e2fea583edee96cf51a"
+
+dest_files=[ "res://.import/Red-Building-Tile-1.png-e160d1040b655903e604abcb7a2460dc.stex" ]
+dest_md5="6a175e66e991439fbca3323ec6559794"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

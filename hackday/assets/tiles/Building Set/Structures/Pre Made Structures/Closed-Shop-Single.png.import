@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Closed-Shop-Single.png-7444a84e319fc37effdbc55d3c6acafb.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Structures/Pre Made Structures/Closed-Shop-Single.png"
+source_md5="676f06728cd530a3766b24974fb65ca0"
+
+dest_files=[ "res://.import/Closed-Shop-Single.png-7444a84e319fc37effdbc55d3c6acafb.stex" ]
+dest_md5="907e449495fb795b0d5e43d0704245f1"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

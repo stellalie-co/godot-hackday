@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Moon-Night.png-8f525f6653867f9a76414dc16372d377.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Loopable Background/Moon-Night.png"
+source_md5="a9392bc8d93896bc77f00b450e43ea34"
+
+dest_files=[ "res://.import/Moon-Night.png-8f525f6653867f9a76414dc16372d377.stex" ]
+dest_md5="ef1fd3c38743cb9e836d642752aa1161"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

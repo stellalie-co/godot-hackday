@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Advertising-Panel-Rectangle-3.png-490eb30ff241a1ac8468e6a41ba664ef.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Advertising Panels & Signs/Advertising-Panel-Rectangle-3.png"
+source_md5="f368a45c40c0b79dc1604f3ce8cc9289"
+
+dest_files=[ "res://.import/Advertising-Panel-Rectangle-3.png-490eb30ff241a1ac8468e6a41ba664ef.stex" ]
+dest_md5="020e958dfbc87441b26a78120d8f9efe"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

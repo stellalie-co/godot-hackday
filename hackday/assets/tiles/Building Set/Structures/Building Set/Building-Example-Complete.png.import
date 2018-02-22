@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Building-Example-Complete.png-0cda78999a2e513e491d64cd6878e98d.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Structures/Building Set/Building-Example-Complete.png"
+source_md5="0f1ae353b36b5802eefe3976abe53cd6"
+
+dest_files=[ "res://.import/Building-Example-Complete.png-0cda78999a2e513e491d64cd6878e98d.stex" ]
+dest_md5="edaef7a61d005d0dd31e0c2878f847e4"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Head.png-90339db2352dcc74010eb506d2cd3d2b.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Body Parts/Head.png"
+source_md5="a5e521145a44cee7ca2c33ce9ca24c5c"
+
+dest_files=[ "res://.import/Head.png-90339db2352dcc74010eb506d2cd3d2b.stex" ]
+dest_md5="cd05d90ac2f1f0b9661f5abab8941336"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

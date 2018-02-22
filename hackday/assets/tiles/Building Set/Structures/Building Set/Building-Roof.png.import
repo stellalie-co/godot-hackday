@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Building-Roof.png-8b5b40efdc9f05ad80fe1855e68fdc51.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Structures/Building Set/Building-Roof.png"
+source_md5="0a0e561f628069a26eb467d57bdcf05a"
+
+dest_files=[ "res://.import/Building-Roof.png-8b5b40efdc9f05ad80fe1855e68fdc51.stex" ]
+dest_md5="b73a96d1d6cabe7559092de8384b4979"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

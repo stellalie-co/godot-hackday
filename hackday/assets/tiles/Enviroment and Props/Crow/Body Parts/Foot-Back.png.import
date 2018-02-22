@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Foot-Back.png-fadf2a5ec9e37501245007edfcae63ea.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Body Parts/Foot-Back.png"
+source_md5="492a265586667177e7d9d6bc15df4dc2"
+
+dest_files=[ "res://.import/Foot-Back.png-fadf2a5ec9e37501245007edfcae63ea.stex" ]
+dest_md5="017a5a1559c5c3cf0d054be514c4694f"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

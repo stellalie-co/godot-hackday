@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Soda-Machine-Blue.png-e5cd8d795743a4c6bfe06d8b0395f616.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Soda Machines/Soda-Machine-Blue.png"
+source_md5="bcb43a69e03af20f7755cb73398d8fe6"
+
+dest_files=[ "res://.import/Soda-Machine-Blue.png-e5cd8d795743a4c6bfe06d8b0395f616.stex" ]
+dest_md5="c41ea66250318277c541245999f84a16"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

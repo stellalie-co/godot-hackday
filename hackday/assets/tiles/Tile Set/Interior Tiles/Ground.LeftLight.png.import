@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Ground.LeftLight.png-767b2baafec3f933bb09da99036e0284.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Interior Tiles/Ground.LeftLight.png"
+source_md5="ab2af8d48421658ee91541ef7ea54614"
+
+dest_files=[ "res://.import/Ground.LeftLight.png-767b2baafec3f933bb09da99036e0284.stex" ]
+dest_md5="89cb884e7f6bea0c51b33e7f1c0b6d7c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

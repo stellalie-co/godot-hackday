@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Simple-Door-3.png-c7599f80b327788fa1bb84274c3a0763.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Doors Animated/Simple-Door-3.png"
+source_md5="5f9c713308b7f4261919f91e8924ab0f"
+
+dest_files=[ "res://.import/Simple-Door-3.png-c7599f80b327788fa1bb84274c3a0763.stex" ]
+dest_md5="d27432f379f36ded6ee6c0ce8a2fe731"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Chip-Implant-Shop.png-4972f2f85d724e8948e3dd82e1e6690f.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Building Set/Structures/Pre Made Structures/Chip-Implant-Shop.png"
+source_md5="984987d965a3dc4e72ed2d753ce45735"
+
+dest_files=[ "res://.import/Chip-Implant-Shop.png-4972f2f85d724e8948e3dd82e1e6690f.stex" ]
+dest_md5="59d2d91ba6b7cef80f7550dbb5306f4e"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

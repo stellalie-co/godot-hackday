@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Trash-Bin-Street.png-f00239ce667fc8b35814eab8a458aece.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Trash-Bin-Street.png"
+source_md5="3815479ceb431a22c62637ecba6d5903"
+
+dest_files=[ "res://.import/Trash-Bin-Street.png-f00239ce667fc8b35814eab8a458aece.stex" ]
+dest_md5="becd7898e19e350d7fe6156f0572cc57"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

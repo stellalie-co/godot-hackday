@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Scene-Exit-Gate---Stage-End-Area.png-14d19b04ef4783d487dd770bbd7218f9.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Scene Exit Gate/Scene-Exit-Gate---Stage-End-Area.png"
+source_md5="db35a966c827621ee109e1a1ef051833"
+
+dest_files=[ "res://.import/Scene-Exit-Gate---Stage-End-Area.png-14d19b04ef4783d487dd770bbd7218f9.stex" ]
+dest_md5="4154dabefe5891b88d58dfb17255d03f"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

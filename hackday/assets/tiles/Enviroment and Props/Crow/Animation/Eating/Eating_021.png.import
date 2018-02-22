@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Eating_021.png-3fedbcf375f02f59c1e7f3f196941897.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Animation/Eating/Eating_021.png"
+source_md5="78ccc4b0239e83992392b97b822a4e00"
+
+dest_files=[ "res://.import/Eating_021.png-3fedbcf375f02f59c1e7f3f196941897.stex" ]
+dest_md5="1e541262130e44044d188718e0a0a489"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

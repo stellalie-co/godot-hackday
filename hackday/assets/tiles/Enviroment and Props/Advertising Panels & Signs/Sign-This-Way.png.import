@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Sign-This-Way.png-77da8ce43d93707e36af8da7d6710bac.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Advertising Panels & Signs/Sign-This-Way.png"
+source_md5="4340e13fdd6216f1a8856cc592b907f0"
+
+dest_files=[ "res://.import/Sign-This-Way.png-77da8ce43d93707e36af8da7d6710bac.stex" ]
+dest_md5="ac72048f925fe6d2e691647baf503b11"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

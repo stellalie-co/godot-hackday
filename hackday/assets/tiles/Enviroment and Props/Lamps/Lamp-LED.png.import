@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Lamp-LED.png-926630ab81fd9bd3533b66d703fe663f.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Lamps/Lamp-LED.png"
+source_md5="9e5203df80305fc7e441d723bc44c6f7"
+
+dest_files=[ "res://.import/Lamp-LED.png-926630ab81fd9bd3533b66d703fe663f.stex" ]
+dest_md5="2ae96087fc3e6030a2d0937de07ba1ad"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

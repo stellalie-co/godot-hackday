@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Lamp-Street-(Side).png-19a604bbec3a3c8ca987b48553ebb6e0.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Lamps/Lamp-Street-(Side).png"
+source_md5="f72731d7fe6e145e68256c65b05902ce"
+
+dest_files=[ "res://.import/Lamp-Street-(Side).png-19a604bbec3a3c8ca987b48553ebb6e0.stex" ]
+dest_md5="ad6cf4166460e2cf091175af07086dc8"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

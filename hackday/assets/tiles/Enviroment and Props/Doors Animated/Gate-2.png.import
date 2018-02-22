@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Gate-2.png-6b8f271a1b5c9c6e42238f9eb8de91f0.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Doors Animated/Gate-2.png"
+source_md5="4a6b60860270bae2fadcd00fb12d049a"
+
+dest_files=[ "res://.import/Gate-2.png-6b8f271a1b5c9c6e42238f9eb8de91f0.stex" ]
+dest_md5="004dff5886e0501a694a6fa9d8193c0a"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

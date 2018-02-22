@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Ground.Bottom.png-2529825759a06fd46fa54ec253e02fc3.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Metal Tiles/Silver Metallic/Ground.Bottom.png"
+source_md5="0cbe9c44c05a860c98ed7f60ecb64350"
+
+dest_files=[ "res://.import/Ground.Bottom.png-2529825759a06fd46fa54ec253e02fc3.stex" ]
+dest_md5="10e881b1c2fdad973dadab14fa7bba97"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

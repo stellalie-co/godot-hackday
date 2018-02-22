@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Center-Drain-Right.png-2370f4c703d44fa00c188b3fc0b2734f.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Tile Set/Street Tiles/Dirty Street Blue/Center-Drain-Right.png"
+source_md5="0ae7c4b210452dc453866a01beaeeb5f"
+
+dest_files=[ "res://.import/Center-Drain-Right.png-2370f4c703d44fa00c188b3fc0b2734f.stex" ]
+dest_md5="76900fc16ad6b9a3efa56cac2a0ff11c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

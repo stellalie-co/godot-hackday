@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Industrial-Pipe-2.png-58d6b9d6ccde6716daa1110879301ec7.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Pipes/Industrial-Pipe-2.png"
+source_md5="de86456c268cefff7916b2f5c1fed46f"
+
+dest_files=[ "res://.import/Industrial-Pipe-2.png-58d6b9d6ccde6716daa1110879301ec7.stex" ]
+dest_md5="8a5f6cd1e0f2f3aed8f1956d55bbdb27"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

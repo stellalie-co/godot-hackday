@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Walking - SpriteSheet.png-9168e3f36cd8772eeef11648b7be2a5e.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Crow/Animation/Walking/Walking - SpriteSheet.png"
+source_md5="2dce85d7bb49d45bb31a63eb3f29c725"
+
+dest_files=[ "res://.import/Walking - SpriteSheet.png-9168e3f36cd8772eeef11648b7be2a5e.stex" ]
+dest_md5="d20998b23a2a12cba11772e274a0e28e"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

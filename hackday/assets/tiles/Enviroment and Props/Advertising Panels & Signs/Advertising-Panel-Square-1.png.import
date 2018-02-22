@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Advertising-Panel-Square-1.png-6e9c4ebd531d427dcbb6ff75bdf5dcb9.stex"
+
+[deps]
+
+source_file="res://hackday/assets/tiles/Enviroment and Props/Advertising Panels & Signs/Advertising-Panel-Square-1.png"
+source_md5="d6f28448254c816cc2861f72faffe8ff"
+
+dest_files=[ "res://.import/Advertising-Panel-Square-1.png-6e9c4ebd531d427dcbb6ff75bdf5dcb9.stex" ]
+dest_md5="32e5f3914913062dce19a5970c5dc665"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
