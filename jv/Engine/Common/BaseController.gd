@@ -38,6 +38,7 @@ var a_animation
 var a_torso
 var a_shape
 var target_groups
+var previous_animation
 
 
 func get_target_groups():
@@ -79,6 +80,7 @@ func get_agent_animation():
 			anim = get_node("../agent_animation")
 		a_animation = AnimationAdapter.new()
 		a_animation.set_animation_instance(anim)
+		a_animation.set_debug(debug)
 
 	return a_animation
 	
@@ -102,9 +104,15 @@ func play_agent_animation(animation_state = null, ignore_modifier = false):
 
 	return false
 	
-func play_agent_animation_once(animation_state = null, ignore_modifier = false, animation_on_finished = "idle"):
+func play_agent_animation_once(animation_state = null, ignore_modifier = false, animation_on_finished = null):
 	var a_anim = get_agent_animation()
 	if a_anim:
+		previous_animation = a_anim.get_animation()
+		if previous_animation and animation_on_finished and previous_animation != animation_on_finished:
+			animation_on_finished = previous_animation
+		elif !previous_animation and !animation_on_finished:
+			animation_on_finished = "idle"
+
 		return a_anim.play_once(animation_state, ignore_modifier, animation_on_finished)
 	return false
 

@@ -13,6 +13,7 @@ export(int) var wandering_distance = 0
 export(bool) var change_direction_when_colliding = true
 export(int) var number_of_collision_raycasts = 1
 export(int) var collision_distance = 50
+export(int) var collision_ray_gap = 20
 
 
 # CONSTANT ============================
@@ -21,7 +22,6 @@ const RaycastsGenerator = preload("res://jv/Engine/Helper/RaycastsGenerator.gd")
 const FLOOR_NORMAL = Vector2(0, -1)
 const SIDING_CHANGE_SPEED = 10
 const MIN_ON_AIR_TIME = 0.05
-const COLLISION_RAY_GAP = 10
 const COLLISION_RAY_Y = 0
 
 
@@ -40,7 +40,6 @@ var has_jumped = false
 var gravity_vel = Vector2(0, gravity)
 var current_animation
 var raycast_generator
-var is_turning_around = false
 var moving_direction
 var original_position
 var turning_around_time = 0
@@ -66,7 +65,7 @@ func _ready():
 
 		raycast_generator = RaycastsGenerator.new()
 		raycast_generator.set_target_instance(get_agent())
-		raycast_generator.generate(number_of_collision_raycasts, ray_x, COLLISION_RAY_Y, COLLISION_RAY_GAP)
+		raycast_generator.generate(number_of_collision_raycasts, ray_x, COLLISION_RAY_Y, collision_ray_gap)
 
 
 func _physics_process(delta):
@@ -138,8 +137,9 @@ func _physics_process(delta):
 	if new_animation != current_animation:
 		current_animation = new_animation
 		controller.play_agent_animation(new_animation)
-		
-		
+		controller.broadcast_status("movement", { "state": new_animation })
+
+
 	turning_around_time += delta
 
 	
@@ -189,4 +189,4 @@ func _draw():
 	
 			if get_controller().get_agent_initial_facing_direction() == "left":
 				ray_x *= -1
-			raycast_generator.draw_debug_lines(self, number_of_collision_raycasts, ray_x, COLLISION_RAY_Y, COLLISION_RAY_GAP)
+			raycast_generator.draw_debug_lines(self, number_of_collision_raycasts, ray_x, COLLISION_RAY_Y, collision_ray_gap)

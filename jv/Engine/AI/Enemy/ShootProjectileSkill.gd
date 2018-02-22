@@ -12,6 +12,7 @@ export(NodePath) var projectile_start_position
 
 # OPTIONAL - override damage of bullet
 export(int) var override_bullet_damage = 0
+export(int) var override_bullet_speed = 0
 
 # OPTIONAL - how many projectiles are created at a time
 export(int) var spawn_count = 1
@@ -38,6 +39,8 @@ var start_position
 var raycast_generator
 var rays
 var target_found
+var shoot_animation = "shoot"
+var current_animation_state
 
 
 func _ready():
@@ -74,13 +77,16 @@ func perform_skill():
 	var projectile_start_position = start_position.get_global_position()
 	var flip_horizontal = controller.get_agent_data("flip_horizontal")
 	var direction_guideline = get_direction_guideline()
-	controller.play_agent_animation_once("shoot")
+
+	controller.play_agent_animation_once(shoot_animation)
 
 	for index in spawn_count:
 		var projectile = projectile_type.instance()
 		projectile_parent.add_child(projectile)
 		if override_bullet_damage > 0:
 			projectile.set_damage(override_bullet_damage)
+		if override_bullet_speed > 0:
+			projectile.set_speed(override_bullet_speed)
 		projectile.prepare(projectile_start_position, flip_horizontal, current_rotation, direction_guideline, index, spawn_count)
 		projectile.set_target_groups(target_groups)
 
@@ -120,6 +126,11 @@ func get_ray_x():
 		return ray_x
 	return -ray_x
 
+
+func _on_status_updated(status, options):
+	if status == "movement":
+		current_animation_state = options.state
+		shoot_animation = current_animation_state + "-shoot"
 
 # DEBUG ===================================
 func _draw():

@@ -16,6 +16,7 @@ var a_storage = {}
 var animation = ""
 var prefer_animation_on_finished = null
 var can_interupt_async_animation = false
+var debug = false
 
 func set_animation_instance(instance):
 	a_instance = instance
@@ -61,6 +62,8 @@ func play(new_animation = null, ignore_modifier = false):
 		if can_interupt_async_animation and HIGH_PRIORITY_ANIMATIONS.find(new_animation) < 0:
 			return
 		if has_animation(animation_to_play):
+			if debug:
+				print("animation : " + animation_to_play)
 			a_instance.play(animation_to_play)
 			animation = animation_to_play
 			return true
@@ -76,12 +79,17 @@ func play_once(new_animation = null, ignore_modifier = false, animation_on_finis
 func stop():
 	a_instance.stop()
 	
-func has_animation(animation):
+	
+func set_debug(value):
+	debug = value
+
+
+func has_animation(animation_to_check):
 	if a_instance:
 		if a_type == TYPE.animatedSprite:
-			return a_instance.frames.has_animation(animation)
+			return a_instance.frames.has_animation(animation_to_check)
 		elif a_type == TYPE.animationPlayer:
-			return a_instance.has_animation(animation)
+			return a_instance.has_animation(animation_to_check)
 	return false
 	
 func get_animation():
