@@ -2,11 +2,11 @@
 
 [ext_resource path="res://hackday/assets/background/game_scene_1.png" type="Texture" id=1]
 [ext_resource path="res://jv/Demos/TileSets/JungleTiles.tres" type="TileSet" id=2]
-[ext_resource path="res://jv/Demos/Minimal/Scenes/Hero.tscn" type="PackedScene" id=3]
-[ext_resource path="res://icon.png" type="Texture" id=4]
-[ext_resource path="res://jv/Demos/Minimal/Scenes/DestructibleBox.tscn" type="PackedScene" id=5]
-[ext_resource path="res://jv/Demos/Minimal/Scenes/StaticEnemy.tscn" type="PackedScene" id=6]
-[ext_resource path="res://jv/Demos/Minimal/Scenes/Trap.tscn" type="PackedScene" id=7]
+[ext_resource path="res://icon.png" type="Texture" id=3]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/DestructibleBox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/Trap.tscn" type="PackedScene" id=5]
+[ext_resource path="res://hackday/player/BadassJohn.tscn" type="PackedScene" id=6]
+[ext_resource path="res://jv/Demos/Minimal/Scenes/StaticEnemy.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -24,7 +24,7 @@ texture = ExtResource( 1 )
 
 mode = 0
 tile_set = ExtResource( 2 )
-cell_size = Vector2( 32, 48 )
+cell_size = Vector2( 32, 70 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
 cell_half_offset = 2
@@ -38,22 +38,18 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 720901, 0, 0, 720902, 1, 0, 720903, 1, 0, 720904, 1, 0, 720905, 1, 0, 720906, 1, 0, 720907, 1, 0, 720908, 1, 0, 720909, 1, 0, 720910, 1, 0, 720911, 1, 0, 720912, 1, 0, 720913, 1, 0, 720914, 1, 0, 720915, 1, 0, 720916, 1, 0, 720917, 1, 0, 720918, 1, 0, 720919, 1, 0, 720920, 1, 0, 720921, 2, 0 )
+tile_data = PoolIntArray( 720901, 0, 0, 720902, 1, 0, 720903, 1, 0, 720904, 1, 0, 720905, 1, 0, 720906, 1, 0, 720907, 1, 0, 720908, 1, 0, 720909, 1, 0, 720910, 1, 0, 720911, 1, 0, 720912, 1, 0, 720913, 1, 0, 720914, 1, 0, 720915, 1, 0, 720916, 1, 0, 720917, 1, 0, 720918, 1, 0, 720919, 1, 0, 720920, 1, 0, 720921, 2, 0, 720922, 8, 0, 720923, 8, 0, 720924, 8, 0, 720925, 8, 0, 720926, 8, 0, 720927, 8, 0, 720928, 8, 0, 720929, 8, 0, 720930, 8, 0, 720931, 8, 0, 720932, 8, 0, 720933, 8, 0, 720934, 8, 0, 720935, 8, 0, 720936, 8, 0, 720937, 8, 0, 720938, 8, 0, 720939, 8, 0, 720940, 8, 0, 720941, 8, 0, 720942, 8, 0, 720943, 8, 0, 720944, 8, 0, 720945, 8, 0, 720946, 8, 0, 720947, 8, 0, 720948, 8, 0, 720949, 8, 0, 720950, 8, 0, 720951, 8, 0, 720952, 8, 0, 720953, 8, 0, 720954, 8, 0, 720955, 8, 0, 720956, 8, 0, 720957, 8, 0, 720958, 8, 0, 720959, 8, 0, 720960, 8, 0, 720961, 8, 0, 720962, 8, 0, 720963, 8, 0, 720964, 8, 0, 720965, 8, 0, 720966, 8, 0, 720967, 8, 0, 720968, 8, 0, 720969, 8, 0 )
 _sections_unfolded = [ "Cell", "Visibility" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Hero" parent="." index="2" instance=ExtResource( 3 )]
-
-position = Vector2( 286.612, 425 )
-
-[node name="platform" type="StaticBody2D" parent="." index="3" groups=[
+[node name="platform" type="StaticBody2D" parent="." index="2" groups=[
 "platform",
 ]]
 
 editor/display_folded = true
-position = Vector2( 296.402, 495.971 )
+position = Vector2( 1781.28, 741.335 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -67,23 +63,29 @@ __meta__ = {
 
 [node name="Sprite" type="Sprite" parent="platform" index="0"]
 
-texture = ExtResource( 4 )
+texture = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="platform" index="1"]
 
 shape = SubResource( 1 )
 
-[node name="destructible" parent="." index="4" instance=ExtResource( 5 )]
+[node name="destructible" parent="." index="3" instance=ExtResource( 4 )]
 
-position = Vector2( 784.076, 498.309 )
+position = Vector2( 2325.36, 730.982 )
 
-[node name="StaticEnemy" parent="." index="5" instance=ExtResource( 6 )]
+[node name="Trap" parent="." index="4" instance=ExtResource( 5 )]
 
-position = Vector2( 712.23, 497.616 )
-
-[node name="Trap" parent="." index="6" instance=ExtResource( 7 )]
-
-position = Vector2( -22.9877, 587.26 )
+position = Vector2( -22.9877, 826.984 )
 scale = Vector2( 3.87432, 1 )
+
+[node name="BadassJohn" parent="." index="5" instance=ExtResource( 6 )]
+
+position = Vector2( 527.392, 439.963 )
+scale = Vector2( 0.3, 0.3 )
+_sections_unfolded = [ "Collision", "Material", "Transform", "collision" ]
+
+[node name="StaticEnemy" parent="." index="6" instance=ExtResource( 7 )]
+
+position = Vector2( 1050.55, 716.35 )
 
 

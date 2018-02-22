@@ -26,6 +26,8 @@ export(int) var spawn_count = 1
 # OPTIONAL - override damage of bullet
 export(int) var override_bullet_damage = 0
 
+# OPTIONAL - override speed of bullet
+export(int) var override_bullet_speed = 0
 
 
 # OPTIONAL - shooting mode
@@ -50,10 +52,13 @@ var target_groups = []
 var can_manually_spawn_projectiles = true
 var timer
 var start_position
+var shoot_animation
+var current_animation_state
 
 
 
 func _ready():
+	
 	if projectile_start_position:
 		start_position = get_node(projectile_start_position)
 	else:
@@ -70,14 +75,19 @@ func _ready():
 		add_child(timer)
 		timer.set_wait_time(waiting_time)
 		timer.connect("timeout", self, "_on_timer_timeout")
+		
+	controller.listen_for_status_updated(self, "_on_status_updated")
 
 
 func _input(event):
 	if !active:
 		return
 	
-	if mode == Mode.MANUAL and event.is_action_released(action_ui_shoot):
-		can_manually_spawn_projectiles = true
+	if event.is_action_released(action_ui_shoot):
+		if mode == Mode.MANUAL or mode == Mode.SEMI_AUTO:
+			can_manually_spawn_projectiles = true
+			controller.play_agent_animation(current_animation_state)
+			
 
 
 func _physics_process(delta):	
@@ -106,12 +116,16 @@ func spawn_projectiles():
 	var projectile_start_position = start_position.get_global_position()
 	var flip_horizontal = controller.get_agent_data("flip_horizontal")
 	var direction_guideline = get_direction_guideline(flip_horizontal)
+	
+	controller.play_agent_animation(shoot_animation)
 
 	for index in spawn_count:
 		var projectile = projectile_type.instance()
 		projectile_parent.add_child(projectile)
 		if override_bullet_damage > 0:
 			projectile.set_damage(override_bullet_damage)
+		if override_bullet_speed > 0:
+			projectile.set_speed(override_bullet_speed)
 		projectile.prepare(projectile_start_position, flip_horizontal, current_rotation, direction_guideline, index, spawn_count)
 		projectile.set_target_groups(target_groups)
 
@@ -168,3 +182,8 @@ func restart_timer():
 
 func _on_timer_timeout():
 	timer.stop()
+	
+func _on_status_updated(status, options):
+	if status == "movement":
+		current_animation_state = options.state
+		shoot_animation = current_animation_state + "-shoot"

@@ -6,6 +6,8 @@ export(int) var max_health = 100
 export(int) var current_health = 100
 # OPTIONAL - the lower the number the faster the agent can be hit again
 export(float) var invincible_time_on_hit = 0.1
+# OPTIONAL
+export(bool) var god_mode = false
 
 
 var is_alive = true setget , get_is_alive
@@ -13,6 +15,7 @@ var invincible = false
 var agent
 var controller
 var timer
+var current_animation_state
 
 
 func _ready():
@@ -31,6 +34,8 @@ func _ready():
 		add_child(timer)
 		timer.set_wait_time(invincible_time_on_hit)
 		timer.connect("timeout", self, "_on_invincible_timer_timeout")
+	
+	controller.listen_for_status_updated(self, "_on_status_updated")
 
 
 func get_is_alive():
@@ -58,15 +63,16 @@ func decrease_health_points(health_points):
 	if invincible:
 		return false
 
-	health_points = abs(health_points)
-	current_health -= health_points
+	if !god_mode:
+		health_points = abs(health_points)
+		current_health -= health_points
 
 	if current_health < 0:
 		current_health = 0
 
 	# Damage agent
 	if current_health > 0:
-		controller.play_agent_animation_once("hit")
+		controller.play_agent_animation_once("hit", true, current_animation_state)
 		controller.broadcast_status("hit")
 		restart_invincible_timer()
 	# Kill agent
@@ -78,7 +84,7 @@ func decrease_health_points(health_points):
 		if agent_shape:
 			agent_shape.set_disabled(true)
 		agent.set_process(false)
-		agent.set_physics_process(false)
+#		agent.set_physics_process(false)
 
 	return true
 
@@ -96,3 +102,7 @@ func _on_invincible_timer_timeout():
 	timer.stop()
 	invincible = false
 	controller.broadcast_status("recover_after_hit")
+	
+func _on_status_updated(status, options):
+	if status == "movement":
+		current_animation_state = options.state

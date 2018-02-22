@@ -28,15 +28,15 @@ animations = [ {
 "name": "idle",
 "speed": 3.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
-"loop": false,
-"name": "die",
-"speed": 3.0
-}, {
 "frames": [ ExtResource( 2 ) ],
 "loop": false,
 "name": "shoot",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 4 ), ExtResource( 5 ) ],
+"loop": false,
+"name": "die",
+"speed": 3.0
 }, {
 "frames": [ ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": false,
@@ -44,7 +44,7 @@ animations = [ {
 "speed": 3.0
 } ]
 
-[node name="StaticEnemy" type="KinematicBody2D" index="0" groups=[
+[node name="StaticEnemy" type="KinematicBody2D" groups=[
 "enemy",
 ]]
 
@@ -99,6 +99,7 @@ script = ExtResource( 10 )
 max_health = 100
 current_health = 100
 invincible_time_on_hit = 0.0
+god_mode = false
 
 [node name="SkillSlots" type="Node2D" parent="agent_torso/Controller" index="2"]
 
@@ -122,7 +123,7 @@ projectile_animation_identifier = null
 projectile_start_position = null
 override_bullet_damage = 0
 spawn_count = 1
-ray_x = 400
+ray_x = 800
 ray_y = 0
 number_of_raycasts = 1
 ray_gap = 10
@@ -145,7 +146,7 @@ projectile_animation_identifier = null
 projectile_start_position = null
 override_bullet_damage = 0
 spawn_count = 3
-ray_x = 300
+ray_x = 500
 ray_y = 0
 number_of_raycasts = 1
 ray_gap = 10

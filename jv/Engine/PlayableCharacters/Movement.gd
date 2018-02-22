@@ -79,7 +79,7 @@ func _physics_process(delta):
 	
 	# Move
 	linear_vel = player.move_and_slide(linear_vel, FLOOR_NORMAL, slope_slide_stop)
-	
+
 	
 	# Detect floor
 	if player.is_on_floor():
@@ -145,6 +145,7 @@ func _physics_process(delta):
 	if new_animation != current_animation:
 		current_animation = new_animation
 		controller.play_agent_animation(new_animation)
+		controller.broadcast_status("movement", { "state": new_animation })
 		
 
 func _on_status_updated(status, options):

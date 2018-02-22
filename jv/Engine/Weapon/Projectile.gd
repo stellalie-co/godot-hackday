@@ -58,6 +58,9 @@ func _ready():
 
 func set_damage(damage):
 	self.damage = damage
+	
+func set_speed(speed):
+	self.speed = speed
 
 
 func prepare(start_position, flip_horizontal, weapon_rotation, direction_guideline, index, total_projectiles):
