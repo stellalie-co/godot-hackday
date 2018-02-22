@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Run Firing_013.png-8764b4a8019a1f2aa5096492de9d58de.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Gorilla/Run Firing/Run Firing_013.png"
+source_md5="db8725c55311f93d7df4d99b0386e036"
+
+dest_files=[ "res://.import/Run Firing_013.png-8764b4a8019a1f2aa5096492de9d58de.stex" ]
+dest_md5="3a4bd308192fc828227d59c8056f366e"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

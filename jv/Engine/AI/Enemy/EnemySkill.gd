@@ -59,7 +59,7 @@ func activate():
 		return
 
 	if can_activate():
-		get_controller().dispatch_after_animation(skill_animation, self, "_on_skill_end")
+#		get_controller().dispatch_after_animation(skill_animation, self, "_on_skill_end")
 		perform_skill()
 		activating = true
 		restart_timer()

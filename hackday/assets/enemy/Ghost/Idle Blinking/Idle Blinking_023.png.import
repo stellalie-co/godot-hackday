@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Idle Blinking_023.png-ec217b111fba7064a223b7822d98b944.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Ghost/Idle Blinking/Idle Blinking_023.png"
+source_md5="a8384bdf18066a88df32998b61163508"
+
+dest_files=[ "res://.import/Idle Blinking_023.png-ec217b111fba7064a223b7822d98b944.stex" ]
+dest_md5="ddbc156e3b25b250d64ca8f909b9ac3d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

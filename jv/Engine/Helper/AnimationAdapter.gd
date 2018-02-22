@@ -118,5 +118,7 @@ func _on_animation_finished(_animation = null):
 		a_storage[played_animation].empty()
 
 	if prefer_animation_on_finished:
-		play(prefer_animation_on_finished, a_modifier)
-		prefer_animation_on_finished = null
+		if prefer_animation_on_finished != played_animation:
+			print("prefer_animation_on_finished :  " + prefer_animation_on_finished)
+			play(prefer_animation_on_finished, a_modifier)
+			prefer_animation_on_finished = ""

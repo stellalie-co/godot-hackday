@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Idle Blinking_009.png-301f0cf4527b96989d84cbbd5e90d69f.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Gorilla/Idle Blinking/Idle Blinking_009.png"
+source_md5="0f2a8f19b750e4b815e2edec11213f73"
+
+dest_files=[ "res://.import/Idle Blinking_009.png-301f0cf4527b96989d84cbbd5e90d69f.stex" ]
+dest_md5="1c956f0c687cd448f18c6058a149825d"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -74,6 +74,7 @@ func perform_skill():
 	var projectile_start_position = start_position.get_global_position()
 	var flip_horizontal = controller.get_agent_data("flip_horizontal")
 	var direction_guideline = get_direction_guideline()
+	controller.play_agent_animation_once("shoot")
 
 	for index in spawn_count:
 		var projectile = projectile_type.instance()
