@@ -20,10 +20,9 @@ global="*res://hackday/global.gd"
 
 [display]
 
-window/size/width=1600
-window/size/height=900
+window/size/width=1200
+window/size/height=800
 window/size/resizable=false
-window/size/fullscreen=true
 window/stretch/mode="2d"
 
 [input]

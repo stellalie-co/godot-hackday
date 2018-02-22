@@ -15,7 +15,7 @@ use_filter = false
 font_data = ExtResource( 6 )
 _sections_unfolded = [ "Extra Spacing", "Font", "Resource", "Settings" ]
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=2]
 
 resource_name = "AttackDrop"
 length = 0.5
@@ -58,7 +58,7 @@ tracks/2/keys = {
 "values": [ Vector2( -2710, -1510 ), Vector2( 480, 330 ), Vector2( 540, 400 ) ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=3]
 
 resource_name = "LabelDrop"
 length = 0.4
@@ -89,9 +89,8 @@ tracks/1/keys = {
 "values": [ Vector2( 470, 1200 ), Vector2( 500, 660 ) ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
-resource_name = "LabelFlash"
 length = 0.4
 loop = true
 step = 0.1
@@ -120,9 +119,8 @@ tracks/1/keys = {
 "values": [ Vector2( 0, 0 ), Vector2( 500, 660 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 
-resource_name = "LogoDrop"
 length = 0.8
 loop = false
 step = 0.1
@@ -151,7 +149,7 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0.52502 ), Color( 1, 1, 1, 1 ) ]
 }
 
-[node name="World" type="Node" index="0"]
+[node name="World" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -272,10 +270,10 @@ autoplay = ""
 playback_process_mode = 0
 playback_default_blend_time = 0.0
 playback_speed = 1.01
-anims/AttackDrop = SubResource( 5 )
-anims/LabelDrop = SubResource( 6 )
-anims/LabelFlash = SubResource( 3 )
-anims/LogoDrop = SubResource( 4 )
+anims/AttackDrop = SubResource( 2 )
+anims/LabelDrop = SubResource( 3 )
+anims/LabelFlash = SubResource( 4 )
+anims/LogoDrop = SubResource( 5 )
 blend_times = [  ]
 _sections_unfolded = [ "Pause", "Playback Options" ]
 
