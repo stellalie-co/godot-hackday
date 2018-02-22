@@ -72,14 +72,13 @@ _sections_unfolded = [ "Scroll" ]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
 
-position = Vector2( -429.241, -40.423 )
+position = Vector2( -531.343, -99.3115 )
 motion_scale = Vector2( 0.1, 0.1 )
 motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 0, 0 )
 _sections_unfolded = [ "Motion", "Transform" ]
 __meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
+"_edit_group_": true
 }
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground/ParallaxLayer" index="0"]
@@ -126,7 +125,7 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 196614, 4, 0, 327678, 3, 0, 327679, 3, 0, 262144, 3, 0, 262145, 3, 0, 262146, 3, 0, 262147, 3, 0, 262148, 3, 0, 262149, 3, 0, 262150, 3, 0, 262151, 3, 0, 262152, 3, 0, 262153, 3, 0, 262154, 3, 0, 262155, 3, 0, 262156, 3, 0, 262157, 3, 0, 262158, 3, 0, 262159, 3, 0, 262160, 3, 0, 262161, 3, 0, 262162, 3, 0, 262163, 3, 0, 262164, 3, 0, 262165, 3, 0, 262166, 3, 0, 262167, 3, 0, 1114102, 4, 0, 1114106, 4, 0, 1114110, 4, 0, 1048578, 4, 0, 1048582, 4, 0, 1048586, 4, 0, 1048590, 4, 0, 1048594, 4, 0, 1048598, 4, 0, 1048602, 4, 0, 1048606, 4, 0, 1048610, 4, 0, 1048614, 4, 0, 1048618, 4, 0, 1048622, 4, 0 )
+tile_data = PoolIntArray( 327678, 3, 0, 327679, 3, 0, 262144, 3, 0, 262145, 3, 0, 262146, 3, 0, 262147, 3, 0, 262148, 3, 0, 262149, 3, 0, 262150, 3, 0, 262151, 3, 0, 262152, 3, 0, 262153, 3, 0, 262154, 3, 0, 262155, 3, 0, 262156, 3, 0, 262157, 3, 0, 262158, 3, 0, 262159, 3, 0, 262160, 3, 0, 262161, 3, 0, 262162, 3, 0, 262163, 3, 0, 262164, 3, 0, 262165, 3, 0, 262166, 3, 0, 262167, 3, 0 )
 _sections_unfolded = [ "Cell", "Transform" ]
 __meta__ = {
 "_edit_lock_": true
@@ -134,7 +133,6 @@ __meta__ = {
 
 [node name="Scenery" type="Node2D" parent="." index="3"]
 
-editor/display_folded = true
 scale = Vector2( 0.5, 0.5 )
 z_index = -1
 _sections_unfolded = [ "Transform", "Z Index" ]
@@ -176,7 +174,9 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Barrel-Common" type="Sprite" parent="Scenery" index="4"]
+[node name="Barrel-Common" type="Sprite" parent="Scenery" index="4" groups=[
+"platform",
+]]
 
 editor/display_folded = true
 position = Vector2( 1754.8, 916.356 )
@@ -201,7 +201,9 @@ position = Vector2( -11.041, -10.0115 )
 scale = Vector2( 8.4242, 11.2154 )
 shape = SubResource( 1 )
 
-[node name="Barrel-Common4" type="Sprite" parent="Scenery" index="5"]
+[node name="Barrel-Common4" type="Sprite" parent="Scenery" index="5" groups=[
+"platform",
+]]
 
 position = Vector2( 2789.55, 905.445 )
 texture = ExtResource( 8 )
@@ -226,7 +228,9 @@ position = Vector2( -11.041, -10.0115 )
 scale = Vector2( 8.4242, 11.2154 )
 shape = SubResource( 1 )
 
-[node name="Barrel-Common2" type="Sprite" parent="Scenery" index="6"]
+[node name="Barrel-Common2" type="Sprite" parent="Scenery" index="6" groups=[
+"platform",
+]]
 
 editor/display_folded = true
 position = Vector2( 1922.37, 913.718 )
@@ -252,7 +256,9 @@ position = Vector2( -11.041, -10.0115 )
 scale = Vector2( 8.4242, 11.2154 )
 shape = SubResource( 1 )
 
-[node name="Barrel-Common3" type="Sprite" parent="Scenery" index="7"]
+[node name="Barrel-Common3" type="Sprite" parent="Scenery" index="7" groups=[
+"platform",
+]]
 
 editor/display_folded = true
 position = Vector2( 1828.69, 718.438 )
@@ -305,16 +311,17 @@ _sections_unfolded = [ "Collision", "Material", "Transform", "collision" ]
 
 [node name="Camera2D" type="Camera2D" parent="BadassJohn" index="2"]
 
-position = Vector2( 874.449, -537.737 )
+position = Vector2( 993.54, -2388.09 )
+scale = Vector2( 4.6182, 3.91798 )
 anchor_mode = 1
 rotating = false
 current = true
-zoom = Vector2( 1, 1 )
+zoom = Vector2( 1.3, 1.3 )
 limit_left = -10000000
-limit_top = -10000000
+limit_top = -400
 limit_right = 10000000
-limit_bottom = 10000000
-limit_smoothed = false
+limit_bottom = -400
+limit_smoothed = true
 drag_margin_h_enabled = true
 drag_margin_v_enabled = true
 smoothing_enabled = false
@@ -328,6 +335,7 @@ drag_margin_bottom = 0.2
 editor_draw_screen = true
 editor_draw_limits = false
 editor_draw_drag_margin = false
+_sections_unfolded = [ "Drag Margin", "Limit", "Smoothing", "Transform" ]
 
 [node name="Gorilla" parent="." index="5" instance=ExtResource( 11 )]
 
