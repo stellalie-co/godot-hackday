@@ -1,6 +1,6 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=29 format=2]
 
-[ext_resource path="res://jv/Demos/Minimal/Scenes/StaticEnemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://hackday/Level1.gd" type="Script" id=1]
 [ext_resource path="res://hackday/assets/background/game_scene_1.png" type="Texture" id=2]
 [ext_resource path="res://hackday/tilesetWithCollision.tres" type="TileSet" id=3]
 [ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Garbage-Bag-2.png" type="Texture" id=4]
@@ -17,14 +17,14 @@
 [ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Trash-Container-Yellow-Opened.png" type="Texture" id=15]
 [ext_resource path="res://hackday/assets/background/logo.png" type="Texture" id=16]
 [ext_resource path="res://hackday/assets/background/logo-text.png" type="Texture" id=17]
-[ext_resource path="res://hackday/player/BadassJohn.tscn" type="PackedScene" id=18]
-[ext_resource path="res://hackday/traps/SpikeTrap.tscn" type="PackedScene" id=19]
-[ext_resource path="res://hackday/enemy/Gorilla.tscn" type="PackedScene" id=20]
-[ext_resource path="res://hackday/enemy/Ghost.tscn" type="PackedScene" id=21]
-[ext_resource path="res://hackday/enemy/Alien.tscn" type="PackedScene" id=22]
-[ext_resource path="res://hackday/platforms/Barrel.tscn" type="PackedScene" id=23]
-[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-1.png" type="Texture" id=24]
-[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-2.png" type="Texture" id=25]
+[ext_resource path="res://hackday/traps/SpikeTrap.tscn" type="PackedScene" id=18]
+[ext_resource path="res://hackday/enemy/Gorilla.tscn" type="PackedScene" id=19]
+[ext_resource path="res://hackday/enemy/Ghost.tscn" type="PackedScene" id=20]
+[ext_resource path="res://hackday/enemy/Alien.tscn" type="PackedScene" id=21]
+[ext_resource path="res://hackday/platforms/Barrel.tscn" type="PackedScene" id=22]
+[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-1.png" type="Texture" id=23]
+[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-2.png" type="Texture" id=24]
+[ext_resource path="res://hackday/scenes/HeroWithCamera.tscn" type="PackedScene" id=25]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -62,14 +62,16 @@ tracks/1/keys = {
 "values": [ Vector2( 1, 1 ), Vector2( 1, 1 ), Vector2( -1, 1 ) ]
 }
 
-[node name="World" type="Node" index="0"]
+[sub_resource type="RectangleShape2D" id=3]
 
-[node name="StaticEnemy2" parent="." index="0" instance=ExtResource( 1 )]
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
 
-position = Vector2( 1080.13, 474.112 )
-_sections_unfolded = [ "Transform" ]
+[node name="World" type="Node"]
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="1"]
+script = ExtResource( 1 )
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." index="0"]
 
 layer = -1
 offset = Vector2( 0, 0 )
@@ -119,7 +121,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="CollisionTileMap" type="TileMap" parent="." index="2"]
+[node name="CollisionTileMap" type="TileMap" parent="." index="1"]
 
 position = Vector2( 1, 0 )
 scale = Vector2( 0.5, 0.5 )
@@ -145,7 +147,7 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Scenery" type="Node2D" parent="." index="3"]
+[node name="Scenery" type="Node2D" parent="." index="2"]
 
 editor/display_folded = true
 scale = Vector2( 0.5, 0.5 )
@@ -281,41 +283,7 @@ scale = Vector2( 0.38, 0.38 )
 texture = ExtResource( 17 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="BadassJohn" parent="." index="4" instance=ExtResource( 18 )]
-
-position = Vector2( 286.981, 443.813 )
-scale = Vector2( 0.3, 0.3 )
-_sections_unfolded = [ "Collision", "Material", "Transform", "collision" ]
-
-[node name="Camera2D" type="Camera2D" parent="BadassJohn" index="2"]
-
-position = Vector2( 1147.31, -1578.26 )
-scale = Vector2( 4.6182, 3.91798 )
-anchor_mode = 1
-rotating = false
-current = true
-zoom = Vector2( 1.1, 1.1 )
-limit_left = -10000000
-limit_top = -370
-limit_right = 10000000
-limit_bottom = -400
-limit_smoothed = true
-drag_margin_h_enabled = true
-drag_margin_v_enabled = true
-smoothing_enabled = false
-smoothing_speed = 5.0
-offset_v = 0.0
-offset_h = 0.0
-drag_margin_left = 0.2
-drag_margin_top = 0.2
-drag_margin_right = 0.2
-drag_margin_bottom = 0.2
-editor_draw_screen = true
-editor_draw_limits = false
-editor_draw_drag_margin = false
-_sections_unfolded = [ "Drag Margin", "Limit", "Smoothing", "Transform" ]
-
-[node name="Traps" type="Node2D" parent="." index="5"]
+[node name="Traps" type="Node2D" parent="." index="3"]
 
 editor/display_folded = true
 scale = Vector2( 0.5, 0.5 )
@@ -324,40 +292,40 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="SpikeTrap" parent="Traps" index="0" instance=ExtResource( 19 )]
+[node name="SpikeTrap" parent="Traps" index="0" instance=ExtResource( 18 )]
 
 position = Vector2( 5131.32, 953.285 )
 
-[node name="SpikeTrap2" parent="Traps" index="1" instance=ExtResource( 19 )]
+[node name="SpikeTrap2" parent="Traps" index="1" instance=ExtResource( 18 )]
 
 position = Vector2( 5413.73, 955.18 )
 
-[node name="Enemies" type="Node" parent="." index="6"]
+[node name="Enemies" type="Node" parent="." index="4"]
 
 editor/display_folded = true
 
-[node name="Gorilla" parent="Enemies" index="0" instance=ExtResource( 20 )]
+[node name="Gorilla" parent="Enemies" index="0" instance=ExtResource( 19 )]
 
 position = Vector2( 4419.59, 408.13 )
 
-[node name="Ghost" parent="Enemies" index="1" instance=ExtResource( 21 )]
+[node name="Ghost" parent="Enemies" index="1" instance=ExtResource( 20 )]
 
 position = Vector2( 1518.22, 437.794 )
 scale = Vector2( 1.3, 1.3 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Ghost2" parent="Enemies" index="2" instance=ExtResource( 21 )]
+[node name="Ghost2" parent="Enemies" index="2" instance=ExtResource( 20 )]
 
 position = Vector2( 2220.9, 441.668 )
 scale = Vector2( 2, 2 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Alien" parent="Enemies" index="3" instance=ExtResource( 22 )]
+[node name="Alien" parent="Enemies" index="3" instance=ExtResource( 21 )]
 
 position = Vector2( 3178.73, 432.937 )
 scale = Vector2( 0.4, 0.4 )
 
-[node name="Platforms" type="Node2D" parent="." index="7"]
+[node name="Platforms" type="Node2D" parent="." index="5"]
 
 editor/display_folded = true
 position = Vector2( -1.91467, 97.6506 )
@@ -368,36 +336,37 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Barrel" parent="Platforms" index="0" instance=ExtResource( 23 )]
+[node name="Barrel" parent="Platforms" index="0" instance=ExtResource( 22 )]
 
-[node name="Barrel6" parent="Platforms" index="1" instance=ExtResource( 23 )]
+[node name="Barrel6" parent="Platforms" index="1" instance=ExtResource( 22 )]
 
 position = Vector2( 4053.14, 713.965 )
 
-[node name="Barrel7" parent="Platforms" index="2" instance=ExtResource( 23 )]
+[node name="Barrel7" parent="Platforms" index="2" instance=ExtResource( 22 )]
 
 position = Vector2( 3847.39, 691.601 )
 rotation = 0.523599
 
-[node name="Barrel2" parent="Platforms" index="3" instance=ExtResource( 23 )]
+[node name="Barrel2" parent="Platforms" index="3" instance=ExtResource( 22 )]
 
 position = Vector2( 1994.75, 716.529 )
 
-[node name="Barrel3" parent="Platforms" index="4" instance=ExtResource( 23 )]
+[node name="Barrel3" parent="Platforms" index="4" instance=ExtResource( 22 )]
 
 position = Vector2( 2002.5, 491.771 )
 
-[node name="Barrel4" parent="Platforms" index="5" instance=ExtResource( 23 )]
+[node name="Barrel4" parent="Platforms" index="5" instance=ExtResource( 22 )]
 
 position = Vector2( 1669.23, 718.467 )
 
-[node name="Barrel5" parent="Platforms" index="6" instance=ExtResource( 23 )]
+[node name="Barrel5" parent="Platforms" index="6" instance=ExtResource( 22 )]
 
 position = Vector2( 1792.88, 479.076 )
 rotation = 0.785398
 
-[node name="Sky" type="ParallaxBackground" parent="." index="8"]
+[node name="Sky" type="ParallaxBackground" parent="." index="6"]
 
+editor/display_folded = true
 layer = -1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -420,7 +389,7 @@ _sections_unfolded = [ "Motion" ]
 [node name="cloud-dusk-1" type="Sprite" parent="Sky/ParallaxLayer" index="0"]
 
 position = Vector2( -661.344, -344.062 )
-texture = ExtResource( 24 )
+texture = ExtResource( 23 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
@@ -429,7 +398,7 @@ __meta__ = {
 [node name="cloud-dusk-2" type="Sprite" parent="Sky/ParallaxLayer" index="1"]
 
 position = Vector2( 564.069, -339.5 )
-texture = ExtResource( 25 )
+texture = ExtResource( 24 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -437,7 +406,7 @@ __meta__ = {
 [node name="cloud-dusk-3" type="Sprite" parent="Sky/ParallaxLayer" index="2"]
 
 position = Vector2( 1829.88, -284.469 )
-texture = ExtResource( 24 )
+texture = ExtResource( 23 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -445,9 +414,33 @@ __meta__ = {
 [node name="cloud-dusk-4" type="Sprite" parent="Sky/ParallaxLayer" index="3"]
 
 position = Vector2( 2805.3, -322.366 )
-texture = ExtResource( 24 )
+texture = ExtResource( 23 )
 __meta__ = {
 "_edit_lock_": true
 }
+
+[node name="SwitchToLevel2" type="Area2D" parent="." index="7"]
+
+position = Vector2( 5264.67, 149.016 )
+scale = Vector2( 6.91491, 11.2825 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwitchToLevel2" index="0"]
+
+position = Vector2( 13.9508, -8.37687 )
+scale = Vector2( 2.07314, 4.05859 )
+shape = SubResource( 3 )
+
+[node name="HeroWithCamera" parent="." index="8" instance=ExtResource( 25 )]
+
+position = Vector2( 376.931, 442.266 )
+
+[connection signal="body_entered" from="SwitchToLevel2" to="." method="_on_SwitchToLevel2_body_entered"]
 
 
