@@ -43,10 +43,18 @@ var raycast_generator
 var moving_direction
 var original_position
 var turning_around_time = 0
+var body_type
+var has_flipped = false
 
 
 func _ready():
+	var agent = get_agent()
 	moving_direction = get_controller().get_agent_initial_facing_direction()
+	
+	if agent.is_class("KinematicBody2D"):
+		body_type = "KinematicBody2D"
+	elif agent.is_class("Area2D"):
+		body_type = "Area2D"
 	
 	if wandering_distance > 0:
 		original_position = get_global_position()
@@ -70,11 +78,55 @@ func _ready():
 
 func _physics_process(delta):
 	var agent = get_agent()
-
+	
 	#increment counters
 	on_air_time += delta
+
+	if body_type == "Area2D":
+		move_area(delta)
+	elif body_type == "KinematicBody2D":
+		move_kinematic_body(delta)
+
 	
+	turning_around_time += delta
 	
+	### COLLISION DETECTION ###
+	if change_direction_when_colliding and detect_collision():
+		turn_around()
+	elif wandering_distance > 0:
+		var pos_x = get_global_position().x
+		if pos_x < original_position.x - wandering_distance or pos_x > original_position.x + wandering_distance:
+			if turning_around_time > 2:
+				turn_around()
+
+func move_area(delta):
+	var agent = get_agent()
+	var pos = agent.position
+	
+	if has_flipped:
+		a_torso.scale.x = -1
+	else:
+		a_torso.scale.x = 1
+
+	# Horizontal movement
+	var target_speed = 0
+	if moving_direction == "left":
+		target_speed += -1
+	elif moving_direction == "right":
+		target_speed += 1
+		
+
+	target_speed *= run_speed
+	linear_vel = Vector2(target_speed, 0)
+	linear_vel *= delta
+	
+	var newPos = agent.get_position() + linear_vel
+	newPos.y += delta * gravity
+	agent.set_position(newPos)
+
+
+func move_kinematic_body(delta):
+	var agent = get_agent()
 	### MOVEMENT ###
 	
 	# Apply Gravity
@@ -140,20 +192,6 @@ func _physics_process(delta):
 		controller.broadcast_status("movement", { "state": new_animation })
 
 
-	turning_around_time += delta
-
-	
-	### COLLISION DETECTION ###
-	if change_direction_when_colliding and detect_collision():
-		turn_around()
-	elif wandering_distance > 0:
-		var pos_x = get_global_position().x
-		if pos_x < original_position.x - wandering_distance or pos_x > original_position.x + wandering_distance:
-			if turning_around_time > 2:
-				turn_around()
-
-
-
 func detect_collision():
 	for ray in raycast_generator.rays:
 		if ray.is_colliding():
@@ -179,6 +217,7 @@ func turn_around():
 	get_controller().set_agent_data("moving_direction", moving_direction)
 	get_controller().broadcast_status("flip_horizontal")
 	turning_around_time = 0
+	has_flipped = !has_flipped
 
 
 # DEBUG ===================================

@@ -6,7 +6,7 @@
 [ext_resource path="res://jv/Demos/Minimal/Scenes/DestructibleBox.tscn" type="PackedScene" id=4]
 [ext_resource path="res://jv/Demos/Minimal/Scenes/Trap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://hackday/player/BadassJohn.tscn" type="PackedScene" id=6]
-[ext_resource path="res://jv/Demos/Minimal/Scenes/StaticEnemy.tscn" type="PackedScene" id=7]
+[ext_resource path="res://hackday/enemy/Ghost.tscn" type="PackedScene" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -49,7 +49,7 @@ __meta__ = {
 ]]
 
 editor/display_folded = true
-position = Vector2( 1781.28, 741.335 )
+position = Vector2( 510, 550 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -69,23 +69,52 @@ texture = ExtResource( 3 )
 
 shape = SubResource( 1 )
 
-[node name="destructible" parent="." index="3" instance=ExtResource( 4 )]
+[node name="platform2" type="StaticBody2D" parent="." index="3" groups=[
+"platform",
+]]
+
+editor/display_folded = true
+position = Vector2( 1120, 500 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="platform2" index="0"]
+
+texture = ExtResource( 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="platform2" index="1"]
+
+shape = SubResource( 1 )
+
+[node name="destructible" parent="." index="4" instance=ExtResource( 4 )]
 
 position = Vector2( 2325.36, 730.982 )
 
-[node name="Trap" parent="." index="4" instance=ExtResource( 5 )]
+[node name="Trap" parent="." index="5" instance=ExtResource( 5 )]
 
 position = Vector2( -22.9877, 826.984 )
 scale = Vector2( 3.87432, 1 )
 
-[node name="BadassJohn" parent="." index="5" instance=ExtResource( 6 )]
+[node name="BadassJohn" parent="." index="6" instance=ExtResource( 6 )]
 
 position = Vector2( 527.392, 439.963 )
 scale = Vector2( 0.3, 0.3 )
 _sections_unfolded = [ "Collision", "Material", "Transform", "collision" ]
 
-[node name="StaticEnemy" parent="." index="6" instance=ExtResource( 7 )]
+[node name="Ghost" parent="." index="7" instance=ExtResource( 7 )]
 
-position = Vector2( 1430, 740 )
+position = Vector2( 740, 710 )
+
+[node name="Ghost2" parent="." index="8" instance=ExtResource( 7 )]
+
+position = Vector2( 960, 710 )
 
 

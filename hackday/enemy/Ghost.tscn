@@ -32,38 +32,38 @@
 [ext_resource path="res://hackday/assets/enemy/Ghost/Idle Blinking/Idle Blinking_029.png" type="Texture" id=30]
 [ext_resource path="res://hackday/assets/enemy/Ghost/Idle Blinking/Idle Blinking_030.png" type="Texture" id=31]
 [ext_resource path="res://hackday/assets/enemy/Ghost/Idle Blinking/Idle Blinking_031.png" type="Texture" id=32]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_000.png" type="Texture" id=33]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_001.png" type="Texture" id=34]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_002.png" type="Texture" id=35]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_003.png" type="Texture" id=36]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_004.png" type="Texture" id=37]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_005.png" type="Texture" id=38]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_006.png" type="Texture" id=39]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_007.png" type="Texture" id=40]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_008.png" type="Texture" id=41]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_009.png" type="Texture" id=42]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_010.png" type="Texture" id=43]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_011.png" type="Texture" id=44]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_012.png" type="Texture" id=45]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_013.png" type="Texture" id=46]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_014.png" type="Texture" id=47]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_015.png" type="Texture" id=48]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_016.png" type="Texture" id=49]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_017.png" type="Texture" id=50]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_018.png" type="Texture" id=51]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_019.png" type="Texture" id=52]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_000.png" type="Texture" id=53]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_001.png" type="Texture" id=54]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_002.png" type="Texture" id=55]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_003.png" type="Texture" id=56]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_004.png" type="Texture" id=57]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_005.png" type="Texture" id=58]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_006.png" type="Texture" id=59]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_007.png" type="Texture" id=60]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_008.png" type="Texture" id=61]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_009.png" type="Texture" id=62]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_010.png" type="Texture" id=63]
-[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_011.png" type="Texture" id=64]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_000.png" type="Texture" id=33]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_001.png" type="Texture" id=34]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_002.png" type="Texture" id=35]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_003.png" type="Texture" id=36]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_004.png" type="Texture" id=37]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_005.png" type="Texture" id=38]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_006.png" type="Texture" id=39]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_007.png" type="Texture" id=40]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_008.png" type="Texture" id=41]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_009.png" type="Texture" id=42]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_010.png" type="Texture" id=43]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Smoke/Smoke_011.png" type="Texture" id=44]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_000.png" type="Texture" id=45]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_001.png" type="Texture" id=46]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_002.png" type="Texture" id=47]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_003.png" type="Texture" id=48]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_004.png" type="Texture" id=49]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_005.png" type="Texture" id=50]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_006.png" type="Texture" id=51]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_007.png" type="Texture" id=52]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_008.png" type="Texture" id=53]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_009.png" type="Texture" id=54]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_010.png" type="Texture" id=55]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_011.png" type="Texture" id=56]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_012.png" type="Texture" id=57]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_013.png" type="Texture" id=58]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_014.png" type="Texture" id=59]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_015.png" type="Texture" id=60]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_016.png" type="Texture" id=61]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_017.png" type="Texture" id=62]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_018.png" type="Texture" id=63]
+[ext_resource path="res://hackday/assets/enemy/Ghost/Slashing/Slashing_019.png" type="Texture" id=64]
 [ext_resource path="res://hackday/assets/enemy/Ghost/Hurt/Hurt_000.png" type="Texture" id=65]
 [ext_resource path="res://hackday/assets/enemy/Ghost/Hurt/Hurt_001.png" type="Texture" id=66]
 [ext_resource path="res://hackday/assets/enemy/Ghost/Hurt/Hurt_002.png" type="Texture" id=67]
@@ -97,15 +97,15 @@ animations = [ {
 "name": "idle",
 "speed": 24.0
 }, {
-"frames": [ ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ) ],
-"loop": true,
-"name": "run",
-"speed": 30.0
-}, {
-"frames": [ ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ) ],
+"frames": [ ExtResource( 33 ), ExtResource( 34 ), ExtResource( 35 ), ExtResource( 36 ), ExtResource( 37 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ) ],
 "loop": true,
 "name": "die",
 "speed": 24.0
+}, {
+"frames": [ ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ) ],
+"loop": true,
+"name": "run",
+"speed": 30.0
 }, {
 "frames": [ ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ) ],
 "loop": false,
@@ -113,14 +113,17 @@ animations = [ {
 "speed": 30.0
 } ]
 
-[node name="Ghost" type="KinematicBody2D" groups=[
+[node name="Ghost" type="Area2D" groups=[
 "enemy",
 ]]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
-collision/safe_margin = 0.08
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
 
 [node name="agent_shape" type="CollisionShape2D" parent="." index="0"]
 
@@ -139,7 +142,7 @@ __meta__ = {
 scale = Vector2( -0.2, 0.2 )
 frames = SubResource( 2 )
 animation = "run"
-frame = 8
+frame = 19
 playing = true
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -158,15 +161,16 @@ agent_initial_facing_direction = "left"
 script = ExtResource( 82 )
 disabled = false
 debug = false
-gravity = 900
+gravity = 0
 run_speed = 250
 slope_slide_stop = 25.0
 movement_sound_manager = null
 damage_target_on_contact = 10
-wandering_distance = 0
+wandering_distance = 300
 change_direction_when_colliding = true
 number_of_collision_raycasts = 1
 collision_distance = 50
+collision_ray_gap = 20
 
 [node name="Health" type="Node2D" parent="agent_torso/Controller" index="1"]
 
