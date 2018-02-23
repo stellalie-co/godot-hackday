@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://jv/Demos/Minimal/Scenes/StaticEnemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://hackday/assets/background/game_scene_1.png" type="Texture" id=2]
@@ -15,18 +15,16 @@
 [ext_resource path="res://hackday/assets/tiles/Building Set/Structures/Pre Made Structures/Closed-Shop-Single.png" type="Texture" id=13]
 [ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Garbage-Bag-1.png" type="Texture" id=14]
 [ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Trash-Container-Yellow-Opened.png" type="Texture" id=15]
-[ext_resource path="res://hackday/assets/background/logo.png" type="Texture" id=16]
-[ext_resource path="res://hackday/assets/background/logo-text.png" type="Texture" id=17]
-[ext_resource path="res://hackday/player/BadassJohn.tscn" type="PackedScene" id=18]
-[ext_resource path="res://hackday/traps/SpikeTrap.tscn" type="PackedScene" id=19]
-[ext_resource path="res://hackday/enemy/Gorilla.tscn" type="PackedScene" id=20]
-[ext_resource path="res://hackday/enemy/Ghost.tscn" type="PackedScene" id=21]
-[ext_resource path="res://hackday/enemy/Alien.tscn" type="PackedScene" id=22]
-[ext_resource path="res://hackday/platforms/Barrel.tscn" type="PackedScene" id=23]
-[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-1.png" type="Texture" id=24]
-[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-2.png" type="Texture" id=25]
+[ext_resource path="res://hackday/player/BadassJohn.tscn" type="PackedScene" id=16]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Traps/Spikes/Spikes-Bloody.png" type="Texture" id=17]
+[ext_resource path="res://hackday/enemy/Gorilla.tscn" type="PackedScene" id=18]
+[ext_resource path="res://hackday/enemy/Ghost.tscn" type="PackedScene" id=19]
+[ext_resource path="res://hackday/enemy/Alien.tscn" type="PackedScene" id=20]
+[ext_resource path="res://hackday/platforms/Barrel.tscn" type="PackedScene" id=21]
+[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-1.png" type="Texture" id=22]
+[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-2.png" type="Texture" id=23]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
@@ -195,7 +193,7 @@ bounce = 0.0
 
 position = Vector2( 13.8166, 68.9582 )
 scale = Vector2( 47.3539, 62.5393 )
-shape = SubResource( 1 )
+shape = SubResource( 3 )
 
 [node name="Tree-Street-1" type="Sprite" parent="Scenery" index="3"]
 
@@ -263,26 +261,7 @@ z_index = -5
 texture = ExtResource( 15 )
 _sections_unfolded = [ "Z Index" ]
 
-[node name="LearnosityBuilding" type="Sprite" parent="Scenery" index="13"]
-
-position = Vector2( 8363.74, 316.306 )
-texture = ExtResource( 6 )
-
-[node name="logo" type="Sprite" parent="Scenery/LearnosityBuilding" index="0"]
-
-position = Vector2( -372.803, 184.546 )
-scale = Vector2( 0.4, 0.4 )
-texture = ExtResource( 16 )
-_sections_unfolded = [ "Transform" ]
-
-[node name="logo-text" type="Sprite" parent="Scenery/LearnosityBuilding" index="1"]
-
-position = Vector2( -65.5788, 184.74 )
-scale = Vector2( 0.38, 0.38 )
-texture = ExtResource( 17 )
-_sections_unfolded = [ "Transform" ]
-
-[node name="BadassJohn" parent="." index="4" instance=ExtResource( 18 )]
+[node name="BadassJohn" parent="." index="4" instance=ExtResource( 16 )]
 
 editor/display_folded = true
 position = Vector2( 286.981, 443.813 )
@@ -323,69 +302,68 @@ editor/display_folded = true
 scale = Vector2( 0.5, 0.5 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="SpikeTrap" parent="Traps" index="0" instance=ExtResource( 19 )]
+[node name="Spikes-Bloody" type="Sprite" parent="Traps" index="0"]
 
-position = Vector2( 5131.32, 953.285 )
+position = Vector2( 5453.17, 915.684 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 17 )
 
-[node name="SpikeTrap2" parent="Traps" index="1" instance=ExtResource( 19 )]
+[node name="Spikes-Bloody2" type="Sprite" parent="Traps" index="1"]
 
-position = Vector2( 5413.73, 955.18 )
+position = Vector2( 5903.67, 913.701 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 17 )
 
 [node name="Enemies" type="Node" parent="." index="6"]
 
-[node name="Gorilla" parent="Enemies" index="0" instance=ExtResource( 20 )]
+[node name="Gorilla" parent="Enemies" index="0" instance=ExtResource( 18 )]
 
-position = Vector2( 4419.59, 408.13 )
+position = Vector2( 1352.33, 421.771 )
 
-[node name="Ghost" parent="Enemies" index="1" instance=ExtResource( 21 )]
+[node name="Ghost" parent="Enemies" index="1" instance=ExtResource( 19 )]
 
-position = Vector2( 1518.22, 437.794 )
-scale = Vector2( 1.3, 1.3 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 2369.07, 420.393 )
 
-[node name="Ghost2" parent="Enemies" index="2" instance=ExtResource( 21 )]
+[node name="Ghost2" parent="Enemies" index="2" instance=ExtResource( 19 )]
 
-position = Vector2( 2220.9, 441.668 )
-scale = Vector2( 2, 2 )
-_sections_unfolded = [ "Transform" ]
+position = Vector2( 2220.05, 477.372 )
 
-[node name="Alien" parent="Enemies" index="3" instance=ExtResource( 22 )]
+[node name="Alien" parent="Enemies" index="3" instance=ExtResource( 20 )]
 
-position = Vector2( 3178.73, 432.937 )
+position = Vector2( 3179.41, 428.16 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Platforms" type="Node2D" parent="." index="7"]
 
-editor/display_folded = true
 position = Vector2( -1.91467, 97.6506 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 7
 _sections_unfolded = [ "Transform", "Z Index" ]
 
-[node name="Barrel" parent="Platforms" index="0" instance=ExtResource( 23 )]
+[node name="Barrel" parent="Platforms" index="0" instance=ExtResource( 21 )]
 
-[node name="Barrel6" parent="Platforms" index="1" instance=ExtResource( 23 )]
+[node name="Barrel6" parent="Platforms" index="1" instance=ExtResource( 21 )]
 
 position = Vector2( 4053.14, 713.965 )
 
-[node name="Barrel7" parent="Platforms" index="2" instance=ExtResource( 23 )]
+[node name="Barrel7" parent="Platforms" index="2" instance=ExtResource( 21 )]
 
 position = Vector2( 3847.39, 691.601 )
 rotation = 0.523599
 
-[node name="Barrel2" parent="Platforms" index="3" instance=ExtResource( 23 )]
+[node name="Barrel2" parent="Platforms" index="3" instance=ExtResource( 21 )]
 
 position = Vector2( 1994.75, 716.529 )
 
-[node name="Barrel3" parent="Platforms" index="4" instance=ExtResource( 23 )]
+[node name="Barrel3" parent="Platforms" index="4" instance=ExtResource( 21 )]
 
 position = Vector2( 2002.5, 491.771 )
 
-[node name="Barrel4" parent="Platforms" index="5" instance=ExtResource( 23 )]
+[node name="Barrel4" parent="Platforms" index="5" instance=ExtResource( 21 )]
 
 position = Vector2( 1669.23, 718.467 )
 
-[node name="Barrel5" parent="Platforms" index="6" instance=ExtResource( 23 )]
+[node name="Barrel5" parent="Platforms" index="6" instance=ExtResource( 21 )]
 
 position = Vector2( 1792.88, 479.076 )
 rotation = 0.785398
@@ -414,22 +392,22 @@ _sections_unfolded = [ "Motion" ]
 [node name="cloud-dusk-1" type="Sprite" parent="Sky/ParallaxLayer" index="0"]
 
 position = Vector2( -661.344, -344.062 )
-texture = ExtResource( 24 )
+texture = ExtResource( 22 )
 _sections_unfolded = [ "Transform" ]
 
 [node name="cloud-dusk-2" type="Sprite" parent="Sky/ParallaxLayer" index="1"]
 
 position = Vector2( 555.092, -356.165 )
-texture = ExtResource( 25 )
+texture = ExtResource( 23 )
 
 [node name="cloud-dusk-3" type="Sprite" parent="Sky/ParallaxLayer" index="2"]
 
 position = Vector2( 1829.88, -284.469 )
-texture = ExtResource( 24 )
+texture = ExtResource( 22 )
 
 [node name="cloud-dusk-4" type="Sprite" parent="Sky/ParallaxLayer" index="3"]
 
 position = Vector2( 2805.3, -322.366 )
-texture = ExtResource( 24 )
+texture = ExtResource( 22 )
 
 

@@ -120,7 +120,7 @@ _sections_unfolded = [ "Resource" ]
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
-extents = Vector2( 146.376, 187.552 )
+extents = Vector2( 149.885, 192.184 )
 
 [node name="Alien" type="KinematicBody2D" groups=[
 "enemy",
@@ -145,7 +145,7 @@ position = Vector2( 0, -3.07922 )
 scale = Vector2( 1, 1 )
 frames = SubResource( 2 )
 animation = "idle"
-frame = 7
+frame = 2
 playing = true
 
 [node name="Controller" type="Node2D" parent="agent_torso" index="1"]
@@ -205,7 +205,7 @@ projectile_animation_identifier = null
 projectile_start_position = NodePath("MachineGunBulletStartPosition")
 override_bullet_damage = 0
 spawn_count = 1
-ray_x = 700
+ray_x = 400
 ray_y = 0
 number_of_raycasts = 5
 ray_gap = 10
@@ -216,7 +216,7 @@ position = Vector2( -18.5894, -0.658311 )
 
 [node name="agent_shape" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( -21.4504, -22.2798 )
+position = Vector2( -13.2955, -14.9096 )
 shape = SubResource( 1 )
 
 
