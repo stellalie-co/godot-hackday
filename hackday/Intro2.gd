@@ -13,5 +13,5 @@ func _ready():
 	
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
-		get_tree().change_scene("res://hackday/Intro3.tscn")
+		get_tree().change_scene("res://hackday/Level1.tscn")
 	pass

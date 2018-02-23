@@ -18,6 +18,6 @@ func _input(event):
 	pass
 
 
-func _on_Animation_animation_started( anim_name ):
+func _on_Animation_animation_started(anim_name):
 	if (anim_name == "LabelDrop"):
 			$AnimationSound.stop()

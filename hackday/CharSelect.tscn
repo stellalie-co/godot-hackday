@@ -75,8 +75,8 @@ __meta__ = {
 
 [node name="AnimatedSprite" parent="." index="1" instance=ExtResource( 3 )]
 
-position = Vector2( 1147.85, 629.028 )
-scale = Vector2( 0.766704, 0.766704 )
+position = Vector2( 750.376, 732.789 )
+scale = Vector2( 2.47431, 2.2425 )
 frame = 0
 
 [node name="AnimatedSprite2" parent="." index="2" instance=ExtResource( 3 )]
@@ -161,7 +161,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="John" type="AnimatedSprite" parent="Chars" index="3"]
 
-position = Vector2( 933.385, 702.558 )
+position = Vector2( 940.522, 697.205 )
 frames = ExtResource( 6 )
 animation = "idle"
 
