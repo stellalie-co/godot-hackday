@@ -14,17 +14,17 @@
 [ext_resource path="res://hackday/scenes/HeroWithCamera.tscn" type="PackedScene" id=12]
 [ext_resource path="res://hackday/assets/sounds/Wave_After_Wave_v0_9.ogg" type="AudioStream" id=13]
 
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
 [sub_resource type="RectangleShape2D" id=3]
-
-custom_solver_bias = 0.0
-extents = Vector2( 10, 10 )
-
-[sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
@@ -151,21 +151,15 @@ _sections_unfolded = [ "Transform" ]
 position = Vector2( 1490.42, 321.346 )
 texture = ExtResource( 8 )
 
-[node name="Platforms" type="Area2D" parent="." index="3"]
+[node name="Platforms" type="Node2D" parent="." index="3"]
 
 position = Vector2( 380.591, -110.349 )
-input_pickable = true
-gravity_vec = Vector2( 0, 1 )
-gravity = 98.0
-linear_damp = 0.1
-angular_damp = 1.0
-audio_bus_override = false
-audio_bus_name = "Master"
 
 [node name="StaticBody2D" type="StaticBody2D" parent="Platforms" index="0" groups=[
 "platform",
 ]]
 
+editor/display_folded = true
 position = Vector2( 363.802, 300.756 )
 scale = Vector2( 7.23139, 1.17944 )
 input_pickable = false
@@ -180,12 +174,13 @@ bounce = 0.0
 
 position = Vector2( 0.468477, 8.6099 )
 scale = Vector2( 3.23999, 3.48832 )
-shape = SubResource( 2 )
+shape = SubResource( 1 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="Platforms" index="1" groups=[
 "platform",
 ]]
 
+editor/display_folded = true
 position = Vector2( 359.307, -133.299 )
 scale = Vector2( 7.26628, 2.67427 )
 input_pickable = false
@@ -201,7 +196,7 @@ _sections_unfolded = [ "Collision" ]
 
 position = Vector2( 0.494557, 9.68421 )
 scale = Vector2( 3.3198, 4.50202 )
-shape = SubResource( 3 )
+shape = SubResource( 2 )
 
 [node name="Enemies" type="Node" parent="." index="4"]
 
@@ -289,7 +284,7 @@ audio_bus_name = "Master"
 
 position = Vector2( -343.116, -224.41 )
 scale = Vector2( 17.3747, 30.0535 )
-shape = SubResource( 1 )
+shape = SubResource( 3 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="8"]
 

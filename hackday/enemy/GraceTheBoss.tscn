@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://hackday/enemy/GraceTheBoss.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://jv/Engine/AI/Enemy/EnemyController.gd" type="Script" id=2]
@@ -7,8 +7,10 @@
 [ext_resource path="res://jv/Demos/Minimal/Scenes/SkillSlots.gd" type="Script" id=5]
 [ext_resource path="res://jv/Engine/AI/Enemy/ShootProjectileSkill.gd" type="Script" id=6]
 [ext_resource path="res://hackday/FireballBullet.tscn" type="PackedScene" id=7]
+[ext_resource path="res://hackday/assets/sounds/high_pitch_scream.ogg" type="AudioStream" id=8]
+[ext_resource path="res://hackday/Lightning.tscn" type="PackedScene" id=9]
 
-[node name="Gorilla" type="KinematicBody2D" index="0" groups=[
+[node name="Gorilla" type="KinematicBody2D" groups=[
 "enemy",
 ]]
 
@@ -28,7 +30,7 @@ __meta__ = {
 scale = Vector2( -1, 1 )
 frames = ExtResource( 1 )
 animation = "idle"
-frame = 15
+frame = 22
 playing = true
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -87,6 +89,7 @@ skill_priority = 0
 projectile_type = ExtResource( 7 )
 projectile_animation_identifier = null
 projectile_start_position = NodePath("MachineGunBulletStartPosition")
+audio_player = NodePath("AudioStreamPlayer")
 override_bullet_damage = 0
 override_bullet_speed = 700
 spawn_count = 5
@@ -98,6 +101,47 @@ ray_gap = 30
 [node name="MachineGunBulletStartPosition" type="Position2D" parent="agent_torso/Controller/SkillSlots/ShootMachineGunBullet" index="0"]
 
 position = Vector2( -273.679, -5.34337 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="agent_torso/Controller/SkillSlots/ShootMachineGunBullet" index="1"]
+
+stream = ExtResource( 8 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="ShootMachineGunBullet2" type="Node2D" parent="agent_torso/Controller/SkillSlots" index="1"]
+
+script = ExtResource( 6 )
+_sections_unfolded = [ "Transform" ]
+disabled = false
+debug = false
+cooldown_time = 3
+skill_animation = ""
+skill_priority = 0
+projectile_type = ExtResource( 9 )
+projectile_animation_identifier = null
+projectile_start_position = NodePath("MachineGunBulletStartPosition")
+audio_player = NodePath("AudioStreamPlayer")
+override_bullet_damage = 0
+override_bullet_speed = 700
+spawn_count = 10
+ray_x = 1000
+ray_y = 0
+number_of_raycasts = 10
+ray_gap = 30
+
+[node name="MachineGunBulletStartPosition" type="Position2D" parent="agent_torso/Controller/SkillSlots/ShootMachineGunBullet2" index="0"]
+
+position = Vector2( -273.679, -5.34337 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="agent_torso/Controller/SkillSlots/ShootMachineGunBullet2" index="1"]
+
+stream = ExtResource( 8 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
 
 [node name="agent_shape" type="CollisionPolygon2D" parent="." index="1"]
 
