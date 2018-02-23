@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/metalbang2.ogg-aa1d70798df1dae0e21e2d2724e559f0.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/metalbang2.ogg"
+source_md5="9bc40e8de742b73191d0ad4995dbea0e"
+
+dest_files=[ "res://.import/metalbang2.ogg-aa1d70798df1dae0e21e2d2724e559f0.oggstr" ]
+dest_md5="890a4d9aefff0c05474b3324fcabd9a5"
+
+[params]
+
+loop=true
+loop_offset=0

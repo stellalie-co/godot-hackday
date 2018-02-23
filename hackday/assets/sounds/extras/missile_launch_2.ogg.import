@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/missile_launch_2.ogg-018fc50c8db3afbaa1f3618afc1e435d.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/missile_launch_2.ogg"
+source_md5="8de907883a21fe2491c946f83eb60680"
+
+dest_files=[ "res://.import/missile_launch_2.ogg-018fc50c8db3afbaa1f3618afc1e435d.oggstr" ]
+dest_md5="4814cf99ea61434cf11ad66be92c34bf"
+
+[params]
+
+loop=true
+loop_offset=0

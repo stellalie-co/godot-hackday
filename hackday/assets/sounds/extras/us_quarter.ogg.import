@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/us_quarter.ogg-a2b2c7065e4619a045698facf96cdeba.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/us_quarter.ogg"
+source_md5="de7d27b18a36bc215be5268ee0b2cfed"
+
+dest_files=[ "res://.import/us_quarter.ogg-a2b2c7065e4619a045698facf96cdeba.oggstr" ]
+dest_md5="431244d6b7d602c23c5fd6d87307aa7b"
+
+[params]
+
+loop=true
+loop_offset=0

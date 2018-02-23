@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/radar_ready.ogg-f9afd64275c99e995c890188006a5730.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/radar_ready.ogg"
+source_md5="1fe87c7ba7963dca9aacf60a2b81d576"
+
+dest_files=[ "res://.import/radar_ready.ogg-f9afd64275c99e995c890188006a5730.oggstr" ]
+dest_md5="2086f4bce42163ba854221ea0204130c"
+
+[params]
+
+loop=true
+loop_offset=0

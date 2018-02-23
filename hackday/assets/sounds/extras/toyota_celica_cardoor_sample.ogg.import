@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/toyota_celica_cardoor_sample.ogg-9d6d6931d7b4df76ce9300b276343168.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/toyota_celica_cardoor_sample.ogg"
+source_md5="eac75a46771bb9888d3a5a03c3ed4d7b"
+
+dest_files=[ "res://.import/toyota_celica_cardoor_sample.ogg-9d6d6931d7b4df76ce9300b276343168.oggstr" ]
+dest_md5="ac56ead7128f9e79869bff1e88a453f3"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/big_explosion.ogg-78c1106f32e4bff9f2209db286b505ed.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/big_explosion.ogg"
+source_md5="e037d0b90206737f8c5c5ef976426fb8"
+
+dest_files=[ "res://.import/big_explosion.ogg-78c1106f32e4bff9f2209db286b505ed.oggstr" ]
+dest_md5="75105c94440d797ab33b42a30de0a7ac"
+
+[params]
+
+loop=true
+loop_offset=0

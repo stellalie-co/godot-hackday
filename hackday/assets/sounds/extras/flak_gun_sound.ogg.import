@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/flak_gun_sound.ogg-4062afddce3f9e865d81deeb656a7f15.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/flak_gun_sound.ogg"
+source_md5="9c069a4b660a82eb1319aa5e92ceffe3"
+
+dest_files=[ "res://.import/flak_gun_sound.ogg-4062afddce3f9e865d81deeb656a7f15.oggstr" ]
+dest_md5="d66f407b4ffab66cfa9eeba334cefc8f"
+
+[params]
+
+loop=true
+loop_offset=0

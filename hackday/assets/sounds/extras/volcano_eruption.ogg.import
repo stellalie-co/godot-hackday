@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/volcano_eruption.ogg-f333a9e8809c7de0e1d9625fe7192534.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/volcano_eruption.ogg"
+source_md5="568c07b664c9f247d36b158bf261496c"
+
+dest_files=[ "res://.import/volcano_eruption.ogg-f333a9e8809c7de0e1d9625fe7192534.oggstr" ]
+dest_md5="6c0493968647f8ed7e8ad090919bc647"
+
+[params]
+
+loop=true
+loop_offset=0

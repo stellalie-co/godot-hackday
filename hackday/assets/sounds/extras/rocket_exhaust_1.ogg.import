@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/rocket_exhaust_1.ogg-e1f0c6098f5791f8b036c0e0f0c91e9f.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/rocket_exhaust_1.ogg"
+source_md5="3ddd34b7e418bdde8f4a24ee6039f5bd"
+
+dest_files=[ "res://.import/rocket_exhaust_1.ogg-e1f0c6098f5791f8b036c0e0f0c91e9f.oggstr" ]
+dest_md5="6738790cef025aecf87b33a7b390dfcc"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/bodyslam.ogg-75a0b84e1de3d0bbe7db393217d715d5.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/bodyslam.ogg"
+source_md5="61a69714e8bddbb7e81c45771d712746"
+
+dest_files=[ "res://.import/bodyslam.ogg-75a0b84e1de3d0bbe7db393217d715d5.oggstr" ]
+dest_md5="57a9d818c476bbd07b3e279a6c0b8fdd"
+
+[params]
+
+loop=true
+loop_offset=0

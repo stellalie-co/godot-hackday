@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/run firing_016.png-671aeb195a2f668c570ee2bcd90e7390.stex"
+
+[deps]
+
+source_file="res://hackday/assets/chars/run/run firing_016.png"
+source_md5="a27f109f8914bd7a9d89c1fd7415344d"
+
+dest_files=[ "res://.import/run firing_016.png-671aeb195a2f668c570ee2bcd90e7390.stex" ]
+dest_md5="d3158990019fdc441c5610eedd25ac09"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

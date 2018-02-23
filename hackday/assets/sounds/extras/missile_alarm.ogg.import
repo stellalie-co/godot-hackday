@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/missile_alarm.ogg-af44040f5c3a2675bbdb6c69b972fcaf.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/missile_alarm.ogg"
+source_md5="8d3f6d2c0af3b22f18d35f1978748f46"
+
+dest_files=[ "res://.import/missile_alarm.ogg-af44040f5c3a2675bbdb6c69b972fcaf.oggstr" ]
+dest_md5="4d13c722f878ac4febef896c9c18b9aa"
+
+[params]
+
+loop=true
+loop_offset=0

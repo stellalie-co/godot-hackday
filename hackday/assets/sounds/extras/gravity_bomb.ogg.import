@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/gravity_bomb.ogg-574be4298db91650fc8c51829f4212ce.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/gravity_bomb.ogg"
+source_md5="a415bc1123d91ff615e14553de3dbf4a"
+
+dest_files=[ "res://.import/gravity_bomb.ogg-574be4298db91650fc8c51829f4212ce.oggstr" ]
+dest_md5="d8ff8febfc98b0e363a0d191e23fcbec"
+
+[params]
+
+loop=true
+loop_offset=0

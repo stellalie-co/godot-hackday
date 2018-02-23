@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/stonebang1.ogg-c735227db7b66cd86e826e9155273ebd.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/stonebang1.ogg"
+source_md5="06505ad1be57d74e89c015e9635bba25"
+
+dest_files=[ "res://.import/stonebang1.ogg-c735227db7b66cd86e826e9155273ebd.oggstr" ]
+dest_md5="acaf100077e136f460efee809513d030"
+
+[params]
+
+loop=true
+loop_offset=0

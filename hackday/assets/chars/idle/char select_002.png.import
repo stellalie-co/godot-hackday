@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/char select_002.png-069d0a53484c2437fda063642456e54e.stex"
+
+[deps]
+
+source_file="res://hackday/assets/chars/idle/char select_002.png"
+source_md5="a1497f777d8dc0df05237bfd57e74a09"
+
+dest_files=[ "res://.import/char select_002.png-069d0a53484c2437fda063642456e54e.stex" ]
+dest_md5="c07b4aa38a9d0f1df64c7d7491e2868a"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

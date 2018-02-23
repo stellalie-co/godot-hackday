@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/timpani_boing.ogg-7606e24ad467f058f98f82e047d07e31.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/timpani_boing.ogg"
+source_md5="800193cf8bdd98d1e2e5853074bd7e74"
+
+dest_files=[ "res://.import/timpani_boing.ogg-7606e24ad467f058f98f82e047d07e31.oggstr" ]
+dest_md5="e278d3115a7a0a92b038b3e80bbf4919"
+
+[params]
+
+loop=true
+loop_offset=0

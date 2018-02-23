@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/new_ground_smack.ogg-3103af3f6e2c34b7cb40e8e0a012dc92.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/new_ground_smack.ogg"
+source_md5="43d930198661baf2eb20445c0d893ed6"
+
+dest_files=[ "res://.import/new_ground_smack.ogg-3103af3f6e2c34b7cb40e8e0a012dc92.oggstr" ]
+dest_md5="5dacef494d6fb61e2bab58f61d8de57e"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,40 +1,485 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://hackday/sl_assets/Art Packs/Game Effects Pack/flame/flame_0.png" type="Texture" id=1]
-[ext_resource path="res://hackday/sl_assets/Art Packs/Game Effects Pack/flame/flame_1.png" type="Texture" id=2]
-[ext_resource path="res://hackday/sl_assets/Art Packs/Game Effects Pack/flame/flame_2.png" type="Texture" id=3]
-[ext_resource path="res://hackday/sl_assets/Art Packs/Game Effects Pack/flame/flame_3.png" type="Texture" id=4]
-[ext_resource path="res://hackday/sl_assets/Art Packs/Game Effects Pack/electricity/electroball_archs_0.png" type="Texture" id=5]
-[ext_resource path="res://hackday/sl_assets/Art Packs/Game Effects Pack/electricity/electroball_archs_1.png" type="Texture" id=6]
-[ext_resource path="res://hackday/sl_assets/Art Packs/Game Effects Pack/electricity/electroball_archs_2.png" type="Texture" id=7]
-[ext_resource path="res://hackday/sl_assets/Art Packs/Game Effects Pack/electricity/electroball_back_0.png" type="Texture" id=8]
-[ext_resource path="res://hackday/sl_assets/Art Packs/Game Effects Pack/electricity/electroball_back_1.png" type="Texture" id=9]
-[ext_resource path="res://hackday/sl_assets/Art Packs/Game Effects Pack/electricity/electroball_back_2.png" type="Texture" id=10]
+[ext_resource path="res://hackday/CharSelect.gd" type="Script" id=1]
+[ext_resource path="res://hackday/assets/background/game_intro_3.png" type="Texture" id=2]
+[ext_resource path="res://hackday/scenes/Effects.tscn" type="PackedScene" id=3]
+[ext_resource path="res://hackday/assets/sounds/alarm.ogg" type="AudioStream" id=4]
+[ext_resource path="res://hackday/assets/fonts/Kenney Future Narrow.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://hackday/assets/John.tres" type="SpriteFrames" id=6]
+[ext_resource path="res://hackday/assets/undercons.png" type="Texture" id=7]
+[ext_resource path="res://hackday/assets/buttons/redSheet.png" type="Texture" id=8]
+[ext_resource path="res://hackday/assets/background/game_intro_3_trans.png" type="Texture" id=9]
 
-[sub_resource type="SpriteFrames" id=1]
+[sub_resource type="Animation" id=1]
 
-animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "flame",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 7 ) ],
-"loop": true,
-"name": "elctroball_1",
-"speed": 10.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 10 ) ],
-"loop": true,
-"name": "electroball_2",
-"speed": 10.0
-} ]
+resource_name = "BackgroundFlash"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("TextureRect:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.5, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 0.898438, 0.614166, 0.614166, 1 ), Color( 0.863281, 0.488968, 0.488968, 1 ), Color( 0.898438, 0.614166, 0.614166, 1 ) ]
+}
 
-[node name="Node" type="AnimatedSprite" index="0"]
+[sub_resource type="DynamicFont" id=2]
 
-frames = SubResource( 1 )
-animation = "flame"
-frame = 2
-playing = true
+size = 60
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 5 )
+_sections_unfolded = [ "Extra Spacing", "Font", "Font/fallback", "Settings" ]
+
+[sub_resource type="DynamicFont" id=3]
+
+size = 30
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 5 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Node" type="Node"]
+
+script = ExtResource( 1 )
+
+[node name="TextureRect" type="TextureRect" parent="." index="0"]
+
+modulate = Color( 0.898438, 0.614166, 0.614166, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -45.0
+margin_top = -25.0
+margin_right = 1642.0
+margin_bottom = 942.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 2 )
+expand = true
+stretch_mode = 0
+_sections_unfolded = [ "Anchor", "Focus", "Hint", "Margin", "Mouse", "Rect", "Size Flags", "Theme", "Visibility" ]
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AnimatedSprite" parent="." index="1" instance=ExtResource( 3 )]
+
+position = Vector2( 1147.85, 629.028 )
+scale = Vector2( 0.766704, 0.766704 )
+frame = 0
+
+[node name="AnimatedSprite2" parent="." index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 1377.22, 781.472 )
+scale = Vector2( 2.47229, 2.47229 )
+frame = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="3"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/BackgroundFlash = SubResource( 1 )
+blend_times = [  ]
+
+[node name="SirenSound" type="AudioStreamPlayer" parent="." index="4"]
+
+stream = ExtResource( 4 )
+volume_db = 0.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+[node name="FireSound" type="AudioStreamPlayer" parent="." index="5"]
+
+stream = null
+volume_db = 0.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+[node name="CharSelectLabel" type="Label" parent="." index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 460.0
+margin_top = 82.0
+margin_right = 1091.0
+margin_bottom = 150.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 2 )
+text = "Character Select"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts", "custom_styles" ]
+
+[node name="Chars" type="Node" parent="." index="7"]
+
+[node name="John2" type="AnimatedSprite" parent="Chars" index="0"]
+
+position = Vector2( 1134.09, 722.425 )
+frames = ExtResource( 6 )
+animation = "hurt"
+
+[node name="John3" type="AnimatedSprite" parent="Chars" index="1"]
+
+position = Vector2( 393.553, 725.368 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+frames = ExtResource( 6 )
+animation = "hurt"
+_sections_unfolded = [ "Transform" ]
+
+[node name="John4" type="AnimatedSprite" parent="Chars" index="2"]
+
+position = Vector2( 567.753, 700.132 )
+rotation = 3.14159
+scale = Vector2( 1, -1 )
+frames = ExtResource( 6 )
+animation = "idle"
+_sections_unfolded = [ "Transform" ]
+
+[node name="John" type="AnimatedSprite" parent="Chars" index="3"]
+
+position = Vector2( 933.385, 702.558 )
+frames = ExtResource( 6 )
+animation = "idle"
+
+[node name="UnderCons" type="TextureRect" parent="Chars" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 502.0
+margin_top = 429.0
+margin_right = 766.0
+margin_bottom = 658.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 0
+
+[node name="UnderCons3" type="TextureRect" parent="Chars" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 242.0
+margin_top = 455.0
+margin_right = 479.0
+margin_bottom = 660.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 0
+
+[node name="UnderCons2" type="TextureRect" parent="Chars" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1032.0
+margin_top = 444.0
+margin_right = 1303.0
+margin_bottom = 678.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 7 )
+expand = true
+stretch_mode = 0
+
+[node name="Buttons" type="Node" parent="." index="8"]
+
+[node name="JohnButton" type="Button" parent="Buttons" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 887.0
+margin_top = 801.0
+margin_right = 933.0
+margin_bottom = 821.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+flat = false
+align = 1
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Buttons/JohnButton" index="0"]
+
+modulate = Color( 0.851562, 0.0964661, 0.0964661, 1 )
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 0, 96, 190, 44 )
+_sections_unfolded = [ "Region", "Transform", "Visibility", "Z Index" ]
+
+[node name="CharSelectLabel2" type="Label" parent="Buttons/JohnButton" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -65.0
+margin_top = -20.0
+margin_right = 60.0
+margin_bottom = 21.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "John"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Focus", "Hint", "Mouse", "Rect", "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
+
+[node name="JackButton" type="Button" parent="Buttons" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1164.0
+margin_top = 804.0
+margin_right = 1210.0
+margin_bottom = 838.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Jack"
+flat = false
+align = 1
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Buttons/JackButton" index="0"]
+
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 1, 47, 189, 48 )
+_sections_unfolded = [ "Region" ]
+
+[node name="CharSelectLabel2" type="Label" parent="Buttons/JackButton" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -65.0
+margin_top = -20.0
+margin_right = 60.0
+margin_bottom = 21.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Jack"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Focus", "Hint", "Mouse", "Rect", "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
+
+[node name="MichalButton" type="Button" parent="Buttons" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 367.0
+margin_top = 805.0
+margin_right = 413.0
+margin_bottom = 825.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "JOHN"
+flat = false
+align = 1
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Buttons/MichalButton" index="0"]
+
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 1, 47, 189, 48 )
+_sections_unfolded = [ "Region", "Visibility" ]
+
+[node name="CharSelectLabel2" type="Label" parent="Buttons/MichalButton" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -65.0
+margin_top = -20.0
+margin_right = 60.0
+margin_bottom = 21.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Michal"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Focus", "Hint", "Mouse", "Rect", "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
+
+[node name="StellaButton" type="Button" parent="Buttons" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 626.0
+margin_top = 807.0
+margin_right = 673.0
+margin_bottom = 827.0
+rect_pivot_offset = Vector2( 0, 0 )
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+text = "Stella"
+flat = false
+align = 1
+_sections_unfolded = [ "Region" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Buttons/StellaButton" index="0"]
+
+texture = ExtResource( 8 )
+region_enabled = true
+region_rect = Rect2( 1, 47, 189, 48 )
+_sections_unfolded = [ "Region" ]
+
+[node name="CharSelectLabel2" type="Label" parent="Buttons/StellaButton" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -65.0
+margin_top = -20.0
+margin_right = 60.0
+margin_bottom = 21.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = SubResource( 3 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Stella"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Focus", "Hint", "Mouse", "Rect", "custom_colors", "custom_constants", "custom_fonts", "custom_styles" ]
+
+[node name="TextureRect2" type="TextureRect" parent="." index="9"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -45.0
+margin_top = -25.0
+margin_right = 1642.0
+margin_bottom = 942.0
+rect_pivot_offset = Vector2( 0, 0 )
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 9 )
+expand = true
+stretch_mode = 0
+__meta__ = {
+"_edit_lock_": true
+}
 
 

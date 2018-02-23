@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tesla_tower.ogg-ff16884e272f808281f183cfbb97ad58.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/tesla_tower.ogg"
+source_md5="80080d72895cece0a387457fbf740ff8"
+
+dest_files=[ "res://.import/tesla_tower.ogg-ff16884e272f808281f183cfbb97ad58.oggstr" ]
+dest_md5="8c305659be514ed1ce77211d30a597ca"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/tom_me_2_128.ogg-44195abdcf75d8f025dae5d06843ca8f.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/tom_me_2_128.ogg"
+source_md5="69d4214a617e5f1c1e24b47ff5625a80"
+
+dest_files=[ "res://.import/tom_me_2_128.ogg-44195abdcf75d8f025dae5d06843ca8f.oggstr" ]
+dest_md5="223189e7ed13879960ebcf2b7ead80e5"
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/firing in the air_001.png-b068c6b6477c1035c5df7abfae3b49e7.stex"
+
+[deps]
+
+source_file="res://hackday/assets/chars/firing in the air/firing in the air_001.png"
+source_md5="d26252507ad99adf410f82b27df1a0ab"
+
+dest_files=[ "res://.import/firing in the air_001.png-b068c6b6477c1035c5df7abfae3b49e7.stex" ]
+dest_md5="d1ed9d160955a188975a969f826c895f"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

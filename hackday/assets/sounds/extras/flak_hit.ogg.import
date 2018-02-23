@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/flak_hit.ogg-75ee4e1a0339e65e76e642609607f259.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/flak_hit.ogg"
+source_md5="eea4bd0d0e312f4ee9c4ce8cd27b1ac4"
+
+dest_files=[ "res://.import/flak_hit.ogg-75ee4e1a0339e65e76e642609607f259.oggstr" ]
+dest_md5="bdc5ed6e466b76fea9c3328b18708a79"
+
+[params]
+
+loop=true
+loop_offset=0

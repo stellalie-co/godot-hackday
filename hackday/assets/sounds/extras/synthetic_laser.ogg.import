@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/synthetic_laser.ogg-139d986bd9a82dc631b55ee589484dc5.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/synthetic_laser.ogg"
+source_md5="42695a6da7ca10af5218dad9571c86eb"
+
+dest_files=[ "res://.import/synthetic_laser.ogg-139d986bd9a82dc631b55ee589484dc5.oggstr" ]
+dest_md5="70d77545c12fd8858d13f9eb9efacace"
+
+[params]
+
+loop=true
+loop_offset=0

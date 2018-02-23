@@ -7,10 +7,10 @@ path="res://.import/game_intro_0.png-9f85563882af80fd71491aed78d882d9.stex"
 [deps]
 
 source_file="res://hackday/assets/background/game_intro_0.png"
-source_md5="28e1907398dcbc05a838e18a33579def"
+source_md5="4eeca1a848e6b9f0a4e83e73e3e3805b"
 
 dest_files=[ "res://.import/game_intro_0.png-9f85563882af80fd71491aed78d882d9.stex" ]
-dest_md5="fac76df79716c469a6b15740c6636e3e"
+dest_md5="1bb7daae70630af7cdb629311dea6d7a"
 
 [params]
 

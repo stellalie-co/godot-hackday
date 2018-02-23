@@ -1,0 +1,18 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/jetwash.ogg-3c103375092e4cebdbacd06e8e1e9dec.oggstr"
+
+[deps]
+
+source_file="res://hackday/assets/sounds/extras/jetwash.ogg"
+source_md5="e155bacf95602e052cfd89021a07e26d"
+
+dest_files=[ "res://.import/jetwash.ogg-3c103375092e4cebdbacd06e8e1e9dec.oggstr" ]
+dest_md5="601d108b34f5ebdb29657758cc06186f"
+
+[params]
+
+loop=true
+loop_offset=0
