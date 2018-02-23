@@ -187,7 +187,6 @@ __meta__ = {
 scale = Vector2( -1, 1 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 15
 playing = true
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -220,8 +219,8 @@ collision_ray_gap = 50
 [node name="Health" type="Node2D" parent="agent_torso/Controller" index="1"]
 
 script = ExtResource( 139 )
-max_health = 100
-current_health = 100
+max_health = 300
+current_health = 300
 invincible_time_on_hit = 0.0
 hit_audio_player = null
 god_mode = false
@@ -239,7 +238,7 @@ delay_between_skills = 0.5
 script = ExtResource( 141 )
 _sections_unfolded = [ "Transform" ]
 disabled = false
-debug = true
+debug = false
 cooldown_time = 1
 skill_animation = ""
 skill_priority = 0
