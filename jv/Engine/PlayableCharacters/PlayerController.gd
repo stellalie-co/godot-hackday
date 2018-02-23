@@ -11,6 +11,7 @@ export var action_ui_down = "ui_down"
 export var action_ui_up = "ui_up"
 export var action_ui_jump = "ui_jump"
 export var action_ui_shoot = "ui_shoot"
+export var action_ui_swap = "ui_swap"
 
 
 # VARIABLE =============================

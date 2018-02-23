@@ -19,6 +19,7 @@ onready var action_ui_right = get_controller().get_action("ui_right")
 onready var action_ui_left = get_controller().get_action("ui_left")
 onready var action_ui_down = get_controller().get_action("ui_down")
 onready var action_ui_up = get_controller().get_action("ui_up")
+onready var action_ui_swap = get_controller().get_action("ui_swap")
 
 
 # VARIABLE ============================
@@ -26,6 +27,7 @@ var current_weapon
 var previous_weapon_rotation
 var weapon_rotation
 var weapon_rotation_animation
+var weapon_index = 0
 
 
 func _ready():
@@ -48,6 +50,19 @@ func _input(event):
 	# Reset weapon_rotation
 	if event.is_action_released(action_ui_up) or event.is_action_released(action_ui_down):
 		weapon_rotation = 0
+	if event.is_action_released(action_ui_swap):
+		swap_weapon()
+
+
+func swap_weapon():
+	var current_index = current_weapon.get_index()
+	var count = get_child_count()
+	
+	current_weapon.set_active(false)
+	if current_index < count - 1:
+		set_active_weapon(get_child(current_index + 1))
+	else:
+		set_active_weapon(get_child(0))
 
 
 func _physics_process(delta):
