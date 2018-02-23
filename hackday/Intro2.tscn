@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://hackday/Intro2.gd" type="Script" id=1]
 [ext_resource path="res://hackday/assets/background/game_intro_1.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://hackday/assets/background/game_intro_1_trans2.png" type="Texture" id=7]
 [ext_resource path="res://hackday/assets/sounds/fire-1.ogg" type="AudioStream" id=8]
 [ext_resource path="res://hackday/assets/sounds/alarm.ogg" type="AudioStream" id=9]
+[ext_resource path="res://hackday/scenes/PressEnterLabel.tscn" type="PackedScene" id=10]
 
 [sub_resource type="Animation" id=1]
 
@@ -29,7 +30,7 @@ tracks/0/keys = {
 "values": [ Color( 1, 0.731183, 0.731183, 1 ), Color( 0.5, 0.342742, 0.342742, 1 ), Color( 1, 0.731183, 0.731183, 1 ) ]
 }
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=2]
 
 resource_name = "JohnRunning"
 length = 4.0
@@ -60,9 +61,8 @@ tracks/1/keys = {
 "values": [ "run", "idle", "run", "run" ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=3]
 
-resource_name = "RocketMove1"
 length = 3.0
 loop = false
 step = 0.1
@@ -79,9 +79,8 @@ tracks/0/keys = {
 "values": [ Vector2( -188.893, 414.113 ), Vector2( 2194.07, 435.908 ) ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=4]
 
-resource_name = "RocketMove2"
 length = 1.0
 loop = false
 step = 0.1
@@ -98,9 +97,8 @@ tracks/0/keys = {
 "values": [ Vector2( 1738.79, 271.232 ), Vector2( -116.242, 312.401 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=5]
 
-resource_name = "RocketMove3"
 length = 2.0
 loop = false
 step = 0.1
@@ -144,7 +142,7 @@ _sections_unfolded = [ "Focus", "Hint", "Material", "Mouse", "Rect", "Visibility
 
 position = Vector2( 265.861, 520.551 )
 scale = Vector2( 1.78399, 1.78399 )
-frame = 3
+frame = 0
 
 [node name="SpaceShip1" parent="." index="2" instance=ExtResource( 4 )]
 
@@ -191,7 +189,7 @@ position = Vector2( -374.686, 802.146 )
 scale = Vector2( -1.5, 1.5 )
 frames = ExtResource( 6 )
 animation = "run"
-frame = 2
+frame = 23
 playing = true
 _sections_unfolded = [ "Transform" ]
 
@@ -199,13 +197,13 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 225.484, 1013.29 )
 scale = Vector2( 2.92732, 2.15467 )
-frame = 2
+frame = 3
 
 [node name="AnimatedSprite3" parent="." index="8" instance=ExtResource( 3 )]
 
 position = Vector2( 1569.19, 751.75 )
 scale = Vector2( 2.15467, 2.15467 )
-frame = 2
+frame = 3
 
 [node name="BackgroundTrans2" type="TextureRect" parent="." index="9"]
 
@@ -237,7 +235,7 @@ playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
 anims/BackgroundFlash = SubResource( 1 )
-anims/JohnRunning = SubResource( 5 )
+anims/JohnRunning = SubResource( 2 )
 blend_times = [  ]
 
 [node name="RocketAnimation" type="AnimationPlayer" parent="." index="11"]
@@ -247,9 +245,9 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/RocketMove1 = SubResource( 2 )
-anims/RocketMove2 = SubResource( 3 )
-anims/RocketMove3 = SubResource( 4 )
+anims/RocketMove1 = SubResource( 3 )
+anims/RocketMove2 = SubResource( 4 )
+anims/RocketMove3 = SubResource( 5 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
 
@@ -268,5 +266,12 @@ volume_db = 0.0
 autoplay = true
 mix_target = 0
 bus = "Master"
+
+[node name="Label" parent="." index="14" instance=ExtResource( 10 )]
+
+margin_left = 1142.0
+margin_top = 825.0
+margin_right = 1563.0
+margin_bottom = 860.0
 
 

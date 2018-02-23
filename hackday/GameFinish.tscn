@@ -134,7 +134,7 @@ position = Vector2( 2049.74, 651.101 )
 scale = Vector2( -1.3713, 1.3713 )
 frames = ExtResource( 6 )
 animation = "idle"
-frame = 6
+frame = 42
 playing = true
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
