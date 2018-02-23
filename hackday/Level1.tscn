@@ -71,7 +71,6 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." index="1"]
 
-editor/display_folded = true
 layer = -1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -87,7 +86,7 @@ _sections_unfolded = [ "Scroll" ]
 
 [node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" index="0"]
 
-position = Vector2( -531.343, -99.3115 )
+position = Vector2( -535.582, -73.8748 )
 motion_scale = Vector2( 0.1, 0.1 )
 motion_offset = Vector2( 0, 0 )
 motion_mirroring = Vector2( 0, 0 )
@@ -284,21 +283,20 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="BadassJohn" parent="." index="4" instance=ExtResource( 18 )]
 
-editor/display_folded = true
 position = Vector2( 286.981, 443.813 )
 scale = Vector2( 0.3, 0.3 )
 _sections_unfolded = [ "Collision", "Material", "Transform", "collision" ]
 
 [node name="Camera2D" type="Camera2D" parent="BadassJohn" index="2"]
 
-position = Vector2( 993.54, -2388.09 )
+position = Vector2( 1147.31, -1578.26 )
 scale = Vector2( 4.6182, 3.91798 )
 anchor_mode = 1
 rotating = false
 current = true
-zoom = Vector2( 1.3, 1.3 )
+zoom = Vector2( 1.1, 1.1 )
 limit_left = -10000000
-limit_top = -400
+limit_top = -370
 limit_right = 10000000
 limit_bottom = -400
 limit_smoothed = true
@@ -322,6 +320,9 @@ _sections_unfolded = [ "Drag Margin", "Limit", "Smoothing", "Transform" ]
 editor/display_folded = true
 scale = Vector2( 0.5, 0.5 )
 _sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="SpikeTrap" parent="Traps" index="0" instance=ExtResource( 19 )]
 
@@ -332,6 +333,8 @@ position = Vector2( 5131.32, 953.285 )
 position = Vector2( 5413.73, 955.18 )
 
 [node name="Enemies" type="Node" parent="." index="6"]
+
+editor/display_folded = true
 
 [node name="Gorilla" parent="Enemies" index="0" instance=ExtResource( 20 )]
 
@@ -361,6 +364,9 @@ position = Vector2( -1.91467, 97.6506 )
 scale = Vector2( 0.5, 0.5 )
 z_index = 7
 _sections_unfolded = [ "Transform", "Z Index" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="Barrel" parent="Platforms" index="0" instance=ExtResource( 23 )]
 
@@ -416,20 +422,32 @@ _sections_unfolded = [ "Motion" ]
 position = Vector2( -661.344, -344.062 )
 texture = ExtResource( 24 )
 _sections_unfolded = [ "Transform" ]
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="cloud-dusk-2" type="Sprite" parent="Sky/ParallaxLayer" index="1"]
 
-position = Vector2( 555.092, -356.165 )
+position = Vector2( 564.069, -339.5 )
 texture = ExtResource( 25 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="cloud-dusk-3" type="Sprite" parent="Sky/ParallaxLayer" index="2"]
 
 position = Vector2( 1829.88, -284.469 )
 texture = ExtResource( 24 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="cloud-dusk-4" type="Sprite" parent="Sky/ParallaxLayer" index="3"]
 
 position = Vector2( 2805.3, -322.366 )
 texture = ExtResource( 24 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 
