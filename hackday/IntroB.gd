@@ -6,6 +6,7 @@ extends Node
 
 func _ready():
 	$Animation.play("BackgroundFlash")
+	$Animation.play("MoveShip")
 	pass
 
 func _input(event):
