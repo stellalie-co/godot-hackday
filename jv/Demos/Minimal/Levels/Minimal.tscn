@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://hackday/assets/background/game_scene_1.png" type="Texture" id=1]
 [ext_resource path="res://jv/Demos/TileSets/JungleTiles.tres" type="TileSet" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://jv/Demos/Minimal/Scenes/Trap.tscn" type="PackedScene" id=5]
 [ext_resource path="res://hackday/player/BadassJohn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://hackday/enemy/Ghost.tscn" type="PackedScene" id=7]
+[ext_resource path="res://hackday/enemy/GraceTheBoss.tscn" type="PackedScene" id=8]
+[ext_resource path="res://hackday/Lightning.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -17,7 +19,7 @@ extents = Vector2( 29.7883, 30.5757 )
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
-position = Vector2( 1364.41, -210.014 )
+position = Vector2( 1370, -140 )
 texture = ExtResource( 1 )
 
 [node name="TileMap" type="TileMap" parent="." index="1"]
@@ -49,7 +51,7 @@ __meta__ = {
 ]]
 
 editor/display_folded = true
-position = Vector2( 510, 550 )
+position = Vector2( 390, 120 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -74,7 +76,7 @@ shape = SubResource( 1 )
 ]]
 
 editor/display_folded = true
-position = Vector2( 1120, 500 )
+position = Vector2( 1140, 180 )
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -105,16 +107,26 @@ scale = Vector2( 3.87432, 1 )
 
 [node name="BadassJohn" parent="." index="6" instance=ExtResource( 6 )]
 
-position = Vector2( 527.392, 439.963 )
+position = Vector2( 530, 700 )
 scale = Vector2( 0.3, 0.3 )
 _sections_unfolded = [ "Collision", "Material", "Transform", "collision" ]
 
 [node name="Ghost" parent="." index="7" instance=ExtResource( 7 )]
 
-position = Vector2( 740, 710 )
+position = Vector2( 840, 40 )
 
 [node name="Ghost2" parent="." index="8" instance=ExtResource( 7 )]
 
-position = Vector2( 960, 710 )
+position = Vector2( 1250, 110 )
+
+[node name="Boss" parent="." index="9" instance=ExtResource( 8 )]
+
+position = Vector2( 1210, 550 )
+scale = Vector2( 1.5, 1.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Lightning" parent="." index="10" instance=ExtResource( 9 )]
+
+position = Vector2( 760, 60 )
 
 

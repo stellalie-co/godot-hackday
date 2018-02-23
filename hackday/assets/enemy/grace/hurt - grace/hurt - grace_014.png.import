@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/hurt - grace_014.png-b66b5da87a9635978cbdc8fe616dae52.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_014.png"
+source_md5="fd1b6cbb9c529dd3ef919f69f6ae4497"
+
+dest_files=[ "res://.import/hurt - grace_014.png-b66b5da87a9635978cbdc8fe616dae52.stex" ]
+dest_md5="a7d1e723b0aa4abc79efeef9b1722da8"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

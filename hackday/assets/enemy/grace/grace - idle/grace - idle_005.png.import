@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/grace - idle_005.png-37f2b4c867bf0df84f1609b6999a5863.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/grace/grace - idle/grace - idle_005.png"
+source_md5="b95600e64f41a16bb9ba2943fcf2a781"
+
+dest_files=[ "res://.import/grace - idle_005.png-37f2b4c867bf0df84f1609b6999a5863.stex" ]
+dest_md5="c988486e08a15632aae8a6f50f1b854c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

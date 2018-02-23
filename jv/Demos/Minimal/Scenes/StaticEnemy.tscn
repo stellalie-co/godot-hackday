@@ -44,7 +44,7 @@ animations = [ {
 "speed": 3.0
 } ]
 
-[node name="StaticEnemy" type="KinematicBody2D" index="0" groups=[
+[node name="StaticEnemy" type="KinematicBody2D" groups=[
 "enemy",
 ]]
 
@@ -93,6 +93,7 @@ wandering_distance = 200
 change_direction_when_colliding = true
 number_of_collision_raycasts = 1
 collision_distance = 50
+collision_ray_gap = 20
 
 [node name="Health" type="Node2D" parent="agent_torso/Controller" index="1"]
 
@@ -124,6 +125,7 @@ projectile_type = ExtResource( 13 )
 projectile_animation_identifier = null
 projectile_start_position = null
 override_bullet_damage = 0
+override_bullet_speed = 0
 spawn_count = 1
 ray_x = 800
 ray_y = 0
@@ -147,6 +149,7 @@ projectile_type = ExtResource( 14 )
 projectile_animation_identifier = null
 projectile_start_position = null
 override_bullet_damage = 0
+override_bullet_speed = 0
 spawn_count = 3
 ray_x = 500
 ray_y = 0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/dying - grace_012.png-b19109d5f0db0e937e99add57b398694.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/grace/dying - grace/dying - grace_012.png"
+source_md5="d338898d28345094b902e47ed1233a0f"
+
+dest_files=[ "res://.import/dying - grace_012.png-b19109d5f0db0e937e99add57b398694.stex" ]
+dest_md5="93e43d75dbc8ac209fd3a0ff48aed013"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

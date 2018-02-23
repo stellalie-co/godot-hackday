@@ -79,16 +79,17 @@ func perform_skill():
 	var direction_guideline = get_direction_guideline()
 
 	controller.play_agent_animation_once(shoot_animation)
-
-	for index in spawn_count:
-		var projectile = projectile_type.instance()
-		projectile_parent.add_child(projectile)
-		if override_bullet_damage > 0:
-			projectile.set_damage(override_bullet_damage)
-		if override_bullet_speed > 0:
-			projectile.set_speed(override_bullet_speed)
-		projectile.prepare(projectile_start_position, flip_horizontal, current_rotation, direction_guideline, index, spawn_count)
-		projectile.set_target_groups(target_groups)
+	
+	if projectile_parent:
+		for index in spawn_count:
+			var projectile = projectile_type.instance()
+			projectile_parent.add_child(projectile)
+			if override_bullet_damage > 0:
+				projectile.set_damage(override_bullet_damage)
+			if override_bullet_speed > 0:
+				projectile.set_speed(override_bullet_speed)
+			projectile.prepare(projectile_start_position, flip_horizontal, current_rotation, direction_guideline, index, spawn_count)
+			projectile.set_target_groups(target_groups)
 
 
 func search_target():

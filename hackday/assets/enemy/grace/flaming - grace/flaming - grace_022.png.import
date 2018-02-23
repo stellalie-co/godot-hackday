@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/flaming - grace_022.png-544e2f579cf29cdb93af64f5f2cd8ee9.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_022.png"
+source_md5="cf8c0b69b58ef3d6dbe9bfbe8814d09d"
+
+dest_files=[ "res://.import/flaming - grace_022.png-544e2f579cf29cdb93af64f5f2cd8ee9.stex" ]
+dest_md5="1effc14882b8f7291fb08e5055cbcb21"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

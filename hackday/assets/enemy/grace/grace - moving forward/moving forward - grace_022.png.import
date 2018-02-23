@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/moving forward - grace_022.png-74390f790fb73620c1b67bb444c43adf.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/grace/grace - moving forward/moving forward - grace_022.png"
+source_md5="fad4700a0cb41285d797830b9b4a8f6b"
+
+dest_files=[ "res://.import/moving forward - grace_022.png-74390f790fb73620c1b67bb444c43adf.stex" ]
+dest_md5="c00e47f302418797494edabfa3b55143"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
