@@ -19,7 +19,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Lightning" type="Area2D" index="0"]
+[node name="Lightning" type="Area2D"]
 
 input_pickable = true
 gravity_vec = Vector2( 0, 1 )
