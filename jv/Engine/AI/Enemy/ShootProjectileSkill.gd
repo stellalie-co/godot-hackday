@@ -9,6 +9,7 @@ export(String) var projectile_animation_identifier setget ,get_projectile_animat
 
 # OPTIONAL - the start position of the projectile when it is first created
 export(NodePath) var projectile_start_position
+export(NodePath) var audio_player
 
 # OPTIONAL - override damage of bullet
 export(int) var override_bullet_damage = 0
@@ -41,6 +42,7 @@ var rays
 var target_found
 var shoot_animation = "shoot"
 var current_animation_state
+var audio
 
 
 func _ready():
@@ -49,6 +51,9 @@ func _ready():
 	else:
 		start_position = Position2D.new()
 		add_child(start_position)
+		
+	if audio_player:
+		audio = get_node(audio_player)
 		
 	raycast_generator = RaycastsGenerator.new()
 	raycast_generator.set_target_instance(get_agent())
@@ -79,6 +84,9 @@ func perform_skill():
 	var direction_guideline = get_direction_guideline()
 
 	controller.play_agent_animation_once(shoot_animation)
+	
+	if audio:
+		audio.play()
 	
 	if projectile_parent:
 		for index in spawn_count:

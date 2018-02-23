@@ -1,4 +1,4 @@
-[gd_scene load_steps=145 format=2]
+[gd_scene load_steps=146 format=2]
 
 [ext_resource path="res://hackday/assets/enemy/grace/grace - idle/grace - idle_000.png" type="Texture" id=1]
 [ext_resource path="res://hackday/assets/enemy/grace/grace - idle/grace - idle_001.png" type="Texture" id=2]
@@ -142,7 +142,8 @@
 [ext_resource path="res://jv/Demos/Minimal/Scenes/SkillSlots.gd" type="Script" id=140]
 [ext_resource path="res://jv/Engine/AI/Enemy/ShootProjectileSkill.gd" type="Script" id=141]
 [ext_resource path="res://hackday/FireballBullet.tscn" type="PackedScene" id=142]
-[ext_resource path="res://hackday/Lightning.tscn" type="PackedScene" id=143]
+[ext_resource path="res://hackday/assets/sounds/high_pitch_scream.ogg" type="AudioStream" id=143]
+[ext_resource path="res://hackday/Lightning.tscn" type="PackedScene" id=144]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -168,7 +169,7 @@ animations = [ {
 "speed": 60.0
 } ]
 
-[node name="Gorilla" type="KinematicBody2D" groups=[
+[node name="Gorilla" type="KinematicBody2D" index="0" groups=[
 "enemy",
 ]]
 
@@ -188,7 +189,7 @@ __meta__ = {
 scale = Vector2( -1, 1 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 27
+frame = 4
 playing = true
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -237,7 +238,6 @@ delay_between_skills = 0.5
 
 [node name="ShootMachineGunBullet" type="Node2D" parent="agent_torso/Controller/SkillSlots" index="0"]
 
-editor/display_folded = true
 visible = false
 script = ExtResource( 141 )
 _sections_unfolded = [ "Transform" ]
@@ -249,6 +249,7 @@ skill_priority = 0
 projectile_type = ExtResource( 142 )
 projectile_animation_identifier = null
 projectile_start_position = NodePath("MachineGunBulletStartPosition")
+audio_player = NodePath("audio")
 override_bullet_damage = 0
 override_bullet_speed = 700
 spawn_count = 5
@@ -257,7 +258,15 @@ ray_y = 0
 number_of_raycasts = 10
 ray_gap = 30
 
-[node name="MachineGunBulletStartPosition" type="Position2D" parent="agent_torso/Controller/SkillSlots/ShootMachineGunBullet" index="0"]
+[node name="audio" type="AudioStreamPlayer" parent="agent_torso/Controller/SkillSlots/ShootMachineGunBullet" index="0"]
+
+stream = ExtResource( 143 )
+volume_db = 0.0
+autoplay = false
+mix_target = 0
+bus = "Master"
+
+[node name="MachineGunBulletStartPosition" type="Position2D" parent="agent_torso/Controller/SkillSlots/ShootMachineGunBullet" index="1"]
 
 position = Vector2( -273.679, -5.34337 )
 
@@ -269,9 +278,10 @@ debug = false
 cooldown_time = 2
 skill_animation = ""
 skill_priority = 0
-projectile_type = ExtResource( 143 )
+projectile_type = ExtResource( 144 )
 projectile_animation_identifier = null
 projectile_start_position = NodePath("LightningPosition")
+audio_player = null
 override_bullet_damage = 0
 override_bullet_speed = 0
 spawn_count = 15
