@@ -142,6 +142,7 @@ _sections_unfolded = [ "Focus", "Hint", "Material", "Mouse", "Rect", "Visibility
 
 position = Vector2( 265.861, 520.551 )
 scale = Vector2( 1.78399, 1.78399 )
+frame = 2
 
 [node name="SpaceShip1" parent="." index="2" instance=ExtResource( 4 )]
 
@@ -188,7 +189,7 @@ position = Vector2( -374.686, 802.146 )
 scale = Vector2( -1.5, 1.5 )
 frames = ExtResource( 6 )
 animation = "run"
-frame = 16
+frame = 21
 playing = true
 _sections_unfolded = [ "Transform" ]
 
@@ -196,13 +197,11 @@ _sections_unfolded = [ "Transform" ]
 
 position = Vector2( 225.484, 1013.29 )
 scale = Vector2( 2.92732, 2.15467 )
-frame = 0
 
 [node name="AnimatedSprite3" parent="." index="8" instance=ExtResource( 3 )]
 
 position = Vector2( 1569.19, 751.75 )
 scale = Vector2( 2.15467, 2.15467 )
-frame = 0
 
 [node name="BackgroundTrans2" type="TextureRect" parent="." index="9"]
 
