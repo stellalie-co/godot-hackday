@@ -5,4 +5,5 @@ extends Node
 # var b = "textvar"
 
 func _ready():
-	$Animation.play("JohnRunning")
+	$Animation.play("GraceDefeat")
+	$Animation.queue("JohnRunning")
