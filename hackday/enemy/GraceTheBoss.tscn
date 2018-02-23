@@ -1,4 +1,4 @@
-[gd_scene load_steps=145 format=2]
+[gd_scene load_steps=144 format=2]
 
 [ext_resource path="res://hackday/assets/enemy/grace/grace - idle/grace - idle_000.png" type="Texture" id=1]
 [ext_resource path="res://hackday/assets/enemy/grace/grace - idle/grace - idle_001.png" type="Texture" id=2]
@@ -37,112 +37,111 @@
 [ext_resource path="res://hackday/assets/enemy/grace/grace - idle/grace - idle_034.png" type="Texture" id=35]
 [ext_resource path="res://hackday/assets/enemy/grace/grace - idle/grace - idle_035.png" type="Texture" id=36]
 [ext_resource path="res://hackday/assets/enemy/grace/grace - idle/grace - idle_036.png" type="Texture" id=37]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_000.png" type="Texture" id=38]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_001.png" type="Texture" id=39]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_002.png" type="Texture" id=40]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_003.png" type="Texture" id=41]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_004.png" type="Texture" id=42]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_005.png" type="Texture" id=43]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_006.png" type="Texture" id=44]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_007.png" type="Texture" id=45]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_008.png" type="Texture" id=46]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_009.png" type="Texture" id=47]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_010.png" type="Texture" id=48]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_011.png" type="Texture" id=49]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_012.png" type="Texture" id=50]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_013.png" type="Texture" id=51]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_014.png" type="Texture" id=52]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_015.png" type="Texture" id=53]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_016.png" type="Texture" id=54]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_017.png" type="Texture" id=55]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_018.png" type="Texture" id=56]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_019.png" type="Texture" id=57]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_020.png" type="Texture" id=58]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_021.png" type="Texture" id=59]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_022.png" type="Texture" id=60]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_023.png" type="Texture" id=61]
-[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_024.png" type="Texture" id=62]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_000.png" type="Texture" id=63]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_001.png" type="Texture" id=64]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_002.png" type="Texture" id=65]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_003.png" type="Texture" id=66]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_004.png" type="Texture" id=67]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_005.png" type="Texture" id=68]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_006.png" type="Texture" id=69]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_007.png" type="Texture" id=70]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_008.png" type="Texture" id=71]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_009.png" type="Texture" id=72]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_010.png" type="Texture" id=73]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_011.png" type="Texture" id=74]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_012.png" type="Texture" id=75]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_013.png" type="Texture" id=76]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_014.png" type="Texture" id=77]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_015.png" type="Texture" id=78]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_016.png" type="Texture" id=79]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_017.png" type="Texture" id=80]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_018.png" type="Texture" id=81]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_019.png" type="Texture" id=82]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_020.png" type="Texture" id=83]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_021.png" type="Texture" id=84]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_022.png" type="Texture" id=85]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_023.png" type="Texture" id=86]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_024.png" type="Texture" id=87]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_025.png" type="Texture" id=88]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_026.png" type="Texture" id=89]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_027.png" type="Texture" id=90]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_028.png" type="Texture" id=91]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_029.png" type="Texture" id=92]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_030.png" type="Texture" id=93]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_031.png" type="Texture" id=94]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_032.png" type="Texture" id=95]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_033.png" type="Texture" id=96]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_034.png" type="Texture" id=97]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_035.png" type="Texture" id=98]
-[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_036.png" type="Texture" id=99]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_000.png" type="Texture" id=100]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_001.png" type="Texture" id=101]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_002.png" type="Texture" id=102]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_003.png" type="Texture" id=103]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_004.png" type="Texture" id=104]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_005.png" type="Texture" id=105]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_006.png" type="Texture" id=106]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_007.png" type="Texture" id=107]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_008.png" type="Texture" id=108]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_009.png" type="Texture" id=109]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_010.png" type="Texture" id=110]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_011.png" type="Texture" id=111]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_012.png" type="Texture" id=112]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_013.png" type="Texture" id=113]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_014.png" type="Texture" id=114]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_015.png" type="Texture" id=115]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_016.png" type="Texture" id=116]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_017.png" type="Texture" id=117]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_018.png" type="Texture" id=118]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_019.png" type="Texture" id=119]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_020.png" type="Texture" id=120]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_021.png" type="Texture" id=121]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_022.png" type="Texture" id=122]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_023.png" type="Texture" id=123]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_024.png" type="Texture" id=124]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_025.png" type="Texture" id=125]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_026.png" type="Texture" id=126]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_027.png" type="Texture" id=127]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_028.png" type="Texture" id=128]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_029.png" type="Texture" id=129]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_030.png" type="Texture" id=130]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_031.png" type="Texture" id=131]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_032.png" type="Texture" id=132]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_033.png" type="Texture" id=133]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_034.png" type="Texture" id=134]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_035.png" type="Texture" id=135]
-[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_036.png" type="Texture" id=136]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_000.png" type="Texture" id=38]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_001.png" type="Texture" id=39]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_002.png" type="Texture" id=40]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_003.png" type="Texture" id=41]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_004.png" type="Texture" id=42]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_005.png" type="Texture" id=43]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_006.png" type="Texture" id=44]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_007.png" type="Texture" id=45]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_008.png" type="Texture" id=46]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_009.png" type="Texture" id=47]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_010.png" type="Texture" id=48]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_011.png" type="Texture" id=49]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_012.png" type="Texture" id=50]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_013.png" type="Texture" id=51]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_014.png" type="Texture" id=52]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_015.png" type="Texture" id=53]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_016.png" type="Texture" id=54]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_017.png" type="Texture" id=55]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_018.png" type="Texture" id=56]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_019.png" type="Texture" id=57]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_020.png" type="Texture" id=58]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_021.png" type="Texture" id=59]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_022.png" type="Texture" id=60]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_023.png" type="Texture" id=61]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_024.png" type="Texture" id=62]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_025.png" type="Texture" id=63]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_026.png" type="Texture" id=64]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_027.png" type="Texture" id=65]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_028.png" type="Texture" id=66]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_029.png" type="Texture" id=67]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_030.png" type="Texture" id=68]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_031.png" type="Texture" id=69]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_032.png" type="Texture" id=70]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_033.png" type="Texture" id=71]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_034.png" type="Texture" id=72]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_035.png" type="Texture" id=73]
+[ext_resource path="res://hackday/assets/enemy/grace/hurt - grace/hurt - grace_036.png" type="Texture" id=74]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_000.png" type="Texture" id=75]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_001.png" type="Texture" id=76]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_002.png" type="Texture" id=77]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_003.png" type="Texture" id=78]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_004.png" type="Texture" id=79]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_005.png" type="Texture" id=80]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_006.png" type="Texture" id=81]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_007.png" type="Texture" id=82]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_008.png" type="Texture" id=83]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_009.png" type="Texture" id=84]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_010.png" type="Texture" id=85]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_011.png" type="Texture" id=86]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_012.png" type="Texture" id=87]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_013.png" type="Texture" id=88]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_014.png" type="Texture" id=89]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_015.png" type="Texture" id=90]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_016.png" type="Texture" id=91]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_017.png" type="Texture" id=92]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_018.png" type="Texture" id=93]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_019.png" type="Texture" id=94]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_020.png" type="Texture" id=95]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_021.png" type="Texture" id=96]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_022.png" type="Texture" id=97]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_023.png" type="Texture" id=98]
+[ext_resource path="res://hackday/assets/enemy/grace/dying - grace/dying - grace_024.png" type="Texture" id=99]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_000.png" type="Texture" id=100]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_001.png" type="Texture" id=101]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_002.png" type="Texture" id=102]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_003.png" type="Texture" id=103]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_004.png" type="Texture" id=104]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_005.png" type="Texture" id=105]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_006.png" type="Texture" id=106]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_007.png" type="Texture" id=107]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_008.png" type="Texture" id=108]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_009.png" type="Texture" id=109]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_010.png" type="Texture" id=110]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_011.png" type="Texture" id=111]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_012.png" type="Texture" id=112]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_013.png" type="Texture" id=113]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_014.png" type="Texture" id=114]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_015.png" type="Texture" id=115]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_016.png" type="Texture" id=116]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_017.png" type="Texture" id=117]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_018.png" type="Texture" id=118]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_019.png" type="Texture" id=119]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_020.png" type="Texture" id=120]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_021.png" type="Texture" id=121]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_022.png" type="Texture" id=122]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_023.png" type="Texture" id=123]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_024.png" type="Texture" id=124]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_025.png" type="Texture" id=125]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_026.png" type="Texture" id=126]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_027.png" type="Texture" id=127]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_028.png" type="Texture" id=128]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_029.png" type="Texture" id=129]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_030.png" type="Texture" id=130]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_031.png" type="Texture" id=131]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_032.png" type="Texture" id=132]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_033.png" type="Texture" id=133]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_034.png" type="Texture" id=134]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_035.png" type="Texture" id=135]
+[ext_resource path="res://hackday/assets/enemy/grace/flaming - grace/flaming - grace_036.png" type="Texture" id=136]
 [ext_resource path="res://jv/Engine/AI/Enemy/EnemyController.gd" type="Script" id=137]
 [ext_resource path="res://jv/Engine/AI/Enemy/Movement.gd" type="Script" id=138]
 [ext_resource path="res://jv/Engine/Common/Health.gd" type="Script" id=139]
 [ext_resource path="res://jv/Demos/Minimal/Scenes/SkillSlots.gd" type="Script" id=140]
 [ext_resource path="res://jv/Engine/AI/Enemy/ShootProjectileSkill.gd" type="Script" id=141]
 [ext_resource path="res://hackday/FireballBullet.tscn" type="PackedScene" id=142]
-[ext_resource path="res://hackday/Lightning.tscn" type="PackedScene" id=143]
 
 [sub_resource type="SpriteFrames" id=1]
 
@@ -152,23 +151,23 @@ animations = [ {
 "name": "idle",
 "speed": 50.0
 }, {
-"frames": [ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ) ],
+"frames": [ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 43 ), ExtResource( 44 ), ExtResource( 45 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 48 ), ExtResource( 49 ), ExtResource( 50 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 53 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 56 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 61 ), ExtResource( 62 ), ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ) ],
+"loop": true,
+"name": "hit",
+"speed": 60.0
+}, {
+"frames": [ ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ) ],
 "loop": false,
 "name": "die",
 "speed": 60.0
 }, {
-"frames": [ ExtResource( 63 ), ExtResource( 64 ), ExtResource( 65 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 72 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 84 ), ExtResource( 85 ), ExtResource( 86 ), ExtResource( 87 ), ExtResource( 88 ), ExtResource( 89 ), ExtResource( 90 ), ExtResource( 91 ), ExtResource( 92 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ) ],
+"frames": [ ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ), ExtResource( 113 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ) ],
 "loop": true,
 "name": "shoot",
 "speed": 60.0
-}, {
-"frames": [ ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ), ExtResource( 106 ), ExtResource( 107 ), ExtResource( 108 ), ExtResource( 109 ), ExtResource( 110 ), ExtResource( 111 ), ExtResource( 112 ), ExtResource( 113 ), ExtResource( 114 ), ExtResource( 115 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 118 ), ExtResource( 119 ), ExtResource( 120 ), ExtResource( 121 ), ExtResource( 122 ), ExtResource( 123 ), ExtResource( 124 ), ExtResource( 125 ), ExtResource( 126 ), ExtResource( 127 ), ExtResource( 128 ), ExtResource( 129 ), ExtResource( 130 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 133 ), ExtResource( 134 ), ExtResource( 135 ), ExtResource( 136 ) ],
-"loop": true,
-"name": "hit",
-"speed": 60.0
 } ]
 
-[node name="Gorilla" type="KinematicBody2D" index="0" groups=[
+[node name="Gorilla" type="KinematicBody2D" groups=[
 "enemy",
 ]]
 
@@ -188,7 +187,7 @@ __meta__ = {
 scale = Vector2( -1, 1 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 19
+frame = 15
 playing = true
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -258,29 +257,6 @@ ray_gap = 30
 [node name="MachineGunBulletStartPosition" type="Position2D" parent="agent_torso/Controller/SkillSlots/ShootMachineGunBullet" index="0"]
 
 position = Vector2( -273.679, -5.34337 )
-
-[node name="ShootLightning" type="Node2D" parent="agent_torso/Controller/SkillSlots" index="1"]
-
-script = ExtResource( 141 )
-disabled = false
-debug = false
-cooldown_time = 1
-skill_animation = ""
-skill_priority = 0
-projectile_type = ExtResource( 143 )
-projectile_animation_identifier = null
-projectile_start_position = null
-override_bullet_damage = 0
-override_bullet_speed = 0
-spawn_count = 1
-ray_x = 300
-ray_y = 0
-number_of_raycasts = 1
-ray_gap = 10
-
-[node name="Position2D" type="Position2D" parent="agent_torso/Controller/SkillSlots/ShootLightning" index="0"]
-
-position = Vector2( -260.388, -5.27814 )
 
 [node name="agent_shape" type="CollisionPolygon2D" parent="." index="1"]
 

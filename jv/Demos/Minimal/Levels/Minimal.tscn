@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://hackday/assets/background/game_scene_1.png" type="Texture" id=1]
 [ext_resource path="res://jv/Demos/TileSets/JungleTiles.tres" type="TileSet" id=2]
@@ -8,7 +8,6 @@
 [ext_resource path="res://hackday/player/BadassJohn.tscn" type="PackedScene" id=6]
 [ext_resource path="res://hackday/enemy/Ghost.tscn" type="PackedScene" id=7]
 [ext_resource path="res://hackday/enemy/GraceTheBoss.tscn" type="PackedScene" id=8]
-[ext_resource path="res://hackday/Lightning.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -124,9 +123,5 @@ position = Vector2( 1250, 110 )
 position = Vector2( 1210, 550 )
 scale = Vector2( 1.5, 1.5 )
 _sections_unfolded = [ "Transform" ]
-
-[node name="Lightning" parent="." index="10" instance=ExtResource( 9 )]
-
-position = Vector2( 760, 60 )
 
 
