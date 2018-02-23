@@ -1,16 +1,28 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://hackday/Level2.gd" type="Script" id=1]
 [ext_resource path="res://hackday/assets/background/game_operaHouse.png" type="Texture" id=2]
 [ext_resource path="res://hackday/tilesetWithCollision.tres" type="TileSet" id=3]
-[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Plants/Tree-Street-1.png" type="Texture" id=4]
-[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Plants/Tree-Street-2.png" type="Texture" id=5]
-[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Plants/Tree-Street-Giant.png" type="Texture" id=6]
-[ext_resource path="res://hackday/enemy/GraceTheBoss.tscn" type="PackedScene" id=7]
-[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-1.png" type="Texture" id=8]
-[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-2.png" type="Texture" id=9]
-[ext_resource path="res://hackday/scenes/HeroWithCamera.tscn" type="PackedScene" id=10]
-[ext_resource path="res://hackday/assets/sounds/Wave_After_Wave_v0_9.ogg" type="AudioStream" id=11]
+[ext_resource path="res://hackday/assets/tiles/Tile Set/Metal Tiles/Silver Metallic/Ground.Top.png" type="Texture" id=4]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Plants/Tree-Street-1.png" type="Texture" id=5]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Plants/Tree-Street-2.png" type="Texture" id=6]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Plants/Tree-Street-Giant.png" type="Texture" id=7]
+[ext_resource path="res://hackday/assets/tiles/Building Set/Structures/Pre Made Structures/Building-Home.png" type="Texture" id=8]
+[ext_resource path="res://hackday/enemy/GraceTheBoss.tscn" type="PackedScene" id=9]
+[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-1.png" type="Texture" id=10]
+[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-2.png" type="Texture" id=11]
+[ext_resource path="res://hackday/scenes/HeroWithCamera.tscn" type="PackedScene" id=12]
+[ext_resource path="res://hackday/assets/sounds/Wave_After_Wave_v0_9.ogg" type="AudioStream" id=13]
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -103,41 +115,105 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Tree-Street-1" type="Sprite" parent="Scenery" index="0"]
+[node name="Ground.Top" type="Sprite" parent="Scenery" index="0"]
+
+position = Vector2( 1489.18, -439.78 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 4 )
+
+[node name="Tree-Street-1" type="Sprite" parent="Scenery" index="1"]
 
 position = Vector2( 2708.35, 79.2309 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Tree-Street-2" type="Sprite" parent="Scenery" index="1"]
+[node name="Tree-Street-2" type="Sprite" parent="Scenery" index="2"]
 
 position = Vector2( 630.725, 34.5975 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
-[node name="Tree-Street-3" type="Sprite" parent="Scenery" index="2"]
+[node name="Tree-Street-3" type="Sprite" parent="Scenery" index="3"]
 
 position = Vector2( 6096.08, 40.4364 )
-texture = ExtResource( 5 )
+texture = ExtResource( 6 )
 
-[node name="Tree-Street-Giant" type="Sprite" parent="Scenery" index="3"]
+[node name="Tree-Street-Giant" type="Sprite" parent="Scenery" index="4"]
 
 position = Vector2( 4743.38, 276.059 )
 scale = Vector2( 0.75, 0.75 )
-texture = ExtResource( 6 )
+texture = ExtResource( 7 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Enemies" type="Node" parent="." index="3"]
+[node name="Building-Home" type="Sprite" parent="Scenery" index="5"]
 
-[node name="Grace" parent="Enemies" index="0" instance=ExtResource( 7 )]
+position = Vector2( 1490.42, 321.346 )
+texture = ExtResource( 8 )
 
-position = Vector2( 2090, 150 )
+[node name="Platforms" type="Area2D" parent="." index="3"]
+
+position = Vector2( 380.591, -110.349 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Platforms" index="0" groups=[
+"platform",
+]]
+
+position = Vector2( 363.802, 300.756 )
+scale = Vector2( 7.23139, 1.17944 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/StaticBody2D" index="0"]
+
+position = Vector2( 0.468477, 8.6099 )
+scale = Vector2( 3.23999, 3.48832 )
+shape = SubResource( 2 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Platforms" index="1" groups=[
+"platform",
+]]
+
+position = Vector2( 359.307, -133.299 )
+scale = Vector2( 7.26628, 2.67427 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+_sections_unfolded = [ "Collision" ]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Platforms/StaticBody2D2" index="0"]
+
+position = Vector2( 0.494557, 9.68421 )
+scale = Vector2( 3.3198, 4.50202 )
+shape = SubResource( 3 )
+
+[node name="Enemies" type="Node" parent="." index="4"]
+
+[node name="Grace" parent="Enemies" index="0" instance=ExtResource( 9 )]
+
+position = Vector2( 2054.04, 119.312 )
 scale = Vector2( 1.6, 1.6 )
 _sections_unfolded = [ "Transform" ]
 
-[node name="Sky" type="ParallaxBackground" parent="." index="4"]
+[node name="Sky" type="ParallaxBackground" parent="." index="5"]
 
+editor/display_folded = true
 layer = -1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -163,7 +239,7 @@ __meta__ = {
 [node name="cloud-dusk-1" type="Sprite" parent="Sky/ParallaxLayer" index="0"]
 
 position = Vector2( -661.344, -344.062 )
-texture = ExtResource( 8 )
+texture = ExtResource( 10 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
@@ -172,7 +248,7 @@ __meta__ = {
 [node name="cloud-dusk-2" type="Sprite" parent="Sky/ParallaxLayer" index="1"]
 
 position = Vector2( 555.092, -356.165 )
-texture = ExtResource( 9 )
+texture = ExtResource( 11 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -180,7 +256,7 @@ __meta__ = {
 [node name="cloud-dusk-3" type="Sprite" parent="Sky/ParallaxLayer" index="2"]
 
 position = Vector2( 1829.88, -284.469 )
-texture = ExtResource( 8 )
+texture = ExtResource( 10 )
 __meta__ = {
 "_edit_lock_": true
 }
@@ -188,16 +264,16 @@ __meta__ = {
 [node name="cloud-dusk-4" type="Sprite" parent="Sky/ParallaxLayer" index="3"]
 
 position = Vector2( 5402.8, -322.366 )
-texture = ExtResource( 8 )
+texture = ExtResource( 10 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="HeroWithCamera" parent="." index="5" instance=ExtResource( 10 )]
+[node name="HeroWithCamera" parent="." index="6" instance=ExtResource( 12 )]
 
 position = Vector2( 203.123, 446.074 )
 
-[node name="FinishGame" type="Area2D" parent="." index="6"]
+[node name="FinishGame" type="Area2D" parent="." index="7"]
 
 position = Vector2( 4957.52, 281.225 )
 scale = Vector2( 1.99476, 2.55729 )
@@ -215,9 +291,9 @@ position = Vector2( -343.116, -224.41 )
 scale = Vector2( 17.3747, 30.0535 )
 shape = SubResource( 1 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="7"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="8"]
 
-stream = ExtResource( 11 )
+stream = ExtResource( 13 )
 volume_db = 0.0
 autoplay = true
 mix_target = 0
