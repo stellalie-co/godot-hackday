@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Run Throwing_000.png-3a611b346f84347419c94fe180cc1caa.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Alien/Run Throwing/Run Throwing_000.png"
+source_md5="60daf97de67e0ef66567f4389677baa6"
+
+dest_files=[ "res://.import/Run Throwing_000.png-3a611b346f84347419c94fe180cc1caa.stex" ]
+dest_md5="e8d75c680e3cdf694f5ed280ab20a7c4"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

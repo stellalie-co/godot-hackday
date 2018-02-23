@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Jump Loop_001.png-a8ca1de7ad106398df817618974d3ee1.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Alien/Jump Loop/Jump Loop_001.png"
+source_md5="974909a8f344e7c534a4e9ceb500c74b"
+
+dest_files=[ "res://.import/Jump Loop_001.png-a8ca1de7ad106398df817618974d3ee1.stex" ]
+dest_md5="1b2b1d453a16b3e45e5dfa7e87bdf9a3"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Run Slashing_008.png-7ddc6281aa7a517c9567e1b94f2bc842.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Alien/Run Slashing/Run Slashing_008.png"
+source_md5="ad93d125174322cfdd3fbcd372a2eb62"
+
+dest_files=[ "res://.import/Run Slashing_008.png-7ddc6281aa7a517c9567e1b94f2bc842.stex" ]
+dest_md5="6fb3bcf16e60182c602b40c5c59192f9"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

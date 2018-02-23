@@ -1,18 +1,30 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://jv/Demos/Minimal/Scenes/StaticEnemy.tscn" type="PackedScene" id=1]
 [ext_resource path="res://hackday/assets/background/game_scene_1.png" type="Texture" id=2]
 [ext_resource path="res://hackday/tilesetWithCollision.tres" type="TileSet" id=3]
-[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Fence/Fence-End.png" type="Texture" id=4]
-[ext_resource path="res://hackday/assets/tiles/Building Set/Structures/Pre Made Structures/Building-Home.png" type="Texture" id=5]
-[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Plants/Tree-Street-1.png" type="Texture" id=6]
-[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Fence/Fence-Start.png" type="Texture" id=7]
-[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Barrel-Common.png" type="Texture" id=8]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Garbage-Bag-2.png" type="Texture" id=4]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Fence/Fence-End.png" type="Texture" id=5]
+[ext_resource path="res://hackday/assets/tiles/Building Set/Structures/Pre Made Structures/Building-Home.png" type="Texture" id=6]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Plants/Tree-Street-1.png" type="Texture" id=7]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Fence/Fence-Start.png" type="Texture" id=8]
 [ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Drone/Flying-Drone.png" type="Texture" id=9]
-[ext_resource path="res://hackday/player/BadassJohn.tscn" type="PackedScene" id=10]
-[ext_resource path="res://hackday/enemy/Gorilla.tscn" type="PackedScene" id=11]
+[ext_resource path="res://hackday/assets/tiles/Building Set/Structures/Pre Made Structures/Sushi-Bar-Complete.png" type="Texture" id=10]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Lamps/Lamp-Street-(Side).png" type="Texture" id=11]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Plants/Tree-Street-Giant.png" type="Texture" id=12]
+[ext_resource path="res://hackday/assets/tiles/Building Set/Structures/Pre Made Structures/Closed-Shop-Single.png" type="Texture" id=13]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Garbage-Bag-1.png" type="Texture" id=14]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Containers & Barrels/Trash-Container-Yellow-Opened.png" type="Texture" id=15]
+[ext_resource path="res://hackday/player/BadassJohn.tscn" type="PackedScene" id=16]
+[ext_resource path="res://hackday/assets/tiles/Enviroment and Props/Traps/Spikes/Spikes-Bloody.png" type="Texture" id=17]
+[ext_resource path="res://hackday/enemy/Gorilla.tscn" type="PackedScene" id=18]
+[ext_resource path="res://hackday/enemy/Ghost.tscn" type="PackedScene" id=19]
+[ext_resource path="res://hackday/enemy/Alien.tscn" type="PackedScene" id=20]
+[ext_resource path="res://hackday/platforms/Barrel.tscn" type="PackedScene" id=21]
+[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-1.png" type="Texture" id=22]
+[ext_resource path="res://hackday/assets/desertPack/cloud-dusk-2.png" type="Texture" id=23]
 
-[sub_resource type="RectangleShape2D" id=1]
+[sub_resource type="RectangleShape2D" id=3]
 
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
@@ -57,6 +69,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." index="1"]
 
+editor/display_folded = true
 layer = -1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -125,7 +138,7 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 327678, 3, 0, 327679, 3, 0, 262144, 3, 0, 262145, 3, 0, 262146, 3, 0, 262147, 3, 0, 262148, 3, 0, 262149, 3, 0, 262150, 3, 0, 262151, 3, 0, 262152, 3, 0, 262153, 3, 0, 262154, 3, 0, 262155, 3, 0, 262156, 3, 0, 262157, 3, 0, 262158, 3, 0, 262159, 3, 0, 262160, 3, 0, 262161, 3, 0, 262162, 3, 0, 262163, 3, 0, 262164, 3, 0, 262165, 3, 0, 262166, 3, 0, 262167, 3, 0 )
+tile_data = PoolIntArray( 327678, 3, 0, 327679, 3, 0, 262144, 3, 0, 262145, 3, 0, 262146, 3, 0, 262147, 3, 0, 262148, 3, 0, 262149, 3, 0, 262150, 3, 0, 262151, 3, 0, 262152, 3, 0, 262153, 3, 0, 262154, 3, 0, 262155, 3, 0, 262156, 3, 0, 262157, 3, 0, 262158, 3, 0, 262159, 3, 0, 262160, 3, 0, 262161, 3, 0, 262162, 3, 0, 262163, 3, 0, 262164, 3, 0, 262165, 3, 0, 262166, 3, 0, 262167, 3, 0, 262168, 3, 0, 262169, 3, 0, 262170, 3, 0, 262171, 3, 0, 262172, 3, 0, 262173, 3, 0, 262174, 3, 0, 262175, 3, 0, 262176, 3, 0, 262177, 3, 0, 262178, 3, 0, 262179, 3, 0, 262180, 3, 0, 262181, 3, 0, 262182, 3, 0, 262183, 3, 0, 262184, 3, 0, 262185, 3, 0, 262186, 3, 0 )
 _sections_unfolded = [ "Cell", "Transform" ]
 __meta__ = {
 "_edit_lock_": true
@@ -133,6 +146,7 @@ __meta__ = {
 
 [node name="Scenery" type="Node2D" parent="." index="3"]
 
+editor/display_folded = true
 scale = Vector2( 0.5, 0.5 )
 z_index = -1
 _sections_unfolded = [ "Transform", "Z Index" ]
@@ -140,153 +154,62 @@ __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Fence-End" type="Sprite" parent="Scenery" index="0"]
+[node name="Garbage-Bag-2" type="Sprite" parent="Scenery" index="0"]
+
+position = Vector2( 953.06, 926.511 )
+texture = ExtResource( 4 )
+
+[node name="Fence-End" type="Sprite" parent="Scenery" index="1"]
 
 position = Vector2( 1296.32, 746.948 )
-texture = ExtResource( 4 )
+texture = ExtResource( 5 )
 _sections_unfolded = [ "Transform" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Building-Home" type="Sprite" parent="Scenery" index="1"]
+[node name="Building-Home" type="Sprite" parent="Scenery" index="2" groups=[
+"platform",
+]]
 
+editor/display_folded = true
 position = Vector2( -45.8412, 327.247 )
-texture = ExtResource( 5 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="Tree-Street-1" type="Sprite" parent="Scenery" index="2"]
-
-position = Vector2( 1644.48, 79.2309 )
 texture = ExtResource( 6 )
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Fence-Start" type="Sprite" parent="Scenery" index="3"]
+[node name="StaticBody2D" type="StaticBody2D" parent="Scenery/Building-Home" index="0"]
+
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Scenery/Building-Home/StaticBody2D" index="0"]
+
+position = Vector2( 13.8166, 68.9582 )
+scale = Vector2( 47.3539, 62.5393 )
+shape = SubResource( 3 )
+
+[node name="Tree-Street-1" type="Sprite" parent="Scenery" index="3"]
+
+position = Vector2( 2708.35, 79.2309 )
+texture = ExtResource( 7 )
+
+[node name="Fence-Start" type="Sprite" parent="Scenery" index="4"]
 
 position = Vector2( 733.849, 746.99 )
-texture = ExtResource( 7 )
+texture = ExtResource( 8 )
 _sections_unfolded = [ "Transform", "Z Index" ]
 __meta__ = {
 "_edit_lock_": true
 }
 
-[node name="Barrel-Common" type="Sprite" parent="Scenery" index="4" groups=[
-"platform",
-]]
-
-editor/display_folded = true
-position = Vector2( 1754.8, 916.356 )
-texture = ExtResource( 8 )
-__meta__ = {
-"_edit_lock_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Scenery/Barrel-Common" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Scenery/Barrel-Common/StaticBody2D" index="0"]
-
-position = Vector2( -11.041, -10.0115 )
-scale = Vector2( 8.4242, 11.2154 )
-shape = SubResource( 1 )
-
-[node name="Barrel-Common4" type="Sprite" parent="Scenery" index="5" groups=[
-"platform",
-]]
-
-position = Vector2( 2789.55, 905.445 )
-texture = ExtResource( 8 )
-__meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Scenery/Barrel-Common4" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Scenery/Barrel-Common4/StaticBody2D" index="0"]
-
-position = Vector2( -11.041, -10.0115 )
-scale = Vector2( 8.4242, 11.2154 )
-shape = SubResource( 1 )
-
-[node name="Barrel-Common2" type="Sprite" parent="Scenery" index="6" groups=[
-"platform",
-]]
-
-editor/display_folded = true
-position = Vector2( 1922.37, 913.718 )
-texture = ExtResource( 8 )
-__meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Scenery/Barrel-Common2" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Scenery/Barrel-Common2/StaticBody2D" index="0"]
-
-position = Vector2( -11.041, -10.0115 )
-scale = Vector2( 8.4242, 11.2154 )
-shape = SubResource( 1 )
-
-[node name="Barrel-Common3" type="Sprite" parent="Scenery" index="7" groups=[
-"platform",
-]]
-
-editor/display_folded = true
-position = Vector2( 1828.69, 718.438 )
-rotation = 1.5708
-texture = ExtResource( 8 )
-_sections_unfolded = [ "Transform" ]
-__meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true
-}
-
-[node name="StaticBody2D" type="StaticBody2D" parent="Scenery/Barrel-Common3" index="0"]
-
-input_pickable = false
-collision_layer = 1
-collision_mask = 1
-constant_linear_velocity = Vector2( 0, 0 )
-constant_angular_velocity = 0.0
-friction = 1.0
-bounce = 0.0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Scenery/Barrel-Common3/StaticBody2D" index="0"]
-
-position = Vector2( -11.041, -10.0115 )
-scale = Vector2( 8.4242, 11.2154 )
-shape = SubResource( 1 )
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Scenery" index="8"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Scenery" index="5"]
 
 root_node = NodePath("..")
 autoplay = ""
@@ -297,14 +220,50 @@ anims/airCraft = SubResource( 2 )
 blend_times = [  ]
 _sections_unfolded = [ "Playback Options" ]
 
-[node name="Flying-Drone" type="Sprite" parent="Scenery" index="9"]
+[node name="Flying-Drone" type="Sprite" parent="Scenery" index="6"]
 
 position = Vector2( 3123.52, 453.983 )
+z_index = 1
 texture = ExtResource( 9 )
-_sections_unfolded = [ "Animation", "Offset", "Pause", "Transform" ]
+_sections_unfolded = [ "Animation", "Offset", "Pause", "Transform", "Z Index" ]
 
-[node name="BadassJohn" parent="." index="4" instance=ExtResource( 10 )]
+[node name="Sushi-Bar-Complete" type="Sprite" parent="Scenery" index="7"]
 
+position = Vector2( 3584.73, 453.513 )
+texture = ExtResource( 10 )
+
+[node name="Lamp-Street-(Side)" type="Sprite" parent="Scenery" index="8"]
+
+position = Vector2( 4702.92, 429.338 )
+texture = ExtResource( 11 )
+
+[node name="Tree-Street-Giant" type="Sprite" parent="Scenery" index="9"]
+
+position = Vector2( 6513.59, 6.91711 )
+texture = ExtResource( 12 )
+
+[node name="Closed-Shop-Single" type="Sprite" parent="Scenery" index="10"]
+
+position = Vector2( 1999.28, 567.447 )
+texture = ExtResource( 13 )
+
+[node name="Garbage-Bag-1" type="Sprite" parent="Scenery" index="11"]
+
+position = Vector2( 736.547, 907.884 )
+z_index = -5
+texture = ExtResource( 14 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="Trash-Container-Yellow-Opened" type="Sprite" parent="Scenery" index="12"]
+
+position = Vector2( 1243.33, 735.484 )
+z_index = -5
+texture = ExtResource( 15 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="BadassJohn" parent="." index="4" instance=ExtResource( 16 )]
+
+editor/display_folded = true
 position = Vector2( 286.981, 443.813 )
 scale = Vector2( 0.3, 0.3 )
 _sections_unfolded = [ "Collision", "Material", "Transform", "collision" ]
@@ -337,8 +296,118 @@ editor_draw_limits = false
 editor_draw_drag_margin = false
 _sections_unfolded = [ "Drag Margin", "Limit", "Smoothing", "Transform" ]
 
-[node name="Gorilla" parent="." index="5" instance=ExtResource( 11 )]
+[node name="Traps" type="Node2D" parent="." index="5"]
 
-position = Vector2( 640.585, 384.207 )
+editor/display_folded = true
+scale = Vector2( 0.5, 0.5 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Spikes-Bloody" type="Sprite" parent="Traps" index="0"]
+
+position = Vector2( 5453.17, 915.684 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 17 )
+
+[node name="Spikes-Bloody2" type="Sprite" parent="Traps" index="1"]
+
+position = Vector2( 5903.67, 913.701 )
+scale = Vector2( 2, 2 )
+texture = ExtResource( 17 )
+
+[node name="Enemies" type="Node" parent="." index="6"]
+
+[node name="Gorilla" parent="Enemies" index="0" instance=ExtResource( 18 )]
+
+position = Vector2( 1352.33, 421.771 )
+
+[node name="Ghost" parent="Enemies" index="1" instance=ExtResource( 19 )]
+
+position = Vector2( 2369.07, 420.393 )
+
+[node name="Ghost2" parent="Enemies" index="2" instance=ExtResource( 19 )]
+
+position = Vector2( 2220.05, 477.372 )
+
+[node name="Alien" parent="Enemies" index="3" instance=ExtResource( 20 )]
+
+position = Vector2( 3179.41, 428.16 )
+scale = Vector2( 0.4, 0.4 )
+
+[node name="Platforms" type="Node2D" parent="." index="7"]
+
+position = Vector2( -1.91467, 97.6506 )
+scale = Vector2( 0.5, 0.5 )
+z_index = 7
+_sections_unfolded = [ "Transform", "Z Index" ]
+
+[node name="Barrel" parent="Platforms" index="0" instance=ExtResource( 21 )]
+
+[node name="Barrel6" parent="Platforms" index="1" instance=ExtResource( 21 )]
+
+position = Vector2( 4053.14, 713.965 )
+
+[node name="Barrel7" parent="Platforms" index="2" instance=ExtResource( 21 )]
+
+position = Vector2( 3847.39, 691.601 )
+rotation = 0.523599
+
+[node name="Barrel2" parent="Platforms" index="3" instance=ExtResource( 21 )]
+
+position = Vector2( 1994.75, 716.529 )
+
+[node name="Barrel3" parent="Platforms" index="4" instance=ExtResource( 21 )]
+
+position = Vector2( 2002.5, 491.771 )
+
+[node name="Barrel4" parent="Platforms" index="5" instance=ExtResource( 21 )]
+
+position = Vector2( 1669.23, 718.467 )
+
+[node name="Barrel5" parent="Platforms" index="6" instance=ExtResource( 21 )]
+
+position = Vector2( 1792.88, 479.076 )
+rotation = 0.785398
+
+[node name="Sky" type="ParallaxBackground" parent="." index="8"]
+
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = false
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="Sky" index="0"]
+
+motion_scale = Vector2( 0.04, 0.04 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+_sections_unfolded = [ "Motion" ]
+
+[node name="cloud-dusk-1" type="Sprite" parent="Sky/ParallaxLayer" index="0"]
+
+position = Vector2( -661.344, -344.062 )
+texture = ExtResource( 22 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="cloud-dusk-2" type="Sprite" parent="Sky/ParallaxLayer" index="1"]
+
+position = Vector2( 555.092, -356.165 )
+texture = ExtResource( 23 )
+
+[node name="cloud-dusk-3" type="Sprite" parent="Sky/ParallaxLayer" index="2"]
+
+position = Vector2( 1829.88, -284.469 )
+texture = ExtResource( 22 )
+
+[node name="cloud-dusk-4" type="Sprite" parent="Sky/ParallaxLayer" index="3"]
+
+position = Vector2( 2805.3, -322.366 )
+texture = ExtResource( 22 )
 
 

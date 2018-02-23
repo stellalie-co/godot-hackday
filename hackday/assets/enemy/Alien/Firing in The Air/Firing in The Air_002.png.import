@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Firing in The Air_002.png-39a56ac62e93a7996f53df3b54d6bb9b.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Alien/Firing in The Air/Firing in The Air_002.png"
+source_md5="0cbf6fe475be3747287fa1f677b6280e"
+
+dest_files=[ "res://.import/Firing in The Air_002.png-39a56ac62e93a7996f53df3b54d6bb9b.stex" ]
+dest_md5="a6d1a80aad408a163228c581504b6c49"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

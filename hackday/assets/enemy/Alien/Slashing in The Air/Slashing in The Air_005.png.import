@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Slashing in The Air_005.png-4823280ded9d6c8722a952b538d1a5b7.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Alien/Slashing in The Air/Slashing in The Air_005.png"
+source_md5="b811869a11847c81939a525d90cbf56f"
+
+dest_files=[ "res://.import/Slashing in The Air_005.png-4823280ded9d6c8722a952b538d1a5b7.stex" ]
+dest_md5="0d3001172e01e5e8c7332865a84fa4f7"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

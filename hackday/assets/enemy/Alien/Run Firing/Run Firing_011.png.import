@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Run Firing_011.png-1fba0397d3b3bceee8aec118606c5b12.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Alien/Run Firing/Run Firing_011.png"
+source_md5="071d002a4373312150b5effc09cbfa8a"
+
+dest_files=[ "res://.import/Run Firing_011.png-1fba0397d3b3bceee8aec118606c5b12.stex" ]
+dest_md5="0d0bc6af403b56922378e4789671ae1a"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

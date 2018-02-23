@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Falling Down_003.png-af1dfd2375ad8994c1f888218e837ca5.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Alien/Falling Down/Falling Down_003.png"
+source_md5="c6978dff0411dd8271bdad61a1fb9a03"
+
+dest_files=[ "res://.import/Falling Down_003.png-af1dfd2375ad8994c1f888218e837ca5.stex" ]
+dest_md5="ff54b8fddad2adf8f4084ab08e7d52f2"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0

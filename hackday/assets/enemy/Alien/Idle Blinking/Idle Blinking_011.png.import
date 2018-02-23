@@ -1,0 +1,32 @@
+[remap]
+
+importer="texture"
+type="StreamTexture"
+path="res://.import/Idle Blinking_011.png-a4ac3bf3ad05bb393835aa1f5c297069.stex"
+
+[deps]
+
+source_file="res://hackday/assets/enemy/Alien/Idle Blinking/Idle Blinking_011.png"
+source_md5="6e54c8aeaf768e7be51b147de7e08755"
+
+dest_files=[ "res://.import/Idle Blinking_011.png-a4ac3bf3ad05bb393835aa1f5c297069.stex" ]
+dest_md5="6face79e09217ef07f9344d8515fec3c"
+
+[params]
+
+compress/mode=0
+compress/lossy_quality=0.7
+compress/hdr_mode=0
+compress/normal_map=0
+flags/repeat=0
+flags/filter=true
+flags/mipmaps=false
+flags/anisotropic=false
+flags/srgb=2
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/HDR_as_SRGB=false
+stream=false
+size_limit=0
+detect_3d=true
+svg/scale=1.0
