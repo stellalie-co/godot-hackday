@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://hackday/Level1.gd" type="Script" id=1]
 [ext_resource path="res://hackday/assets/background/game_scene_1.png" type="Texture" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://hackday/assets/desertPack/cloud-dusk-1.png" type="Texture" id=23]
 [ext_resource path="res://hackday/assets/desertPack/cloud-dusk-2.png" type="Texture" id=24]
 [ext_resource path="res://hackday/scenes/HeroWithCamera.tscn" type="PackedScene" id=25]
+[ext_resource path="res://hackday/assets/sounds/tom_me_2_128.ogg" type="AudioStream" id=26]
 
 [sub_resource type="RectangleShape2D" id=1]
 
@@ -67,12 +68,13 @@ tracks/1/keys = {
 custom_solver_bias = 0.0
 extents = Vector2( 10, 10 )
 
-[node name="World" type="Node" index="0"]
+[node name="World" type="Node"]
 
 script = ExtResource( 1 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="." index="0"]
 
+editor/display_folded = true
 layer = -1
 offset = Vector2( 0, 0 )
 rotation = 0.0
@@ -440,6 +442,14 @@ shape = SubResource( 3 )
 [node name="HeroWithCamera" parent="." index="8" instance=ExtResource( 25 )]
 
 position = Vector2( 376.931, 442.266 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="9"]
+
+stream = ExtResource( 26 )
+volume_db = 0.0
+autoplay = true
+mix_target = 0
+bus = "Master"
 
 [connection signal="body_entered" from="SwitchToLevel2" to="." method="_on_SwitchToLevel2_body_entered"]
 

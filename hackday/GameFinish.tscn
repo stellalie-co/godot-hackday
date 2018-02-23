@@ -67,7 +67,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[node name="Node" type="Node" index="0"]
+[node name="Node" type="Node"]
 
 script = ExtResource( 1 )
 _sections_unfolded = [ "Material", "Mouse", "Visibility" ]
@@ -134,7 +134,7 @@ position = Vector2( 2049.74, 651.101 )
 scale = Vector2( -1.3713, 1.3713 )
 frames = ExtResource( 6 )
 animation = "idle"
-frame = 42
+frame = 46
 playing = true
 _sections_unfolded = [ "Material", "Transform", "Visibility" ]
 
