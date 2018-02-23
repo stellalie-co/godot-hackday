@@ -132,7 +132,7 @@ _sections_unfolded = [ "Transform" ]
 
 [node name="Grace" parent="Enemies" index="0" instance=ExtResource( 7 )]
 
-position = Vector2( 2066.42, -241.011 )
+position = Vector2( 2090, 150 )
 scale = Vector2( 1.6, 1.6 )
 _sections_unfolded = [ "Transform" ]
 

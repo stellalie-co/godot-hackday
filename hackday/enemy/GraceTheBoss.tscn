@@ -169,14 +169,17 @@ animations = [ {
 "speed": 60.0
 } ]
 
-[node name="Gorilla" type="KinematicBody2D" index="0" groups=[
+[node name="Gorilla" type="Area2D" groups=[
 "enemy",
 ]]
 
 input_pickable = false
-collision_layer = 1
-collision_mask = 1
-collision/safe_margin = 0.08
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
 
 [node name="agent_torso" type="Node2D" parent="." index="0"]
 
@@ -189,7 +192,7 @@ __meta__ = {
 scale = Vector2( -1, 1 )
 frames = SubResource( 1 )
 animation = "idle"
-frame = 4
+frame = 11
 playing = true
 _sections_unfolded = [ "Transform", "Visibility" ]
 
@@ -208,7 +211,7 @@ agent_initial_facing_direction = "left"
 script = ExtResource( 138 )
 disabled = false
 debug = false
-gravity = 900
+gravity = 0
 run_speed = 250
 slope_slide_stop = 25.0
 movement_sound_manager = null
