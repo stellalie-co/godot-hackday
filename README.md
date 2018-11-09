@@ -7,4 +7,6 @@ We wanted to learn something new and have a bit of fun on the day. What would be
 
 ![](https://lh6.googleusercontent.com/hBxQMY3PZhxzf_wTfmLT59zUX58mKCv_pSq7ngC9GqpitPiGkt1Isd334fGp6Kd9_BWqu7CEn-WQ8zOzbAu5WximEsQsjyQ2MPMJpJGjRsTv41g6xBeRAplD8yM2j_1CWO0Ac6ju)
 
+See blog post here to see more images and read our story!
+
 https://stellalie.com/2018/11/09/learnosity-hackday-project-everyone-can-he-a-hero﻿/
